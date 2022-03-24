@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\homeController;
+use App\Http\Controllers\aboutusController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,16 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/', homeController::class);
+
+Route::controller(aboutusController::class)->group(function(){
+    Route::get('about-us', 'index');
+    Route::get('about-us/{variable}/{variable2?}', 'show'); /* Ruta con variable opcional */
 });
 
-Route::get('about-us', function () {
-    /*return view('welcome');*/
-    return "Quienes somos";
-});
 
-Route::get('about-us/{variable}', function ($variable) {
-    /*return view('welcome');*/
-    return "Quienes somos $variable";
-});
+
+
+
+
