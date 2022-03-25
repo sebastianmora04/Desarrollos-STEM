@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Prevycons - Home</title>
+    <title>@yield('title')</title>
+    <!--favicon -->
     <style>
         body{
     font-family: 'Poppins', sans-serif;
@@ -13,7 +14,7 @@
 }
 
 .nombret {
-    background-color: #ffdf00;
+    background-color: #ff6600fd;
     font-size: 20px;
     padding: 15px 25px 15px 25px;
     display: flex;
@@ -180,9 +181,10 @@ a:hover{
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- styles -->
 </head>
 <body>
+    <!-- Header -->
     <header class="container-fluid  position-sticky top-0">
         <div class="menu">
             <p class="nombret">
@@ -194,11 +196,11 @@ a:hover{
                         if($user['rol']==1){ ?>
                         <a href="insertar.php"><li>Administrar</li></a>
                     <?php }endif; ?>
-                    <a href=""><li>Inicio</li></a>
+                    <a href="home"><li>Inicio</li></a>
                     <a href="about-us"><li>Quienes somos</li></a>
-                    <a href="calendario.php"><li >Servicios</li> </a>
-                    <a href="boleteria.php"><li >Blog</li></a>
-                    <a href="tienda2.php"><li >Catálogo</li></a>
+                    <a href="servicios"><li >Servicios</li> </a>
+                    <a href="blog"><li >Blog</li></a>
+                    <a href="catalogo"><li >Catálogo</li></a>
                     <?php if(!empty($user)): ?>
                             <a class="nombre_usuario" href="editar_user.php"><li> Hola, <?= $user['nombre']; ?> <?= $user['apellido']?></li></a>
                             <a href="logout.php"><li>Logout</li></a>
@@ -213,21 +215,13 @@ a:hover{
             </nav>
         </div>
     </header>
+    <!-- nav -->
 
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand">Navbar</a>
-            <div class="d-flex">
-                <a href="" class="navbar-brand">Quienes somos</a>
-                <a href="" class="navbar-brand">Servicios</a>
-                <a href="" class="navbar-brand">Blog</a>
-                <a href="" class="navbar-brand">Catálogo</a>          
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>  
-        </div>
-    </nav>
+    <!-- Contenido -->
+    @yield('content')
+    <!-- footer -->
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
