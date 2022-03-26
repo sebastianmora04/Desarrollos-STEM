@@ -200,7 +200,7 @@ a:hover{
                     <a href="home"><li>Inicio</li></a>
                     <a href="{{route('about.index')}}"><li>Quienes somos</li></a>
                     <a href="servicios"><li >Servicios</li> </a>
-                    <a href="blog"><li >Blog</li></a>
+                    <a href="{{route('blog.index')}}"><li >Blog</li></a>
                     <a href="catalogo"><li >Catálogo</li></a>
                     <?php if(!empty($user)): ?>
                             <a class="nombre_usuario" href="editar_user.php"><li> Hola, <?= $user['nombre']; ?> <?= $user['apellido']?></li></a>

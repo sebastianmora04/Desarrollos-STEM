@@ -28,7 +28,11 @@ Route::controller(aboutusController::class)->group(function(){
 
 Route::get('servicios', serviciosController::class)->name('servicio');
 
-Route::get('blog', blogController::class)->name('blog');
+Route::controller(blogController::class)->group(function(){
+    Route::get('blog', 'index')->name('blog.index');
+    Route::get('blog/create','create')->name('blog.create');
+    Route::get('blog/{variable}', 'show')->name('blog.show'); /* Ruta con variable opcional */
+});
 
 Route::get('catalogo', catalogoController::class)->name('catalogo');
 
