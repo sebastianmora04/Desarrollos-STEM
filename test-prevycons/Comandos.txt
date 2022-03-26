@@ -1,0 +1,13 @@
+Make 
+Controllers -> php artisan make::Controller *nombre del controlador*Controller
+Models -> php artisan make::model *nombre del modelo*
+Migrations -> php artisan make::migration *accion*_*nombre*_*to_tabla update*_table
+*ejecutar* -> php artisan migrate 
+Seeders -> php artisan make::seeder *nombre del modelo*Seeder
+Factories -> php artisan make::model *nombre del modelo*
+
+Consultas eloquent:
+        terminal -> php artisan tinker 
+        terminal -> App\Models\*nombre del modelo a usar*
+    Ejecución Consultas
+        $servicio = Servicio::select('id','name','descripcion')->where('id','<',5)->orderby('id','desc')->get();

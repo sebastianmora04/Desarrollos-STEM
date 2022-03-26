@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
     <!--favicon -->
+    
     <style>
         body{
     font-family: 'Poppins', sans-serif;
@@ -197,7 +198,7 @@ a:hover{
                         <a href="insertar.php"><li>Administrar</li></a>
                     <?php }endif; ?>
                     <a href="home"><li>Inicio</li></a>
-                    <a href="about-us"><li>Quienes somos</li></a>
+                    <a href="{{route('about.index')}}"><li>Quienes somos</li></a>
                     <a href="servicios"><li >Servicios</li> </a>
                     <a href="blog"><li >Blog</li></a>
                     <a href="catalogo"><li >Catálogo</li></a>

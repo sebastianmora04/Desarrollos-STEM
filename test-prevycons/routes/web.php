@@ -22,14 +22,14 @@ Route::get('/', homeController::class);
 Route::get('home', homeController::class);
 
 Route::controller(aboutusController::class)->group(function(){
-    Route::get('about-us', 'index');
-    Route::get('about-us/{variable}/{variable2?}', 'show'); /* Ruta con variable opcional */
+    Route::get('about-us', 'index')->name('about.index');
+    Route::get('about-us/{variable}/{variable2?}', 'show')->name('about.show'); /* Ruta con variable opcional */
 });
 
-Route::get('servicios', serviciosController::class);
+Route::get('servicios', serviciosController::class)->name('servicio');
 
-Route::get('blog', blogController::class);
+Route::get('blog', blogController::class)->name('blog');
 
-Route::get('catalogo', catalogoController::class);
+Route::get('catalogo', catalogoController::class)->name('catalogo');
 
-Route::any('test', testController::class);
+Route::any('test', testController::class)->name('test');
