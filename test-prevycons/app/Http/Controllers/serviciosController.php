@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class serviciosController extends Controller
 {
-    public function __invoke()
+    public function index()
     {
         $servicios = Servicio::paginate();
         /* Paginar ejemplo 1-15 page 1, 16-30 page 2, etc

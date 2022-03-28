@@ -18,22 +18,27 @@ use App\Http\Controllers\testController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', homeController::class);
-Route::get('home', homeController::class);
+Route::get('/', homeController::class)->name('/');
+Route::controller(homeController::class)->group(function(){
+    Route::get('home', 'index')->name('home.index');
+});
 
 Route::controller(aboutusController::class)->group(function(){
     Route::get('about-us', 'index')->name('about.index');
     Route::get('about-us/{variable}/{variable2?}', 'show')->name('about.show'); /* Ruta con variable opcional */
 });
 
-Route::get('servicios', serviciosController::class)->name('servicio');
+Route::get('servicios', [serviciosController::class, 'index'])->name('servicio.index');
 
 Route::controller(blogController::class)->group(function(){
     Route::get('blog', 'index')->name('blog.index');
     Route::get('blog/create','create')->name('blog.create');
-    Route::get('blog/{variable}', 'show')->name('blog.show'); /* Ruta con variable opcional */
+    Route::post('blog', 'store')->name('blog.store');
+    Route::get('blog/{blog}', 'show')->name('blog.show'); /* Ruta con variable opcional */
+    Route::get('blog/{blog}/edit','edit')->name('blog.edit');
+    Route::put('blog/{blog}','update')->name('blog.update');
 });
 
-Route::get('catalogo', catalogoController::class)->name('catalogo');
+Route::get('catalogo', [catalogoController::class, 'index'])->name('catalogo.index');
 
 Route::any('test', testController::class)->name('test');

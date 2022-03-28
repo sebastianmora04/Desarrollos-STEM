@@ -9,7 +9,12 @@
 
     <ul>
         @foreach ($blogs as $item)
-            <li>Blog {{$item->name}}</li>
+            <li>
+                <a href="{{route('blog.show',$item->id)}}"> Blog {{$item->name}} </a>
+            </li>
         @endforeach
+        
     </ul>
+
+    {{$blogs->links()}}
 @endsection

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
     <!--favicon -->
+    <link rel="shortcut icon" href="img/pagina web_favicon.png" type="image/x-icon">
+
     
     <style>
         body{
@@ -179,9 +181,7 @@ a:hover{
     <link rel="stylesheet" href="css/base.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- styles -->
 </head>
 <body>
@@ -197,11 +197,11 @@ a:hover{
                         if($user['rol']==1){ ?>
                         <a href="insertar.php"><li>Administrar</li></a>
                     <?php }endif; ?>
-                    <a href="home"><li>Inicio</li></a>
+                    <a href="{{route('home.index')}}"><li>Inicio</li></a>
                     <a href="{{route('about.index')}}"><li>Quienes somos</li></a>
-                    <a href="servicios"><li >Servicios</li> </a>
+                    <a href="{{route('servicio.index')}}"><li >Servicios</li> </a>
                     <a href="{{route('blog.index')}}"><li >Blog</li></a>
-                    <a href="catalogo"><li >Catálogo</li></a>
+                    <a href="{{route('catalogo.index')}}"><li >Catálogo</li></a>
                     <?php if(!empty($user)): ?>
                             <a class="nombre_usuario" href="editar_user.php"><li> Hola, <?= $user['nombre']; ?> <?= $user['apellido']?></li></a>
                             <a href="logout.php"><li>Logout</li></a>
@@ -209,6 +209,7 @@ a:hover{
                     <?php else: ?>
                             <a href="login_user.php"><li>Login</li></a>
                     <?php endif; ?>
+                    <a href="">Contactanos</a>
                     
                     
                     <!-- a href="index.php"><li ><img src="" alt=""></li></a> -->
@@ -218,10 +219,15 @@ a:hover{
     </header>
     <!-- nav -->
 
+    
     <!-- Contenido -->
     @yield('content')
-    <!-- footer -->
+    
 
+    <!-- footer -->
+    <footer>
+        <h5 style="text-align: center"><strong>Copyright © 2016-2020 STEM</strong> Soluciones Tecnológicas S.A.S. All rights reserved.</h5 style="text-align: center">
+    </footer>
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
