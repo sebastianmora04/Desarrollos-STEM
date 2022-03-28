@@ -8,16 +8,16 @@
     <!--favicon -->
     <link rel="shortcut icon" href="img/pagina web_favicon.png" type="image/x-icon">
 
-    
+
     <style>
-        body{
+body{
     font-family: 'Poppins', sans-serif;
     margin:0;
     background-color: #ffffff;
 }
 
 .nombret {
-    background-color: #ff6600fd;
+    background-color: #ff6600b9;
     font-size: 20px;
     padding: 15px 25px 15px 25px;
     display: flex;
@@ -26,7 +26,7 @@
 
 .menu li{
     list-style: none;
-    margin-right: 25px;
+    margin-right: 15px;
 }
 
 .menu ul{
@@ -101,87 +101,12 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-@media (max-width: 600px) {
-    .iconos{
-       flex-direction: column;
-        justify-content: center;
-    }
-}
-
-.icon{
-    width: 65px;
-    font-size: 10px;
-    height: 65px;
-    margin: 60px;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: all .4s;
-}
-
-.icon:nth-child(1):hover{
-    box-shadow: 0px 0px 0px 10px #ffdf00 ;
-}
-
-.icon:nth-child(2):hover{
-   box-shadow: 0px 0px 0px 10px #ffdf00 ;
-}
-
-.icon:nth-child(3):hover{
-    box-shadow: 0px 0px 0px 10px #ffdf00 ;
-}
-.icon:nth-child(4):hover{
-    box-shadow: 0px 0px 0px 10px #ffdf00 ;
-}
-.icon:nth-child(5):hover{
-    box-shadow: 0px 0px 0px 10px #ffdf00 ;
-}
-
-
-.fa-facebook {
-    color: #ffdf00; 
-}
-
-.fa-twitter-square{
-    color: #ffdf00; 
-}
-
-.fa-phone-square-alt{
-    color: #ffdf00; 
-}
-
-.fa-instagram-square{
-    color: #ffdf00; 
-}
-
-.fa-search-location{
-    color: #ffdf00; 
-}
-
-/* para el escudo */
-
-.escudo{
-    width: 8%; 
-}
-
-.cont-escudo{
-    margin-top: 180px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -30px;
-}
-
-@media (max-width: 768px) {
-    .escudo{
-        display: none;
-    }
 }
     </style>
     <link rel="stylesheet" href="css/base.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- styles -->
 </head>
 <body>

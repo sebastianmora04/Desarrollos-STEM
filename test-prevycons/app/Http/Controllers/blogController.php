@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use Illuminate\Http\Request;
-
+use App\Http\Requests\StoreBlog;
 class blogController extends Controller
 {
     
@@ -15,13 +15,7 @@ class blogController extends Controller
     public function create(){
         return view('blog.create');
     }
-    public function store(Request $request){
-
-        $request->validate([
-            'name' => 'required',
-            'informacion' => 'required',
-            'categoria' => 'required'
-        ]);
+    public function store(StoreBlog $request){
 
         $blog = New Blog();
         $blog->name=$request->name;
