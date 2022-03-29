@@ -138,7 +138,16 @@ a:hover{
     
 
     <!-- footer -->
-    <footer>
+    <footer class=" bg-gray-300">
+        <br>
+        <div class="ml-auto flex flex-row w-full justify-end">
+            <div class="basis-1/12 underline">Siguenos </div>
+            <div class="basis-1/12 justify-end"><a href="https://www.facebook.com/prevycons"><img src="img/facebook.png" class="w-1/5" alt=""></a></div>
+            <div class="basis-1/12 justify-end"><a href="https://wa.link/9qcq92"><img src="img/whatsapp.png" class="w-1/5" alt=""></a></div>
+            <div class="basis-1/12 justify-end"><a href="https://www.instagram.com/prevycons"><img src="img/instagram.png" class="w-1/5" alt=""></a></div>
+            <div class="basis-1/12 justify-end"><a href=""><img src="img/youtube.png" class="w-1/5" alt=""></a></div>
+        </div>
+        <br>
         <h5 class="p-5 bg-gray-300" style="text-align: center"><strong>Copyright © 2016-2022 STEM</strong> Soluciones Tecnológicas S.A.S. All rights reserved.</h5 style="text-align: center">
     </footer>
     <!-- scripts -->

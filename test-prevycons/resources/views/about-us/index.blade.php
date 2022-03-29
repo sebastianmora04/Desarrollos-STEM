@@ -3,6 +3,7 @@
 @section('title','Prevycons - Quienes somos?')
 
 @section('content')
+<!-- Conozcanos -> Quienes somos? - Conozca nuestro equipo - Politica de tratamiento de datos -->
     <div class="bg-cyan-600 flex flex-col  mx-auto h-auto text-slate-50">
         <div class="ml-10 mt-5">
             Siempre apuntando a lo más alto
