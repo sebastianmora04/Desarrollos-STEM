@@ -3,15 +3,16 @@
 @section('title','Prevycons - Servicios')
 
 @section('content')
-    <h1>Servicios</h1>
-    <ul>
-        @foreach ($servicios as $item)
-        <li>{{$item->name}} - {{$item->descripcion}} </li>
-        @endforeach
-        <li>Consultorías</li>
-        <li>Auditorías</li>
-        <li>Capacitaciones</li>
-        <li>Examen</li>
-    </ul>
+    <div class="w-11/12 h-1/5 bg-orange-300 mx-auto">
+        <h1 style="text-align: center" class="">Servicios</h1>
+    </div>
+    <br>
+    <div class="grid grid-cols-4 gap-4 box-border h-auto w-11/12 p-4 border-4 justify-center mx-auto">
+    @foreach ($servicios as $item)
+
+        <a href="">{{$item->name}} - {{$item->descripcion}}</a>
+        
+    @endforeach
+    </div>
     {{$servicios->links()}}
 @endsection
