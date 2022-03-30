@@ -5,6 +5,7 @@ use App\Http\Controllers\homeController;
 use App\Http\Controllers\aboutusController;
 use App\Http\Controllers\blogController;
 use App\Http\Controllers\catalogoController;
+use App\Http\Controllers\contactanosController;
 use App\Http\Controllers\serviciosController;
 use App\Http\Controllers\testController;
 
@@ -42,3 +43,5 @@ Route::controller(blogController::class)->group(function(){
 Route::get('catalogo', [catalogoController::class, 'index'])->name('catalogo.index');
 
 Route::any('test', testController::class)->name('test');
+
+Route::any('hireus', [contactanosController::class, 'index'])->name('hire.index');

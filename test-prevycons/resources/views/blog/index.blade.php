@@ -3,7 +3,15 @@
 @section('title','Prevycons - Blog')
 
 @section('content')
-    <h1>Blog - implementar</h1>
+    <div class="bg-emerald-600 flex flex-col  mx-auto h-auto text-slate-50">
+        <div class="ml-10 mt-5">
+            <br>
+        </div>
+        <div class="ml-10 mb-5 text-5xl">
+            <h1>Blog </h1> 
+            <h1><br></h1>
+        </div>
+    </div>
 
     <a href="{{route('blog.create')}}">Crear post</a>
 

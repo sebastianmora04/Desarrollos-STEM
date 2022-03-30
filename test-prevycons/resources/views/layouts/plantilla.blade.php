@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
     <!--favicon -->
-    <link rel="shortcut icon" href="img/pagina web_favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{URL::asset('img/pagina web_favicon.png')}}" type="image/x-icon">
 
 <!--
     <style>
@@ -114,18 +114,18 @@ a:hover{
     <header class="container-fluid  position-sticky top-0 bg-slate-50 px-14">
         <div class="items-center justify-between flex bg-opacity-90 px-15 py-4 my-4 mx-auto w-full">
             <div class=" text-2xl text-cyan font-semibold inline-flex items-center">
-                <img src="img/pagina web_horizontal.png" class="w-1/3"
-                    alt="logo-img">
+                <img src="{{URL::asset('img/pagina web_horizontal.png')}}" class="w-40"
+                    alt="logo">
             </div>
             <div class="flex">
                 <ul class="flex text-black-600">
-                    <li class="ml-5 px-1 py-1 transition hover:bg-orange-300 hover:scale-110 ease-in-out rounded"><a href="{{route('home.index')}}">Inicio</a></li>
-                    <li class="ml-5 px-1 py-1 transition hover:bg-orange-300 hover:scale-110 ease-in-out rounded"><a href="{{route('about.index')}}">Conozcanos</a></li>
-                    <li class="ml-5 px-1 py-1 transition hover:bg-orange-300 hover:scale-110 ease-in-out rounded"><a href="{{route('servicio.index')}}">Servicios</a></li>
-                    <li class="ml-5 px-1 py-1 transition hover:bg-orange-300 hover:scale-110 ease-in-out rounded"><a href="{{route('blog.index')}}">Blog</a></li>
-                    <li class="ml-5 px-1 py-1 transition hover:bg-orange-300 hover:scale-110 ease-in-out rounded"><a href="{{route('blog.index')}}">De_interés</a></li>
-                    <li class="ml-5 px-1 py-1 transition hover:bg-orange-300 hover:scale-110 ease-in-out rounded"><a href="{{route('catalogo.index')}}">Catálogo</a></li>
-                    <li class="ml-5 px-2 py-1 transition hover:bg-gray-300 hover:scale-110 ease-in-out rounded font-semibold text-orange-600 border-2 border-gray-600"><a href="">Contactanos</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('home.index')}}">Inicio</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('about.index')}}">Conozcanos</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('servicio.index')}}">Servicios</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('blog.index')}}">Blog</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('blog.index')}}">De_interés</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('catalogo.index')}}">Catálogo</a></li>
+                    <li class="ml-5 px-2 py-1 transition  hover:border-gray-500 hover:scale-110 ease-in-out rounded font-semibold text-orange-600 border-2 border-gray-300"><a href="{{route('hire.index')}}">Contáctanos</a></li>
                 </ul>
             </div>
         </div>
@@ -141,14 +141,14 @@ a:hover{
     <footer class=" bg-gray-300">
         <br>
         <div class="ml-auto flex flex-row w-full justify-end">
-            <div class="basis-1/12 underline">Siguenos </div>
-            <div class="basis-1/12 justify-end"><a href="https://www.facebook.com/prevycons"><img src="img/facebook.png" class="w-1/5" alt=""></a></div>
-            <div class="basis-1/12 justify-end"><a href="https://wa.link/9qcq92"><img src="img/whatsapp.png" class="w-1/5" alt=""></a></div>
-            <div class="basis-1/12 justify-end"><a href="https://www.instagram.com/prevycons"><img src="img/instagram.png" class="w-1/5" alt=""></a></div>
-            <div class="basis-1/12 justify-end"><a href=""><img src="img/youtube.png" class="w-1/5" alt=""></a></div>
+            <div class="basis-1/12 underline underline-offset-4">Siguenos </div>
+            <div class="basis-1/12 justify-end"><a href="https://www.facebook.com/prevycons"><img src="{{URL::asset('img/facebook.png')}}" class="w-1/5" alt=""></a></div>
+            <div class="basis-1/12 justify-end"><a href="https://wa.link/9qcq92"><img src="{{URL::asset('img/whatsapp.png')}}" class="w-1/5" alt=""></a></div>
+            <div class="basis-1/12 justify-end"><a href="https://www.instagram.com/prevycons"><img src="{{URL::asset('img/instagram.png')}}" class="w-1/5" alt=""></a></div>
+            <div class="basis-1/12 justify-end"><a href=""><img src="{{URL::asset('img/youtube.png')}}" class="w-1/5" alt=""></a></div>
         </div>
         <br>
-        <h5 class="p-5 bg-gray-300" style="text-align: center"><strong>Copyright © 2016-2022 STEM</strong> Soluciones Tecnológicas S.A.S. All rights reserved.</h5 style="text-align: center">
+        <h5 class="p-5 bg-gray-200" style="text-align: center"><strong>Copyright © 2016-2022 STEM</strong> Soluciones Tecnológicas S.A.S. All rights reserved.</h5 style="text-align: center">
     </footer>
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

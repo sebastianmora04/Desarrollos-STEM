@@ -25,11 +25,13 @@
     <br>
     <div class="grid grid-cols-4 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">
     @foreach ($servicios as $item)
-        <div class="box-border h-auto p-4 border-4 border-slate-300 w-full">
+    <a href="">
+        <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
             <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
                     alt="logo-img">
-            <a href=""><div class="">{{$item->name}} - {{$item->descripcion}}</div></a>
+            <div class="">{{$item->name}} - {{$item->descripcion}}</div>
         </div>
+    </a>
     @endforeach
     </div>
     {{$servicios->links()}}
