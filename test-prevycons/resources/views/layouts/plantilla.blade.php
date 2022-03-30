@@ -120,7 +120,7 @@ a:hover{
             <div class="flex">
                 <ul class="flex text-black-600">
                     <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('home.index')}}">Inicio</a></li>
-                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('about.index')}}">Conozcanos</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('about.index')}}">Conózcanos</a></li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('servicio.index')}}">Servicios</a></li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('blog.index')}}">Blog</a></li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('blog.index')}}">De_interés</a></li>

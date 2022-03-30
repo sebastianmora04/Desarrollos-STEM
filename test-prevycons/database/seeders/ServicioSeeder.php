@@ -29,5 +29,19 @@ class ServicioSeeder extends Seeder
 
         $servicio2->save();
 
+        $servicio3 = new Servicio();
+
+        $servicio3->name='Asesorías';
+        $servicio3->descripcion='Apoyo para implementar un buen sistema de seguridad';
+
+        $servicio3->save();
+
+        $servicio4 = new Servicio();
+
+        $servicio4->name='Asesorías';
+        $servicio4->descripcion='Apoyo para implementar un buen sistema de seguridad';
+
+        $servicio4->save();
+
     }
 }

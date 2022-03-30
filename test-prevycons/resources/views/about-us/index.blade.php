@@ -9,7 +9,7 @@
             Siempre apuntando a lo más alto
         </div>
         <div class="ml-10 mb-5 text-5xl">
-            <h1>Ayudar a las empresas a innovar, </h1> 
+            <h1>Ayudamos a las empresas a innovar, </h1> 
             <h1>transformar y liderar.</h1>
         </div>
     </div>
@@ -46,8 +46,7 @@
                     <p>
                         Ofrecemos servicios integrales a las organizaciones que ayudarán a fortalecer tu
                         posicionamiento de marca y nombre.
-                        TE AYUDAMOS A CERTIFICAR TU ORGANIZACIÓN A TRAVÉS DE LA
-                        CERTIFICACIÓN DE ESTÁNDARES DE CALIDAD.
+                        AYUDAMOS A CERTIFICAR TU ORGANIZACIÓN A TRAVÉS DE ESTÁNDARES DE CALIDAD.
                     </p>
                 </div>
             </div>
