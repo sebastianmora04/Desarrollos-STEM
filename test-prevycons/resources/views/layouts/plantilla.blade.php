@@ -108,6 +108,55 @@ a:hover{
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- styles -->
+
+    <style type="text/css">
+        
+        ul {
+            list-style:none;
+        }
+        
+        .nav > li {
+            float:left;
+        }
+        
+        .nav li ul {
+            display:none;
+            position:absolute;
+        }
+        .filtro1{
+            min-width:230px;
+        }
+        .filtro2{
+            min-width:100px;
+        }
+        .filtro22{
+            min-width:100px;
+        }
+        .filtro22:hover{
+            right: 20px;
+            min-width:100px;
+        }
+        .filtro3{
+            min-width: 180px;
+        }
+        .nav li:hover > ul {
+            display:block;
+        }
+        
+        .nav li ul li {
+            position:relative;
+        }
+        
+        .nav li ul li ul {
+            right:-180px;
+            top:0px;
+
+        }
+        .right-categoria{
+            right: -150px;
+        }
+        
+    </style>
 </head>
 <body class="bg-slate-100">
     <!-- Header -->
@@ -118,14 +167,53 @@ a:hover{
                     alt="logo">
             </div>
             <div class="flex">
-                <ul class="flex text-black-600">
-                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('home.index')}}">Inicio</a></li>
-                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('about.index')}}">Conózcanos</a></li>
-                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('servicio.index')}}">Servicios</a></li>
-                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('blog.index')}}">Blog</a></li>
-                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('blog.index')}}">De_interés</a></li>
-                    <li class="ml-5 px-1 py-1 transition  hover:scale-110 hover:text-orange-600 hover:underline-offset-4 hover:underline ease-in-out rounded"><a href="{{route('catalogo.index')}}">Catálogo</a></li>
-                    <li class="ml-5 px-2 py-1 transition  hover:border-gray-500 hover:scale-110 ease-in-out rounded font-semibold text-orange-600 border-2 border-gray-300"><a href="{{route('hire.index')}}">Contáctanos</a></li>
+                <ul class="flex text-black-600 nav">
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded"><a href="{{route('home.index')}}">Inicio</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
+                        <a href="{{route('about.index')}}">Conózcanos</a>
+                        <br>
+                        <ul class=" filtro1 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600">
+                            <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200">¿Quiénes somos?</li></a>
+                            <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200">Nuestro equipo</li></a>
+                            <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200">Política de tratamiento de datos</li></a>
+                        </ul>
+                    </li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded"><a href="{{route('servicios.index')}}">Servicios</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
+                        <a href="{{route('blog.index')}}">Blog</a>
+                        <ul class="filtro2 px-auto bg-slate-50 text-slate-600 rounded">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                    </li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded"><a href="{{route('blog.index')}}">De_interés</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
+                        <a href="{{route('catalogo.index')}}">Catálogo</a>
+                        <ul class="filtro22 px-auto bg-slate-50 text-slate-600 rounded">
+                            <li>Sectores
+                                <ul class="filtro3 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600">
+                                    <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200">Industrial</li></a>
+                                    <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200">Médico</li></a>
+                                    <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200">Manufactura</li></a>
+                                    <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200">Comercial</li></a>
+                                </ul>
+                            </li>
+                            <li>Categorías
+                                <ul class="filtro3 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600">
+                                    <li>Protección Manual</li>
+                                    <li>Protección Facial</li>
+                                    <li>Protección Respiratoria</li>
+                                    <li>Protección Corporal</li>
+                                    <li>Protección Visual</li>
+                                    <li>Protección Auditiva</li>
+                                    <li>Trabajo seguro en alturas</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ml-5 px-2 py-1 transition  hover:border-gray-500 hover:scale-105 ease-in-out rounded font-semibold text-orange-600 border-2 border-gray-300"><a href="{{route('hire.index')}}">Contáctanos</a></li>
                 </ul>
             </div>
         </div>

@@ -19,16 +19,19 @@
     <br>
     <div class="flex flex-col  mx-auto h-auto text-2xl  underline underline-offset-8 text-gray-500">
         <div class="m-auto">
-            Diseño e implementación de Sistemas de Gestión
+            DISEÑO E IMPLEMENTACIÓN DE SISTEMAS DE GESTIÓN
         </div>
     </div>
     <br>
     <div class="grid grid-cols-4 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">
     @foreach ($servicios as $item)
-        <a href="" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
-            <img src="img/pagina web_normal.png" class="mx-auto w-1/2 justify-center"
+        <a href="{{route('servicios.show',$item->id)}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
+            <img src="{{$item->img}}" class="mx-auto w-1/2 justify-center"
                     alt="logo-img">
-            <div class="">{{$item->name}} - {{$item->descripcion}}</div>
+            <div class="">
+                <strong>{{$item->name}}</strong>
+                <br>{{$item->descripcion}}
+            </div>
         </a> <!-- box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto -->
     @endforeach
     </div>
@@ -41,12 +44,15 @@
     </div>
     <br>
     <div class="grid grid-cols-4 gap-4  h-auto w-11/12 p-4  justify-center mx-auto">
-        @foreach ($servicios as $item)
-            <div class="box-border h-auto w-auto p-4 border-4 border-slate-300">
-                <img src="img/pagina web_normal.png" class="w-1/3 justify center"
+        @foreach ($servicios2 as $item)
+        <a href="{{route('servicios.show',$item->id)}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
+                <img src="{{$item->img}}" class="mx-auto w-1/2 justify-center"
                         alt="logo-img">
-                <a href=""><div class="">{{$item->name}} - {{$item->descripcion}}</div></a>
-            </div>
+                <div class="">
+                    <strong>{{$item->name}}</strong>
+                    <br> {{$item->descripcion}}
+                </div>
+        </a>
         @endforeach
     </div>
 @endsection

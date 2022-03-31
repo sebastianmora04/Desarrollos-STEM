@@ -20,7 +20,7 @@
                     <label class='ml-5 px-2 py-1'>
                         Nombre
                         <br>
-                        <br>
+                        
                         <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded" type="text" name="name" value="{{old('name')}}">
                     </label>
                     <br>
@@ -28,15 +28,15 @@
                     <label class='ml-5 px-2 py-1'>
                         Correo electrónico
                         <br>
-                        <br>
-                        <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded" type="text" name="correo" value="{{old('correo')}}">
+                        
+                        <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded" type="email" name="correo" value="{{old('correo')}}">
                     </label>
                     <br>
                     <br>
                     <label class='ml-5 px-2 py-1'>
                         Telefono
                         <br>
-                        <br>
+                        
                         <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded" type="text" name="telefono" value="{{old('telefono')}}">
                     </label>
                     <br>
@@ -44,7 +44,7 @@
                     <label class='ml-5 px-2 py-1'>
                         Tema
                         <br>
-                        <br>
+                        
                         <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded" type="text" name="tema" value="{{old('tema')}}">
                     </label>
                     <br>
@@ -52,7 +52,7 @@
                     <label class='ml-5 px-2 py-1'>
                         Descripción 
                         <br>
-                        <br> 
+                         
                         <textarea class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded h-auto" name="Descripcion" rows="3">{{old('Descripcion')}}</textarea>
                     </label>
                     <br>
@@ -67,20 +67,25 @@
             </div>
             <div class=" row-span-1 ">
                 <div>
-                    Oficina:
+                    <strong>Nuestra oficina</strong>
                     <br>
-                    Bucaramanga
+                    Dirección: Carrera 19 #41-33 Bucaramanga, Santander
                     <br>
-                    +57316
+                    Teléfono: <a class="underline underline-offset-2" href="https://wa.link/9qcq92">+57 316 5242068</a>
                     <br>
-                    Cra. 19 #41-33
-                    <br>
-                    prevycons@gmail.com
+                    Correo: prevycons@gmail.com
                 </div>
                 <br>
                 <div>
-                    Director general:
+                    <strong>Director general</strong>
                     <br>
+                    Susana Prada Robayo
+                    <br>
+                    Ing. industrial - Especialista en salud ocupacional
+                    <br>
+                    <a class="underline underline-offset-2" href="https://wa.link/9qcq92">+57 316 5242068</a>
+                    <br>
+
 
                 </div>
             </div>

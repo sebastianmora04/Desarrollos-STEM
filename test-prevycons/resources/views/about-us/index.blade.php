@@ -13,27 +13,24 @@
             <h1>transformar y liderar.</h1>
         </div>
     </div>
-    <div class="justify-center mx-auto">
+    <div class="justify-center mx-auto shadow-xl">
         <div class="px-16 py-5">
             <br>
             <div class="flex flex-row justify-center mx-auto">
                 <div class="basis-1/4">01</div>
                 <div class="basis-2/4">
-                    <h1 class="font-semibold">¿Quiénes somos?</h1>
+                    <div class="flex flex-col  mx-auto h-auto text-2xl  underline underline-offset-8 text-gray-500">
+                        <div class="m-auto">
+                            ¿QUIÉNES SOMOS?
+                        </div>
+                    </div>
                     <br>
                     <p class=" text-justify">
-                        Somos una compañía con más de 5 años de experiencia;
-                        trabajamos con el propósito de desarrollar acompañamiento empresarial a través
-                        de: consultoría especializada, auditorías internas, formación y capacitación,
-                        supervisión de obras, fundamentados en el HACER (documentamos, capacitamos,
-                        visitamos las empresas)
-                        Somos un Equipo interdisciplinario, Ingenieros de calidad, profesionales en
-                        Seguridad y salud en el trabajo, Administradores, Fitoterapeutas, Psicólogos,
-                        Enfermeros, Contadores, Ingenieros Mecánicos con el propósito de abarcar
-                        diferentes líneas temáticas en los diversos sistemas de gestión, como son,
-                        GESTIÓN DE LA CALIDAD, GESTIÓN AMBIENTAL, GESTIÓN DE SEGURIDAD
-                        Y SALUD EN EL TRABAJO, GESTIÓN ENERGÉTICA, AUDITORÍAS INTERNAS,
-                        GESTION CONTABLE y temas afines.
+                        Somos una firma de profesionales que acompañamos a nuestros clientes en el desarrollo de sistemas de gestión basados en la mejora continua.
+                        Prestamos nuestros servicios en diseño e implementación de sistemas de gestión de calidad (Normas ISO 9001, ISO 14001, ISO 45001), Gestión Documental, Planes de manejo ambiental, Sistemas de gestión en salud y seguridad en el trabajo, Mediciones higiénicas, Investigación de accidentes y enfermedades laborales, Planes de seguridad vial, Auditorías
+                        internas y externas.
+                        Tenemos experiencia en empresas del sector industrial, agroindustrial, constructor, comercializadoras de servicios, IPS, colegios, entidades sin ánimo de lucro y de economía solidaria.
+
                     </p>
                 </div>
             </div>
@@ -41,7 +38,7 @@
         <br>
         <div class="px-16">
             <div class="flex flex-row justify-center mx-auto w-10/12 bg-emerald-600 text-slate-50">
-                <div class="basis-1/5 font-semibold mt-auto mb-auto"><p class="ml-5">¿Qué hacemos?</p></div>
+                <div class="basis-1/5 font-semibold mt-auto mb-auto"><p class="ml-5">¿QUÉ HACEMOS?</p></div>
                 <div class="basis-3/5 px-1">
                     <p>
                         Ofrecemos servicios integrales a las organizaciones que ayudarán a fortalecer tu
@@ -50,31 +47,53 @@
                     </p>
                 </div>
             </div>
-        <br>
+            <br>
 
+            <br>
+            <div class="flex flex-row px-16 justify-center mx-auto">
+                <div class="basis-5/12 p-2 ">
+                    <h1 style="text-align: center" class=" text-xl flex flex-col  mx-auto h-auto underline underline-offset-4 text-gray-500">VISIÓN</h1>
+                    <br>
+                    <p class="text-justify px-auto">
+                        Para el 2028, PREV&amp;CONS será una empresa líder en el mercado con
+                        reconocimiento a nivel nacional ofreciendo a nuestros clientes una integralidad en
+                        los servicios prestados a través de equipo humano competente multidisciplinario
+                        en constante formación y actualización.
+                    </p>
+                </div>
+                <div class="basis-1/12"></div>
+                <div class="basis-5/12 p-2 ">
+                    <h1 style="text-align: center" class=" text-xl flex flex-col  mx-auto h-auto underline underline-offset-4 text-gray-500">MISIÓN</h1>
+                    <br>
+                    <p class="text-justify px-auto">
+                        PREV&amp;CONS se compromete en ofrecer a nuestros clientes soluciones
+                        acertadas para cada una de sus necesidades, orientadas al logro de su
+                        Bienestar.
+                    </p>
+                </div>
+            </div>
+        </div>
         <br>
-        <div class="flex flex-row px-16 justify-center mx-auto">
-            <div class="basis-5/12 p-2 ">
-                <h1 style="text-align: center" class="font-semibold">Visión</h1>
-                <br>
-                <p class="text-justify px-auto">
-                    Para el 2028, PREV&amp;CONS será una empresa líder en el mercado con
-                    reconocimiento a nivel nacional ofreciendo a nuestros clientes una integralidad en
-                    los servicios prestados a través de equipo humano competente multidisciplinario
-                    en constante formación y actualización.
-                </p>
-            </div>
-            <div class="basis-1/12"></div>
-            <div class="basis-5/12 p-2 ">
-                <h1 style="text-align: center" class="font-semibold">Misión</h1>
-                <br>
-                <p class="text-justify px-auto">
-                    PREV&amp;CONS se compromete en ofrecer a nuestros clientes soluciones
-                    acertadas para cada una de sus necesidades, orientadas al logro de su
-                    Bienestar.
-                </p>
-            </div>
+    </div>
+    <br>
+    <br>
+    <!-- Nosotros pre-footer  -->
+    <div class="flex flex-col  mx-auto h-auto text-xl  underline underline-offset-8 text-gray-500">
+        <div class="m-auto">
+            NOSOTROS
         </div>
     </div>
     <br>
+    <div class="grid grid-cols-3 gap-4  h-auto w-full p-4 justify-center mx-auto">
+        <a href="{{route('about.team')}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
+            <div class="text-center mx-auto font-semibold">NUESTRO EQUIPO</div>
+            <br>
+            <h1 class="hover:bg-slate-200 hover:font-semibold mx-auto w-1/4 text-center rounded">SABER MÁS</h1>
+        </a>
+        <a href="{{route('about.ptd')}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
+            <div class="text-center mx-auto font-semibold">POLÍTICA DE TRATAMIENTO DE DATOS</div>
+            <br>
+            <h1 class="hover:bg-slate-200 hover:font-semibold mx-auto w-1/4 text-center rounded">SABER MÁS</h1>
+        </a>
+    </div>
 @endsection

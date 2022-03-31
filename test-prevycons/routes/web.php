@@ -26,10 +26,16 @@ Route::controller(homeController::class)->group(function(){
 
 Route::controller(aboutusController::class)->group(function(){
     Route::get('about-us', 'index')->name('about.index');
+    Route::get('about-us/team', 'team')->name('about.team');
+    Route::get('about-us/ptd', 'ptd')->name('about.ptd');
     Route::get('about-us/{variable}/{variable2?}', 'show')->name('about.show'); /* Ruta con variable opcional */
 });
 
-Route::get('servicios', [serviciosController::class, 'index'])->name('servicio.index');
+/*Route::get('servicios', [serviciosController::class, 'index'])->name('servicio.index');*/
+Route::controller(serviciosController::class)->group(function(){
+    Route::get('servicios', 'index')->name('servicios.index');
+    Route::get('servicios/{servicios}', 'show')->name('servicios.show');
+});
 
 Route::controller(blogController::class)->group(function(){
     Route::get('blog', 'index')->name('blog.index');

@@ -20,7 +20,7 @@
     <br>
     <div class="flex flex-col  mx-auto h-auto text-2xl  underline underline-offset-8 text-gray-500">
         <div class="m-auto">
-            Cátalogo E.P.P.
+            ELEMENTOS DE PROTECCIÓN PERSONAL - EPP
         </div>
     </div>
     <br>

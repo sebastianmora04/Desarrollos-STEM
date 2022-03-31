@@ -11,19 +11,7 @@ class Servicio extends Model
 {
     use HasFactory;
 
-    protected function name(): Attribute
-    {
-        return new Attribute(
-            /*Otra manera de definir funciones*/
-            /* Accesor */
-            get: fn($value) => ucwords($value)
-            ,
-            /* Mutador */
-            set: function($value){
-                return strtolower($value);
-            }
-        );
-    }
+    
     
     /* Versiones anteriores de laravel Accesores y Mutadores
 

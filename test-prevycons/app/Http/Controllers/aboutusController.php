@@ -12,4 +12,10 @@ class aboutusController extends Controller
     public function show($variable,$variable2=null) {
         return view('about-us.show',['variable'=> $variable,'variable2'=> $variable2]);
     }
+    public function team(){
+        return view('about-us.team');
+    }
+    public function ptd(){
+        return view('about-us.ptd');
+    }
 }

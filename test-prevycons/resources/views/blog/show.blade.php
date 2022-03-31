@@ -3,8 +3,11 @@
 @section('title','Prevycons - Blog '. $blog->name)
 
 @section('content')
-    <h2>Titulo:  {{$blog->name}}</h2>
+    <strong>{{$blog->name}}</strong>
+    <p class="text-slate-400">{{$blog->categoria}}</p>
+    <br>
+    <br>
     <p>{{$blog->informacion}}</p>
-    <p><strong>{{$blog->categoria}}</strong></p>
+    <br>
     <a href="{{route('blog.edit', $blog)}}">Editar post</a>
 @endsection
