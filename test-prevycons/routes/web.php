@@ -6,6 +6,7 @@ use App\Http\Controllers\aboutusController;
 use App\Http\Controllers\blogController;
 use App\Http\Controllers\catalogoController;
 use App\Http\Controllers\contactanosController;
+use App\Http\Controllers\novedadesController;
 use App\Http\Controllers\serviciosController;
 use App\Http\Controllers\testController;
 
@@ -46,8 +47,11 @@ Route::controller(blogController::class)->group(function(){
     Route::put('blog/{blog}','update')->name('blog.update');
 });
 
+Route::any('novedades', [novedadesController::class, 'index'])->name('novedades.index');
+
 Route::get('catalogo', [catalogoController::class, 'index'])->name('catalogo.index');
 
 Route::any('test', testController::class)->name('test');
 
 Route::any('hireus', [contactanosController::class, 'index'])->name('hire.index');
+

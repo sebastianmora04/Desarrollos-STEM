@@ -163,7 +163,7 @@ a:hover{
     <header class="container-fluid  position-sticky top-0 bg-slate-50 px-14">
         <div class="items-center justify-between flex bg-opacity-90 px-15 py-4 my-4 mx-auto w-full">
             <div class=" text-2xl text-cyan font-semibold inline-flex items-center">
-                <img src="{{URL::asset('img/pagina web_horizontal.png')}}" class="w-40"
+                <img src="{{URL::asset('img/web/LOGOTIPO_PREVYCONS.png')}}" class=" w-2/4"
                     alt="logo">
             </div>
             <div class="flex">
@@ -172,28 +172,50 @@ a:hover{
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
                         <a href="{{route('about.index')}}">Conózcanos</a>
                         <br>
-                        <ul class=" filtro1 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600">
+                        <ul class="shadow-xl filtro1 text-sm px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600">
                             <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200">¿Quiénes somos?</li></a>
                             <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200">Nuestro equipo</li></a>
                             <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200">Política de tratamiento de datos</li></a>
                         </ul>
                     </li>
-                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded"><a href="{{route('servicios.index')}}">Servicios</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
+                        <a href="{{route('servicios.index')}}">Servicios</a>
+                        <ul class="filtro1 px-auto bg-slate-50 text-slate-600 rounded text-sm shadow-xl">
+                            <li class="text-lg">Sistemas de gestión</li>
+                            <a class="" href="{{route('servicios.show',1)}}"><li class="px-4 hover:bg-slate-200">Gestión de calidad</li></a>
+                            <a class="" href="{{route('servicios.show',2)}}"><li class="px-4 hover:bg-slate-200">Gestión de seguridad y salud en el trabajo</li></a>
+                            <a class="" href="{{route('servicios.show',3)}}"><li class="px-4 hover:bg-slate-200">Gestión documental</li></a>
+                            <a class="" href="{{route('servicios.show',4)}}"><li class="px-4 hover:bg-slate-200">Gestión ambiental</li></a>
+                            <li class="text-lg">Otros servicios</li>
+                            <a class="" href="{{route('servicios.show',5)}}"><li class="px-4 hover:bg-slate-200">Plan estratégico de seguridad vial</li></a>
+                            <a class="" href="{{route('servicios.show',6)}}"><li class="px-4 hover:bg-slate-200">Auditorías</li></a>
+                            <a class="" href="{{route('servicios.show',7)}}"><li class="px-4 hover:bg-slate-200">Capacitaciones para SG SST</li></a>
+                            <a class="" href="{{route('servicios.show',8)}}"><li class="px-4 hover:bg-slate-200">Reporte e investigación de incidentes, accidentes de trabajo y enfermedades laborales</li></a>
+                        </ul>
+                    </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
                         <a href="{{route('blog.index')}}">Blog</a>
-                        <ul class="filtro2 px-auto bg-slate-50 text-slate-600 rounded">
+                        <ul class="shadow-xl filtro2 px-auto bg-slate-50 text-slate-600 rounded">
                             <li>1</li>
                             <li>2</li>
                             <li>3</li>
                             <li>4</li>
                         </ul>
                     </li>
-                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded"><a href="{{route('blog.index')}}">De_interés</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
+                        <a href="{{route('novedades.index')}}">Novedades</a>
+                        <br>
+                        <ul class="shadow-xl filtro1 text-sm px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600">
+                            <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200">Noticias</li></a>
+                            <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200">Normas</li></a>
+                            <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200">Decretos</li></a>
+                        </ul>
+                    </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
                         <a href="{{route('catalogo.index')}}">Catálogo</a>
-                        <ul class="filtro22 px-auto bg-slate-50 text-slate-600 rounded">
+                        <ul class="shadow-xl filtro22 text-sm px-auto bg-slate-50 text-slate-600 rounded">
                             <li>Sectores
-                                <ul class="filtro3 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600">
+                                <ul class=" shadow-xl filtro3 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600 text-sm">
                                     <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200">Industrial</li></a>
                                     <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200">Médico</li></a>
                                     <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200">Manufactura</li></a>
@@ -201,7 +223,7 @@ a:hover{
                                 </ul>
                             </li>
                             <li>Categorías
-                                <ul class="filtro3 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600">
+                                <ul class="shadow-xl filtro3 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600 text-sm">
                                     <li>Protección Manual</li>
                                     <li>Protección Facial</li>
                                     <li>Protección Respiratoria</li>

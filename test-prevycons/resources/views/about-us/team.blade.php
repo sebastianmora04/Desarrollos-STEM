@@ -30,6 +30,7 @@
     
     <div class="grid grid-cols-2 gap-4  h-auto w-full p-4 justify-center mx-auto shadow-xl ">
         <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
+            <img src="{{URL::asset('img/web/.png')}}" alt="">
             <strong>Susana Prada Robayo</strong>
             <br>
             Ing. Industrial - Esp. en Salud Ocupacional
@@ -40,6 +41,8 @@
             Docente de responsabilidad social y gestión de entorno.
         </div>
         <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
+            <img class="mx-auto" src="{{URL::asset('img/web/tatiana-06.jpg')}}" alt="">
+            <br>
             <strong>Tatiana Castañeda Sánchez</strong>
             <br>
             Ing. Ambiental - Mag. en Calidad y Gestión Integral.
@@ -49,6 +52,8 @@
             diseño implementación y mejora de los sistemas ISO 9001, 45001, 14001, 14064, Experta en la gestión de conceptos sanitarios, permisos y licencias ambientales, Docente hora Catedra Responsabilidad Social.
         </div>
         <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
+            <img class="mx-auto" src="{{URL::asset('img/web/olga-06.jpg')}}" alt="">
+            <br>
             <strong>Olga Lucia Mantilla Q.</strong>
             <br>
             Psicologa - Esp. en Salud Ocupacional.
@@ -60,6 +65,8 @@
             organizar y desarrollar programas para el fortalecimiento de relaciones con los grupos de interés de la empresa, familias, socios y comunidad. Diseño e implementación de programas de vigilancia epidemiológica de riesgo psicosocial y desórdenes musculo-esqueletitos.
         </div>
         <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
+            <img class="mx-auto" src="{{URL::asset('img/web/yulieth-06.jpg')}}" alt="">
+            <br>
             <strong>Yulieth Sanchez Bocanegra</strong>
             <br>
             Fisioterapeuta - Esp. en Seguridad y Salud en el Trabajo.

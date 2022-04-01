@@ -20,7 +20,7 @@ class serviciosController extends Controller
     public function show(Servicio $servicios) {
 
         /* $servicios = servicios::find($id); */
- 
-         return view('servicios.show',compact('servicios'));
+        $numero=$servicios->id;
+        return view('servicios.unidad.'.$numero,compact('servicios'));
      }
 }

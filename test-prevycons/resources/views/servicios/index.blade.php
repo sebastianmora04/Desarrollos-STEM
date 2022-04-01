@@ -28,6 +28,7 @@
         <a href="{{route('servicios.show',$item->id)}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
             <img src="{{$item->img}}" class="mx-auto w-1/2 justify-center"
                     alt="logo-img">
+            <br>
             <div class="">
                 <strong>{{$item->name}}</strong>
                 <br>{{$item->descripcion}}
@@ -48,6 +49,7 @@
         <a href="{{route('servicios.show',$item->id)}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
                 <img src="{{$item->img}}" class="mx-auto w-1/2 justify-center"
                         alt="logo-img">
+                <br>
                 <div class="">
                     <strong>{{$item->name}}</strong>
                     <br> {{$item->descripcion}}
