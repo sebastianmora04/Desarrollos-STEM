@@ -24,53 +24,59 @@
         </div>
     </div>
     <br>
-    <div class="grid grid-cols-4 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">
-        <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-            <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                    alt="logo-img">
-            <a href=""><div class="">Producto</div></a>
+    <div class="flex flex-row">
+        <div class="basis-1/3">
+            
         </div>
-        <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-            <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                    alt="logo-img">
-            <a href=""><div class="">Producto</div></a>
+
+        <div class="grid grid-cols-3 gap-4  h-auto w-11/12 p-4 justify-center mx-auto basis-2/3">
+            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
+                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
+                        alt="logo-img">
+                <a href=""><div class="">Producto</div></a>
+            </div>
+            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
+                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
+                        alt="logo-img">
+                <a href=""><div class="">Producto</div></a>
+            </div>
+            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
+                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
+                        alt="logo-img">
+                <a href=""><div class="">Producto</div></a>
+            </div>
+            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
+                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
+                        alt="logo-img">
+                <a href=""><div class="">Producto</div></a>
+            </div>
+            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
+                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
+                        alt="logo-img">
+                <a href=""><div class="">Producto</div></a>
+            </div>
+            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
+                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
+                        alt="logo-img">
+                <a href=""><div class="">Producto</div></a>
+            </div>
+            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
+                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
+                        alt="logo-img">
+                <a href=""><div class="">Producto</div></a>
+            </div>
+            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
+                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
+                        alt="logo-img">
+                <a href=""><div class="">Producto</div></a>
+            </div>
+            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
+                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
+                        alt="logo-img">
+                <a href=""><div class="">Producto</div></a>
+            </div>
+    
         </div>
-        <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-            <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                    alt="logo-img">
-            <a href=""><div class="">Producto</div></a>
-        </div>
-        <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-            <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                    alt="logo-img">
-            <a href=""><div class="">Producto</div></a>
-        </div>
-        <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-            <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                    alt="logo-img">
-            <a href=""><div class="">Producto</div></a>
-        </div>
-        <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-            <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                    alt="logo-img">
-            <a href=""><div class="">Producto</div></a>
-        </div>
-        <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-            <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                    alt="logo-img">
-            <a href=""><div class="">Producto</div></a>
-        </div>
-        <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-            <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                    alt="logo-img">
-            <a href=""><div class="">Producto</div></a>
-        </div>
-        <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-            <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                    alt="logo-img">
-            <a href=""><div class="">Producto</div></a>
-        </div>
-  
     </div>
 
 

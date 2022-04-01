@@ -124,17 +124,18 @@ a:hover{
             position:absolute;
         }
         .filtro1{
+            
             min-width:230px;
         }
         .filtro2{
             min-width:100px;
         }
         .filtro22{
-            min-width:100px;
+            min-width:80px;
         }
         .filtro22:hover{
             right: 20px;
-            min-width:100px;
+            min-width:80px;
         }
         .filtro3{
             min-width: 180px;
@@ -173,6 +174,7 @@ a:hover{
                         <a href="{{route('about.index')}}">Conózcanos</a>
                         <br>
                         <ul class="shadow-xl filtro1 text-sm px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600">
+                            <li class="invisible"><br> space <br></li>
                             <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200">¿Quiénes somos?</li></a>
                             <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200">Nuestro equipo</li></a>
                             <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200">Política de tratamiento de datos</li></a>
@@ -181,12 +183,13 @@ a:hover{
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
                         <a href="{{route('servicios.index')}}">Servicios</a>
                         <ul class="filtro1 px-auto bg-slate-50 text-slate-600 rounded text-sm shadow-xl">
-                            <li class="text-lg">Sistemas de gestión</li>
+                            <li class="invisible"><br> space <br></li>
+                            <li class="text-sm font-semibold">Sistemas de gestión</li>
                             <a class="" href="{{route('servicios.show',1)}}"><li class="px-4 hover:bg-slate-200">Gestión de calidad</li></a>
                             <a class="" href="{{route('servicios.show',2)}}"><li class="px-4 hover:bg-slate-200">Gestión de seguridad y salud en el trabajo</li></a>
                             <a class="" href="{{route('servicios.show',3)}}"><li class="px-4 hover:bg-slate-200">Gestión documental</li></a>
                             <a class="" href="{{route('servicios.show',4)}}"><li class="px-4 hover:bg-slate-200">Gestión ambiental</li></a>
-                            <li class="text-lg">Otros servicios</li>
+                            <li class="text-sm font-semibold">Otros servicios</li>
                             <a class="" href="{{route('servicios.show',5)}}"><li class="px-4 hover:bg-slate-200">Plan estratégico de seguridad vial</li></a>
                             <a class="" href="{{route('servicios.show',6)}}"><li class="px-4 hover:bg-slate-200">Auditorías</li></a>
                             <a class="" href="{{route('servicios.show',7)}}"><li class="px-4 hover:bg-slate-200">Capacitaciones para SG SST</li></a>
@@ -196,6 +199,7 @@ a:hover{
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
                         <a href="{{route('blog.index')}}">Blog</a>
                         <ul class="shadow-xl filtro2 px-auto bg-slate-50 text-slate-600 rounded">
+                            <li class="invisible"><br> space <br></li>
                             <li>1</li>
                             <li>2</li>
                             <li>3</li>
@@ -205,7 +209,8 @@ a:hover{
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
                         <a href="{{route('novedades.index')}}">Novedades</a>
                         <br>
-                        <ul class="shadow-xl filtro1 text-sm px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600">
+                        <ul class="shadow-xl filtro2 text-sm px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600">
+                            <li class="invisible"><br> space <br></li>
                             <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200">Noticias</li></a>
                             <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200">Normas</li></a>
                             <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200">Decretos</li></a>
@@ -214,6 +219,7 @@ a:hover{
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
                         <a href="{{route('catalogo.index')}}">Catálogo</a>
                         <ul class="shadow-xl filtro22 text-sm px-auto bg-slate-50 text-slate-600 rounded">
+                            <li class="invisible"><br> space <br></li>
                             <li>Sectores
                                 <ul class=" shadow-xl filtro3 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600 text-sm">
                                     <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200">Industrial</li></a>
