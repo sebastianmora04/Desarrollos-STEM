@@ -161,8 +161,8 @@ a:hover{
 </head>
 <body class="bg-slate-100">
     <!-- Header -->
-    <header class="container-fluid  position-sticky top-0 bg-slate-50 px-14">
-        <div class="items-center justify-between flex bg-opacity-90 px-15 py-4 my-4 mx-auto w-full">
+    <header class="container-fluid  position-sticky top-0 px-14">
+        <div class="items-center justify-between flex px-15 py-4 my-4 mx-auto w-full">
             <div class=" text-2xl text-cyan font-semibold inline-flex items-center">
                 <img src="{{URL::asset('img/web/LOGOTIPO_PREVYCONS.png')}}" class=" w-2/4"
                     alt="logo">
@@ -175,35 +175,35 @@ a:hover{
                         <br>
                         <ul class="shadow-xl filtro1 text-sm px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600">
                             <li class="invisible"><br> space <br></li>
-                            <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200">¿Quiénes somos?</li></a>
-                            <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200">Nuestro equipo</li></a>
-                            <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200">Política de tratamiento de datos</li></a>
+                            <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200 p-2 text-xs">¿Quiénes somos?</li></a>
+                            <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200 p-2 text-xs">Nuestro equipo</li></a>
+                            <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200 p-2 text-xs">Política de tratamiento de datos</li></a>
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
                         <a href="{{route('servicios.index')}}">Servicios</a>
                         <ul class="filtro1 px-auto bg-slate-50 text-slate-600 rounded text-sm shadow-xl">
                             <li class="invisible"><br> space <br></li>
-                            <li class="text-sm font-semibold">Sistemas de gestión</li>
-                            <a class="" href="{{route('servicios.show',1)}}"><li class="px-4 hover:bg-slate-200">Gestión de calidad</li></a>
-                            <a class="" href="{{route('servicios.show',2)}}"><li class="px-4 hover:bg-slate-200">Gestión de seguridad y salud en el trabajo</li></a>
-                            <a class="" href="{{route('servicios.show',3)}}"><li class="px-4 hover:bg-slate-200">Gestión documental</li></a>
-                            <a class="" href="{{route('servicios.show',4)}}"><li class="px-4 hover:bg-slate-200">Gestión ambiental</li></a>
-                            <li class="text-sm font-semibold">Otros servicios</li>
-                            <a class="" href="{{route('servicios.show',5)}}"><li class="px-4 hover:bg-slate-200">Plan estratégico de seguridad vial</li></a>
-                            <a class="" href="{{route('servicios.show',6)}}"><li class="px-4 hover:bg-slate-200">Auditorías</li></a>
-                            <a class="" href="{{route('servicios.show',7)}}"><li class="px-4 hover:bg-slate-200">Capacitaciones para SG SST</li></a>
-                            <a class="" href="{{route('servicios.show',8)}}"><li class="px-4 hover:bg-slate-200">Reporte e investigación de incidentes, accidentes de trabajo y enfermedades laborales</li></a>
+                            <li class="text-sm font-semibold px-1">Sistemas de gestión</li>
+                            <a class="" href="{{route('servicios.show',1)}}"><li class="p-2 text-xs hover:bg-slate-200">Gestión de calidad</li></a>
+                            <a class="" href="{{route('servicios.show',2)}}"><li class="p-2 text-xs hover:bg-slate-200">Gestión de seguridad y salud en el trabajo</li></a>
+                            <a class="" href="{{route('servicios.show',3)}}"><li class="p-2 text-xs hover:bg-slate-200">Gestión documental</li></a>
+                            <a class="" href="{{route('servicios.show',4)}}"><li class="p-2 text-xs hover:bg-slate-200">Gestión ambiental</li></a>
+                            <li class="text-sm font-semibold px-1">Otros servicios</li>
+                            <a class="" href="{{route('servicios.show',5)}}"><li class="p-2 text-xs hover:bg-slate-200">Plan estratégico de seguridad vial</li></a>
+                            <a class="" href="{{route('servicios.show',6)}}"><li class="p-2 text-xs hover:bg-slate-200">Auditorías</li></a>
+                            <a class="" href="{{route('servicios.show',7)}}"><li class="p-2 text-xs hover:bg-slate-200">Capacitaciones para SG SST</li></a>
+                            <a class="" href="{{route('servicios.show',8)}}"><li class="p-2 text-xs hover:bg-slate-200">Reporte e investigación de incidentes, accidentes de trabajo y enfermedades laborales</li></a>
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
                         <a href="{{route('blog.index')}}">Blog</a>
                         <ul class="shadow-xl filtro2 px-auto bg-slate-50 text-slate-600 rounded">
                             <li class="invisible"><br> space <br></li>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
+                            <li class=" p-2 text-xs">1</li>
+                            <li class=" p-2 text-xs">2</li>
+                            <li class=" p-2 text-xs">3</li>
+                            <li class=" p-2 text-xs">4</li>
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
@@ -211,32 +211,32 @@ a:hover{
                         <br>
                         <ul class="shadow-xl filtro2 text-sm px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600">
                             <li class="invisible"><br> space <br></li>
-                            <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200">Noticias</li></a>
-                            <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200">Normas</li></a>
-                            <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200">Decretos</li></a>
+                            <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200 p-2 text-xs">Noticias</li></a>
+                            <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200 p-2 text-xs">Normas</li></a>
+                            <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200 p-2 text-xs">Decretos</li></a>
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
                         <a href="{{route('catalogo.index')}}">Catálogo</a>
                         <ul class="shadow-xl filtro22 text-sm px-auto bg-slate-50 text-slate-600 rounded">
                             <li class="invisible"><br> space <br></li>
-                            <li>Sectores
+                            <li class="hover:bg-slate-200  p-2 text-xs">Sectores
                                 <ul class=" shadow-xl filtro3 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600 text-sm">
-                                    <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200">Industrial</li></a>
-                                    <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200">Médico</li></a>
-                                    <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200">Manufactura</li></a>
-                                    <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200">Comercial</li></a>
+                                    <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200  p-2 text-xs">Industrial</li></a>
+                                    <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200  p-2 text-xs">Médico</li></a>
+                                    <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200  p-2 text-xs">Manufactura</li></a>
+                                    <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200  p-2 text-xs">Comercial</li></a>
                                 </ul>
                             </li>
-                            <li>Categorías
+                            <li class="hover:bg-slate-200  p-2 text-xs">Categorías
                                 <ul class="shadow-xl filtro3 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600 text-sm">
-                                    <li>Protección Manual</li>
-                                    <li>Protección Facial</li>
-                                    <li>Protección Respiratoria</li>
-                                    <li>Protección Corporal</li>
-                                    <li>Protección Visual</li>
-                                    <li>Protección Auditiva</li>
-                                    <li>Trabajo seguro en alturas</li>
+                                    <li class="hover:bg-slate-200  p-2 text-xs">Protección Manual</li>
+                                    <li class="hover:bg-slate-200  p-2 text-xs">Protección Facial</li>
+                                    <li class="hover:bg-slate-200  p-2 text-xs">Protección Respiratoria</li>
+                                    <li class="hover:bg-slate-200  p-2 text-xs">Protección Corporal</li>
+                                    <li class="hover:bg-slate-200  p-2 text-xs">Protección Visual</li>
+                                    <li class="hover:bg-slate-200  p-2 text-xs">Protección Auditiva</li>
+                                    <li class="hover:bg-slate-200  p-2 text-xs">Trabajo seguro en alturas</li>
                                 </ul>
                             </li>
                         </ul>
@@ -254,17 +254,28 @@ a:hover{
     
 
     <!-- footer -->
-    <footer class=" bg-gray-300">
+    <footer class=" bg-gray-500">
         <br>
+        <!-- redes sociales -->
         <div class="ml-auto flex flex-row w-full justify-end">
-            <div class="basis-1/12 underline underline-offset-4">Siguenos </div>
-            <div class="basis-1/12 justify-end"><a href="https://www.facebook.com/prevycons"><img src="{{URL::asset('img/facebook.png')}}" class="w-1/5" alt=""></a></div>
-            <div class="basis-1/12 justify-end"><a href="https://wa.link/9qcq92"><img src="{{URL::asset('img/whatsapp.png')}}" class="w-1/5" alt=""></a></div>
-            <div class="basis-1/12 justify-end"><a href="https://www.instagram.com/prevycons"><img src="{{URL::asset('img/instagram.png')}}" class="w-1/5" alt=""></a></div>
-            <div class="basis-1/12 justify-end"><a href=""><img src="{{URL::asset('img/youtube.png')}}" class="w-1/5" alt=""></a></div>
+            <div class="basis-1/6 justify-end flex flex-row">
+                <div class="basis-1/4">
+                    <a class="" href="https://www.facebook.com/prevycons"><img src="{{URL::asset('img/facebook.png')}}" class="w-1/2 bg-slate-50 transition hover:scale-110 rounded" alt=""></a>
+                </div>
+                <div class="basis-1/4">
+                    <a class="" href="https://wa.link/9qcq92"><img src="{{URL::asset('img/whatsapp.png')}}" class="w-1/2 bg-slate-50 transition hover:scale-110 rounded" alt=""></a>
+                </div>
+                <div class="basis-1/4">
+                    <a class="" href="https://www.instagram.com/prevycons"><img src="{{URL::asset('img/instagram.png')}}" class="w-1/2 bg-slate-50 transition hover:scale-110 rounded" alt=""></a>
+                </div>
+                <div class="basis-1/4">
+                    <a class="" href=""><img src="{{URL::asset('img/youtube.png')}}" class="w-1/2 bg-slate-50 transition hover:scale-110 rounded" alt=""></a>
+                </div>
+            </div>
         </div>
+
         <br>
-        <h5 class="p-5 bg-gray-200" style="text-align: center"><strong>Copyright © 2016-2022 STEM</strong> Soluciones Tecnológicas S.A.S. All rights reserved.</h5 style="text-align: center">
+        <h5 class="p-5 bg-gray-200 text-xs" style="text-align: right" ><strong>Copyright © 2016-2022 STEM</strong> Soluciones Tecnológicas S.A.S. All rights reserved.</h5 style="text-align: center">
     </footer>
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

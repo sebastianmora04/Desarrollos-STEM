@@ -35,7 +35,7 @@
         <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
             <div class="flex flex-row">
                 <div class="basis-1/6">
-                    <img class="mx-auto" src="{{URL::asset('img/web/.jpg')}}" alt="">
+                    <img class="mx-auto border-4 border-cyan-500" src="{{URL::asset('img/web/.jpg')}}" alt="">
                 </div>
                 <div class="basis-1/12"></div>
                 <div class="basis-4/6">
@@ -57,7 +57,7 @@
         <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
             <div class="flex flex-row">
                 <div class="basis-1/6">
-                    <img class="mx-auto" src="{{URL::asset('img/web/tatiana-06.jpg')}}" alt="">
+                    <img class="mx-auto border-2 border-cyan-500" src="{{URL::asset('img/web/tatiana-06.jpg')}}" alt="">
                 </div>
                 <div class="basis-1/12"></div>
                 <div class="basis-4/6">
@@ -79,7 +79,7 @@
         <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
             <div class="flex flex-row">
                 <div class="basis-1/6">
-                    <img class="mx-auto" src="{{URL::asset('img/web/olga-06.jpg')}}" alt="">
+                    <img class="mx-auto border-2 border-cyan-500" src="{{URL::asset('img/web/olga-06.jpg')}}" alt="">
                 </div>
                 <div class="basis-1/12"></div>
                 <div class="basis-4/6">
@@ -103,7 +103,7 @@
         <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
             <div class="flex flex-row">
                 <div class="basis-1/6">
-                    <img class="mx-auto" src="{{URL::asset('img/web/yulieth-06.jpg')}}" alt="">
+                    <img class="mx-auto border-2 border-cyan-500" src="{{URL::asset('img/web/yulieth-06.jpg')}}" alt="">
                 </div>
                 <div class="basis-1/12"></div>
                 <div class="basis-4/6">

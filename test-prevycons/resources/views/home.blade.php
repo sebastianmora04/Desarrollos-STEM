@@ -3,11 +3,16 @@
 @section('title','Prevycons - Home')
 
 @section('content')
-    <div class="bg-orange-300 w-full content-center items-center justify-between">
-        <div>
-            Bienvenidos a Prevycons
-        </div>
+
+<div class="bg-cyan-600 flex flex-col  mx-auto h-auto text-slate-50">
+    <div class="ml-10 mt-5">
+        <br>
     </div>
+    <div class="ml-10 mb-5 text-5xl">
+        <h1>Bienvenidos a Prevycons</h1> 
+        <h1><br></h1>
+    </div>
+</div>
 
 
 @endsection

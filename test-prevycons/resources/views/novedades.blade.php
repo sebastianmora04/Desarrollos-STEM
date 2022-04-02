@@ -3,7 +3,7 @@
 @section('title','Prevycons - Novedades')
 
 @section('content')
-    <div class="bg-indigo-600 flex flex-col  mx-auto h-auto text-slate-50">
+    <div class="bg-red-600 flex flex-col  mx-auto h-auto text-slate-50">
         <div class="ml-10 mt-5">
             <br>
         </div>

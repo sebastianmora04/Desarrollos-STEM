@@ -25,8 +25,17 @@
     </div>
     <br>
     <div class="flex flex-row">
-        <div class="basis-1/3">
-            
+        <div class="basis-1/3 p-4">
+            <input type="checkbox" name="disponible" id="" value="disponible">Disponible
+            <br>
+            <input type="checkbox" name="" id="">
+            <br>
+            <p>Sectores</p>
+            <input type="checkbox" name="" id="">
+            <br>
+            <p>Categorías</p>
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
         </div>
 
         <div class="grid grid-cols-3 gap-4  h-auto w-11/12 p-4 justify-center mx-auto basis-2/3">

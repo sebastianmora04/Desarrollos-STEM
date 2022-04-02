@@ -3,7 +3,7 @@
 @section('title','Prevycons - Blog')
 
 @section('content')
-    <div class="bg-red-600 flex flex-col  mx-auto h-auto text-slate-50">
+    <div class="bg-indigo-600 flex flex-col  mx-auto h-auto text-slate-50">
         <div class="ml-10 mt-5">
             <br>
         </div>
@@ -14,7 +14,7 @@
     </div>
     <br>
     <a href="{{route('blog.create')}}" class="">
-        <button class="ml-5 px-2 py-1 transition  hover:border-gray-500 hover:scale-105 ease-in-out rounded font-semibold text-red-600 border-2 border-gray-300">Crear post</button>
+        <button class="ml-5 px-2 py-1 transition  hover:border-gray-500 hover:scale-105 ease-in-out rounded font-semibold text-indigo-600 border-2 border-gray-300">Crear post</button>
     </a>
     <br>
     <br>
