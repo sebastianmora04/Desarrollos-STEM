@@ -26,16 +26,32 @@
     <br>
     <div class="flex flex-row">
         <div class="basis-1/3 p-4">
-            <input type="checkbox" name="disponible" id="" value="disponible">Disponible
+            <input type="checkbox" name="disponible" id="" value="disponible"> Disponible
             <br>
-            <input type="checkbox" name="" id="">
             <br>
             <p>Sectores</p>
-            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id=""> Industrial
             <br>
+            <input type="checkbox" name="" id=""> Médico
+            <br>
+            <input type="checkbox" name="" id=""> Manufactura
+            <br>
+            <input type="checkbox" name="" id=""> Comercial
+            <br><br>
             <p>Categorías</p>
-            <input type="checkbox" name="" id="">
-            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id=""> Protección manual
+            <br>
+            <input type="checkbox" name="" id=""> Protección facial
+            <br>
+            <input type="checkbox" name="" id=""> Protección respiratoria
+            <br>
+            <input type="checkbox" name="" id=""> Protección corporal
+            <br>
+            <input type="checkbox" name="" id=""> Protección visual
+            <br>
+            <input type="checkbox" name="" id=""> Protección auditiva
+            <br>
+            <input type="checkbox" name="" id=""> Trabajo seguro en alturas
         </div>
 
         <div class="grid grid-cols-3 gap-4  h-auto w-11/12 p-4 justify-center mx-auto basis-2/3">
