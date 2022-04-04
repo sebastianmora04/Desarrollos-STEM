@@ -1,15 +1,29 @@
 # Test prevycons
 ## Tarea realizada --
 
-### 28-03-2022
 
+### 05-04-2022
 #### Asignación trabajo:
 
-Validar formularios
+#### Portabilidad a Laravel 8 con php 7.4 para poder subir al host
 
-Plantilla Blog version 0.1
+### 04-04-2022
 
-Update and delete post del Blog
+Intento Nro 1 para cambio de versión proyecto PREVYCONS --
+
+Consulta y desarrollo de técnicas para mayor eficiencia --
+
+### 02-04-2022
+
+Organización plantillas --
+
+### 28-03-2022
+
+Validar formularios --
+
+Plantilla Blog version 0.1 --
+
+Update and delete post del Blog --
 
 ### 26-03-2022
 
@@ -17,13 +31,13 @@ Consultas eloquent --
 
 Llenado de formularios(INSERT) --
 
-Validación de formularios 
+Validación de formularios --
 
-CRUD básico -> Read check Create check
+CRUD básico -> Read check Create check --
 
 ### 25-03-2022
 
-Rutas principales
+Rutas principales --
 
 Inicio --
 
