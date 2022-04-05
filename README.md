@@ -2,10 +2,36 @@
 ## Tarea realizada --
 
 
+### 06-04-2022
+
+#### Asignación trabajo:
+
+Pendientes
+
+Envío email
+
+Sección política de tratamiento de datos
+
 ### 05-04-2022
 #### Asignación trabajo:
 
-#### Portabilidad a Laravel 8 con php 7.4 para poder subir al host
+Portabilidad a Laravel 8 con php 7.4 para poder subir al host --
+
+Arreglo base de datos en el host
+  
+    Primary keys
+  
+    Unique
+  
+    Auto increment
+  
+Filtros
+  
+    Productos -> Ligado al acceso de los mismos en archivo CSV
+  
+    Blog -> Separación por secciones
+  
+    Novedades -> Separación por secciones
 
 ### 04-04-2022
 
