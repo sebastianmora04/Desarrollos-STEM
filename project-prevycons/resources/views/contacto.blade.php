@@ -14,8 +14,8 @@
     </div>
     <br>
     <div class="justify-center mx-auto h-auto">
-        <div class="grid grid-rows-2 grid-flow-col gap-4 px-10 ">
-            <div class="row-span-2  ...">
+        <div class="md:grid md:grid-rows-2 md:grid-flow-col md:gap-4 md:px-10 ">
+            <div class="md:row-span-2  ...">
                 <form class="w-11/12" action="">
                     <label class='ml-5 px-2 py-1'>
                         Nombre
@@ -62,10 +62,11 @@
                     </button>
                 </form>    
             </div>
-            <div class=" row-span-1 ...">
+            <br class="md:hidden">
+            <div class=" md:row-span-1 md:px-0 px-4">
                 <iframe class="w-11/12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15836.325779968354!2d-73.1219976!3d7.1165603!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x199801411c168254!2sPrevycons%20SAS!5e0!3m2!1ses-419!2sco!4v1648652656563!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class=" row-span-1 ">
+            <div class=" md:row-span-1 md:px-0 px-2 ">
                 <div>
                     <strong>Nuestra oficina</strong>
                     <br>
@@ -89,6 +90,7 @@
 
                 </div>
             </div>
+            <br class="md:hidden">
         </div>
     </div>
 @endsection
