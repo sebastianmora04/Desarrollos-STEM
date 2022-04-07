@@ -24,40 +24,70 @@
                         
                         <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded" type="text" name="name" value="{{old('name')}}">
                     </label>
-                    <br>
-                    <br>
+
+                    @error('name')
+                        <br>
+                        <small>*{{$message}}</small>
+                        <br>
+                    @enderror
+                    <br><br>
+
                     <label class='ml-5 px-2 py-1'>
                         Correo electrónico
                         <br>
                         
                         <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded" type="email" name="correo" value="{{old('correo')}}">
                     </label>
-                    <br>
-                    <br>
+
+                    @error('correo')
+                        <br>
+                        <small>*{{$message}}</small>
+                        <br>
+                    @enderror
+                    <br><br>
+
                     <label class='ml-5 px-2 py-1'>
                         Telefono
                         <br>
                         
                         <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded" type="text" name="telefono" value="{{old('telefono')}}">
                     </label>
-                    <br>
-                    <br>
+
+                    @error('telefono')
+                        <br>
+                        <small>*{{$message}}</small>
+                        <br>
+                    @enderror
+                    <br><br>
+                    
                     <label class='ml-5 px-2 py-1'>
                         Tema
                         <br>
                         
                         <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded" type="text" name="tema" value="{{old('tema')}}">
                     </label>
-                    <br>
-                    <br>
+                    
+                    @error('tema')
+                        <br>
+                        <small>*{{$message}}</small>
+                        <br>
+                    @enderror
+                    <br><br>
+
                     <label class='ml-5 px-2 py-1'>
                         Descripción 
                         <br>
                          
                         <textarea class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded h-auto" name="descripcion" rows="3">{{old('Descripcion')}}</textarea>
                     </label>
-                    <br>
-                    <br>
+                    
+                    @error('descripcion')
+                        <br>
+                        <small>*{{$message}}</small>
+                        <br>
+                    @enderror
+                    <br><br>
+
                     <button class="ml-5 px-2 py-1 text-xl transition hover:bg-gray-300 hover:scale-110 ease-in-out rounded font-semibold text-orange-600 border-2 border-gray-600" type="submit">
                         Enviar
                     </button>
