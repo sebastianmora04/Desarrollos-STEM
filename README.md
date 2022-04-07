@@ -2,18 +2,27 @@
 ## Tarea realizada --
 
 
-### 06-04-2022
+### 08-04-2022
 
 #### Asignación trabajo:
 
-Pendientes
+  Envío de mails desde servidor Bluehost
+  
+  Iniciar filtros para productos
 
-Envío email
+### 07-04-2022
+
+Primer modelado responsive PREVYCONS --
+
+Envío email mailtrap --
+
+### 06-04-2022
+
+Envío email mailtrap --
 
 Sección política de tratamiento de datos
 
 ### 05-04-2022
-#### Asignación trabajo:
 
 Portabilidad a Laravel 8 con php 7.4 para poder subir al host --
 
