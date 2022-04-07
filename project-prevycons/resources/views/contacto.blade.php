@@ -4,10 +4,10 @@
 
 @section('content')
     <div class="bg-blue-600 flex flex-col  mx-auto h-auto text-slate-50">
-        <div class="ml-10 mt-5">
+        <div class="ml-10 mt-5 sm:text-base text-sm">
             Trabajamos en brindar un servicio excepcional
         </div>
-        <div class="ml-10 mb-5 text-5xl">
+        <div class="ml-10 mb-5 sm:text-5xl text-3xl">
             <h1>Contrátenos hoy y haga </h1> 
             <h1>avanzar su negocio.</h1>
         </div>

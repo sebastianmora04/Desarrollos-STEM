@@ -8,7 +8,7 @@
         <div class="ml-10 mt-5">
             <br>
         </div>
-        <div class="ml-10 mb-5 text-5xl">
+        <div class="ml-10 mb-5 sm:text-5xl text-3xl">
             <h1>Política de tratamiento de datos </h1> 
             <h1><br></h1>
         </div>
@@ -27,16 +27,16 @@
         </div>
     </div>
     <br>
-    <div class="grid grid-cols-3 gap-4  h-auto w-full p-4 justify-center mx-auto">
+    <div class="grid sm:grid-cols-3 grid-cols-2 gap-4  h-auto w-full p-4 justify-center mx-auto">
         <a href="{{route('about.index')}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
-            <div class="text-center mx-auto font-semibold">¿QUIÉNES SOMOS?</div>
+            <div class="sm:text-base text-sm text-center mx-auto font-semibold">¿QUIÉNES SOMOS?</div>
             <br>
-            <h1 class="hover:bg-slate-200 hover:font-semibold mx-auto w-1/4 text-center rounded">SABER MÁS</h1>
+            <h1 class="hover:bg-slate-200 hover:font-semibold sm:mx-auto sm:w-1/2 sm:text-base text-sm text-center rounded">SABER MÁS</h1>
         </a>
         <a href="{{route('about.team')}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
-            <div class="text-center mx-auto font-semibold">NUESTRO EQUIPO</div>
+            <div class="sm:text-base text-sm text-center mx-auto font-semibold">NUESTRO EQUIPO</div>
             <br>
-            <h1 class="hover:bg-slate-200 hover:font-semibold mx-auto w-1/4 text-center rounded">SABER MÁS</h1>
+            <h1 class="hover:bg-slate-200 hover:font-semibold sm:mx-auto sm:w-1/2 sm:text-base text-sm text-center rounded">SABER MÁS</h1>
         </a>
     </div>
 

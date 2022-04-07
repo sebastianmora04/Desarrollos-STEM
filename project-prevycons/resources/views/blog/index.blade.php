@@ -7,7 +7,7 @@
         <div class="ml-10 mt-5">
             <br>
         </div>
-        <div class="ml-10 mb-5 text-5xl">
+        <div class="ml-10 mb-5 sm:text-5xl text-3xl">
             <h1>Blog </h1> 
             <h1><br></h1>
         </div>

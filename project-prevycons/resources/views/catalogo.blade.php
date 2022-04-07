@@ -8,7 +8,7 @@
         <div class="ml-10 mt-5">
             <br>
         </div>
-        <div class="ml-10 mb-5 text-5xl">
+        <div class="ml-10 mb-5 sm:text-5xl text-3xl">
             <h1>Catálogo </h1> 
             <h1><br></h1>
         </div>
@@ -18,14 +18,14 @@
         <p></p>
     </div>
     <br>
-    <div class="flex flex-col  mx-auto h-auto text-2xl  underline underline-offset-8 text-gray-500">
-        <div class="m-auto">
+    <div class="flex flex-col  mx-auto h-auto sm:text-2xl text-lg underline underline-offset-8 text-gray-500">
+        <div class="m-auto text-center sm:px-0 px-2">
             ELEMENTOS DE PROTECCIÓN PERSONAL - EPP
         </div>
     </div>
     <br>
     <div class="flex flex-row">
-        <div class="basis-1/3 p-4">
+        <div class="basis-1/3 p-4 sm:text-base text-sm">
             <input type="checkbox" name="disponible" id="" value="disponible"> Disponible
             <br>
             <br>
@@ -54,7 +54,7 @@
             <input type="checkbox" name="" id=""> Trabajo seguro en alturas
         </div>
 
-        <div class="grid grid-cols-3 gap-4  h-auto w-11/12 p-4 justify-center mx-auto basis-2/3">
+        <div class="grid sm:grid-cols-3 grid-cols-2 gap-4  h-auto w-11/12 p-4 justify-center mx-auto basis-2/3">
             <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
                 <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
                         alt="logo-img">
