@@ -74,5 +74,7 @@ Route::get('catalogo', [catalogoController::class, 'index'])->name('catalogo.ind
 
 Route::any('test', testController::class)->name('test');
 
-Route::any('hireus', [contactanosController::class, 'index'])->name('hire.index');
-
+Route::controller(contactanosController::class)->group(function(){
+    Route::get('hireus', 'index')->name('hire.index');
+    Route::post('hireus', 'mail')->name('hire.mail');
+});

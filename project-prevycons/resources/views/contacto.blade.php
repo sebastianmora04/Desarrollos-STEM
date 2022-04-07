@@ -16,7 +16,8 @@
     <div class="justify-center mx-auto h-auto">
         <div class="md:grid md:grid-rows-2 md:grid-flow-col md:gap-4 md:px-10 ">
             <div class="md:row-span-2  ...">
-                <form class="w-11/12" action="">
+                <form class="w-11/12" action="{{route('hire.mail')}}" method="POST">
+                    @csrf <!-- Token para enviar -->
                     <label class='ml-5 px-2 py-1'>
                         Nombre
                         <br>
@@ -53,7 +54,7 @@
                         Descripción 
                         <br>
                          
-                        <textarea class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded h-auto" name="Descripcion" rows="3">{{old('Descripcion')}}</textarea>
+                        <textarea class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded h-auto" name="descripcion" rows="3">{{old('Descripcion')}}</textarea>
                     </label>
                     <br>
                     <br>

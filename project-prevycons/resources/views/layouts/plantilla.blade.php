@@ -292,22 +292,22 @@ a:hover{
     
 
     <!-- footer -->
-    <footer class=" bg-gray-500">
+    <footer class=" bg-gray-400">
         <br>
         <!-- redes sociales -->
         <div class="ml-auto flex flex-row w-full justify-end">
             <div class="sm:basis-1/6 basis-1/4 justify-end flex flex-row">
                 <div class="basis-1/4">
-                    <a class="" href="https://www.facebook.com/prevycons"><img src="{{URL::asset('img/facebook logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
+                    <a class="" href="https://www.facebook.com/prevycons" target="_blank" rel="noopener noreferrer"><img src="{{URL::asset('img/facebook logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
                 </div>
                 <div class="basis-1/4">
-                    <a class="" href="https://wa.link/9qcq92"><img src="{{URL::asset('img/whatsapp logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
+                    <a class="" href="https://wa.link/9qcq92" target="_blank" rel="noopener noreferrer"><img src="{{URL::asset('img/whatsapp logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
                 </div>
                 <div class="basis-1/4">
-                    <a class="" href="https://www.instagram.com/prevycons"><img src="{{URL::asset('img/instagram logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
+                    <a class="" href="https://www.instagram.com/prevycons" target="_blank" rel="noopener noreferrer"><img src="{{URL::asset('img/instagram logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
                 </div>
                 <div class="basis-1/4">
-                    <a class="" href=""><img src="{{URL::asset('img/youtube logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
+                    <a class="" href="" target="_blank" rel="noopener noreferrer"><img src="{{URL::asset('img/youtube logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
                 </div>
             </div>
         </div>
