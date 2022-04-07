@@ -82,7 +82,7 @@
                     <br>
                     Susana Prada Robayo
                     <br>
-                    Ing. industrial - Especialista en salud ocupacional
+                    Ing. industrial - Especialista en seguridad y salud en el trabajo
                     <br>
                     <a class="underline underline-offset-2" href="https://wa.link/9qcq92">+57 316 5242068</a>
                     <br>

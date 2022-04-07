@@ -280,7 +280,7 @@ a:hover{
                 <a href="{{route('catalogo.index')}}" class="block py-2 pr-4 pl-3 text-zinc-500 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-600 lg:p-0 dark:text-gray-800 lg:dark:hover:text-orange-600 dark:hover:bg-slate-200 dark:hover:text-orange-600 lg:dark:hover:bg-transparent dark:border-gray-700">Catálogo</a>
               </li>
               <li>
-                <a href="{{route('hire.index')}}" class="block py-2 pr-4 pl-3 text-zinc-500 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-600 lg:p-0 dark:text-orange-600 lg:dark:hover:text-orange-600 dark:hover:bg-slate-200 dark:hover:text-orange-600 lg:dark:hover:bg-transparent dark:border-gray-700 lg:hover:border-gray-500 lg:hover:scale-105 lg:ease-in-out  lg:border-2 lg:border-gray-300 lg:rounded lg:px-2 lg:transition">Contáctanos</a>
+                <a href="{{route('hire.index')}}" class="block py-2 pr-4 pl-3 text-orange-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-600 lg:p-0 dark:text-orange-600 lg:dark:hover:text-orange-600 dark:hover:bg-slate-200 dark:hover:text-orange-600 lg:dark:hover:bg-transparent dark:border-gray-700 lg:hover:border-gray-500 lg:hover:scale-105 lg:ease-in-out  lg:border-2 lg:border-gray-300 lg:rounded lg:px-2 lg:transition">Contáctanos</a>
               </li>
             </ul>
           </div>
@@ -298,16 +298,16 @@ a:hover{
         <div class="ml-auto flex flex-row w-full justify-end">
             <div class="sm:basis-1/6 basis-1/4 justify-end flex flex-row">
                 <div class="basis-1/4">
-                    <a class="" href="https://www.facebook.com/prevycons"><img src="{{URL::asset('img/facebook.png')}}" class="w-4 md:w-1/2 bg-slate-50 transition hover:scale-110 rounded" alt=""></a>
+                    <a class="" href="https://www.facebook.com/prevycons"><img src="{{URL::asset('img/facebook logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
                 </div>
                 <div class="basis-1/4">
-                    <a class="" href="https://wa.link/9qcq92"><img src="{{URL::asset('img/whatsapp.png')}}" class="w-4 md:w-1/2 bg-slate-50 transition hover:scale-110 rounded" alt=""></a>
+                    <a class="" href="https://wa.link/9qcq92"><img src="{{URL::asset('img/whatsapp logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
                 </div>
                 <div class="basis-1/4">
-                    <a class="" href="https://www.instagram.com/prevycons"><img src="{{URL::asset('img/instagram.png')}}" class="w-4 md:w-1/2 bg-slate-50 transition hover:scale-110 rounded" alt=""></a>
+                    <a class="" href="https://www.instagram.com/prevycons"><img src="{{URL::asset('img/instagram logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
                 </div>
                 <div class="basis-1/4">
-                    <a class="" href=""><img src="{{URL::asset('img/youtube.png')}}" class="w-4 md:w-1/2 bg-slate-50 transition hover:scale-110 rounded" alt=""></a>
+                    <a class="" href=""><img src="{{URL::asset('img/youtube logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
                 </div>
             </div>
         </div>
