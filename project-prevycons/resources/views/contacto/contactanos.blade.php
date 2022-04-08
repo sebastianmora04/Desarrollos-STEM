@@ -7,9 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Prueba 2 - </h1>
+    <h1>PREVYCONS</h1>
 
-    <p>Procedimiento de envío de mails 2 - </p>
+    <p>Información de contacto</p>
 
     <p><strong>Nombre: </strong>{{$contacto['name']}}</p>
     <p><strong>Correo electrónico: </strong>{{$contacto['correo']}}</p>

@@ -54,54 +54,25 @@
             <input type="checkbox" name="" id=""> Trabajo seguro en alturas
         </div>
 
-        <div class="grid sm:grid-cols-3 grid-cols-2 gap-4  h-auto w-11/12 p-4 justify-center mx-auto basis-2/3">
-            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                        alt="logo-img">
-                <a href=""><div class="">Producto</div></a>
-            </div>
-            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                        alt="logo-img">
-                <a href=""><div class="">Producto</div></a>
-            </div>
-            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                        alt="logo-img">
-                <a href=""><div class="">Producto</div></a>
-            </div>
-            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                        alt="logo-img">
-                <a href=""><div class="">Producto</div></a>
-            </div>
-            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                        alt="logo-img">
-                <a href=""><div class="">Producto</div></a>
-            </div>
-            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                        alt="logo-img">
-                <a href=""><div class="">Producto</div></a>
-            </div>
-            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                        alt="logo-img">
-                <a href=""><div class="">Producto</div></a>
-            </div>
-            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                        alt="logo-img">
-                <a href=""><div class="">Producto</div></a>
-            </div>
-            <div class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-full">
-                <img src="img/pagina web_normal.png" class="w-1/3 justify-center object-center"
-                        alt="logo-img">
-                <a href=""><div class="">Producto</div></a>
-            </div>
-    
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">
+            @foreach ($servicios2 as $item)
+                <a href="" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
+                    <img src="img/productos/{{$item->id}}.png" class="mx-auto w-1/2 justify-center"
+                            alt="logo-img">
+                    <br>
+                    <div class="sm:text-base text-sm">
+                        <strong>{{$item->name}}</strong>
+                        <br>
+                        <p>{{$item->categoria}}</p>
+                    </div>
+                </a> <!-- box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto -->
+            @endforeach
         </div>
+        {{$servicios->links()}}
+
+    </div>
+
+    
     </div>
 
 
