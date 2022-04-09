@@ -26,32 +26,41 @@
     <br>
     <div class="flex flex-row">
         <div class="basis-1/3 p-4 sm:text-base text-sm">
-            <input type="checkbox" name="disponible" id="" value="disponible"> Disponible
-            <br>
-            <br>
-            <p>Sectores</p>
-            <input type="checkbox" name="" id=""> Industrial
-            <br>
-            <input type="checkbox" name="" id=""> Médico
-            <br>
-            <input type="checkbox" name="" id=""> Manufactura
-            <br>
-            <input type="checkbox" name="" id=""> Comercial
-            <br><br>
-            <p>Categorías</p>
-            <input type="checkbox" name="" id=""> Protección manual
-            <br>
-            <input type="checkbox" name="" id=""> Protección facial
-            <br>
-            <input type="checkbox" name="" id=""> Protección respiratoria
-            <br>
-            <input type="checkbox" name="" id=""> Protección corporal
-            <br>
-            <input type="checkbox" name="" id=""> Protección visual
-            <br>
-            <input type="checkbox" name="" id=""> Protección auditiva
-            <br>
-            <input type="checkbox" name="" id=""> Trabajo seguro en alturas
+            <form action="">
+                <input type="checkbox" name="disponible" id="" value="disponible"> Disponible
+                
+                <br><br>
+
+                <p>Sectores</p>
+                <select name="sector" id="">
+                    <option value=""></option>
+                    <option value="">Industrial</option>
+                    <option value="">Médico</option>
+                    <option value="">Manufactura</option>
+                    <option value="">Comercial</option>
+                </select>
+                
+                <br><br>
+
+                <input type="text" name="nombre" placeholder="Ingrese nombre" value="{{old('nombre')}}">
+
+                <br><br>
+
+                <p>Categorías</p>
+                <select name="tipo" class="form-control mr-sm-2" id="exampleFormControlSelect1">
+                    <option value="{{old('tipo')}}"></option>
+                    <option value=""></option>
+                    <option value="PROTECCION MANOS">Protección manos</option>
+                    <option value="PROTECCION CABEZA">Protección cabeza</option>
+                    <option value="PROTECCION RESPIRATORIA">Protección respiratoria</option>
+                    <option value="PROTECCION CORPORAL">Protección corporal</option>
+                    <option value="PROTECCION VISUAL">Protección visual</option>
+                    <option value="PROTECCION AUDITIVA">Protección auditiva</option>
+                    <option value="TRABAJO ">Trabajo seguro en alturas</option>
+                </select>
+
+                <button type="submit">Filtrar</button>
+            </form>
         </div>
 
         <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">

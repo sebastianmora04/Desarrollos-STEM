@@ -244,7 +244,7 @@ class ProductoSeeder extends Seeder
         Protección lateral para una mayor cobertura del rostro';
         $p19->precio=0;
         $p19->cantidad=0;
-        $p19->categoria="PROTECCIÓN CABEZA";
+        $p19->categoria="PROTECCIÓN VISUAL";
         $p19->valoracion=0;
         $p19->save();
 
@@ -257,7 +257,7 @@ class ProductoSeeder extends Seeder
         Anti-empañante, aprobación ANSI-Z87+';
         $p20->precio=0;
         $p20->cantidad=0;
-        $p20->categoria="PROTECCIÓN CABEZA";
+        $p20->categoria="PROTECCIÓN VISUAL";
         $p20->valoracion=0;
         $p20->save();
     }
