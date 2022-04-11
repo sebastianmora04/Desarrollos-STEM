@@ -16,6 +16,14 @@ class catalogoController extends Controller
 
         $servicios2 = Producto::where('categoria','LIKE',$tipo)->where('name','LIKE','%'.$nombre.'%')->get();
 
-        return view('catalogo', compact('servicios','servicios2'));
+        return view('catalogo.index', compact('servicios','servicios2'));
     }
+
+    public function show(Producto $producto) 
+    {
+        /* $blog = Blog::find($id); */
+ 
+        return view('catalogo.show',compact('producto'));
+    }
+
 }

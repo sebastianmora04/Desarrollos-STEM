@@ -160,7 +160,7 @@ a:hover{
         
     </style>
 </head>
-<body class="bg-slate-100">
+<body class="bg-slate-100 text-gray-800">
     <!-- Header -->
     <header class="hidden lg:block container-fluid  position-sticky top-0 px-14">
         <div class="items-center justify-between flex px-15 py-4 my-4 mx-auto w-full">
@@ -230,14 +230,17 @@ a:hover{
                                 </ul>
                             </li>
                             <li class="hover:bg-slate-200  p-2 text-xs">Categorías
-                                <ul class="shadow-xl filtro3 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600 text-sm">
-                                    <li class="hover:bg-slate-200  p-2 text-xs">Protección Manual</li>
-                                    <li class="hover:bg-slate-200  p-2 text-xs">Protección Facial</li>
-                                    <li class="hover:bg-slate-200  p-2 text-xs">Protección Respiratoria</li>
-                                    <li class="hover:bg-slate-200  p-2 text-xs">Protección Corporal</li>
-                                    <li class="hover:bg-slate-200  p-2 text-xs">Protección Visual</li>
-                                    <li class="hover:bg-slate-200  p-2 text-xs">Protección Auditiva</li>
-                                    <li class="hover:bg-slate-200  p-2 text-xs">Trabajo seguro en alturas</li>
+                                <ul class="shadow-xl filtro3 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600 text-sm" name='tipo'>
+                                    <!-- Buscar otra manera de filtrar desde acá -->
+                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+MANOS">       <li class="hover:bg-slate-200  p-2 text-xs"> Protección Manos       </li></a>
+                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+CABEZA">      <li class="hover:bg-slate-200  p-2 text-xs"> Protección Cabeza      </li></a>
+                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+RESPIRATORIA"><li class="hover:bg-slate-200  p-2 text-xs"> Protección Respiratoria</li></a>
+                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+CORPORAL">    <li class="hover:bg-slate-200  p-2 text-xs"> Protección Corporal    </li></a>
+                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+VISUAL">      <li class="hover:bg-slate-200  p-2 text-xs"> Protección Visual      </li></a>
+                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+AUDITIVA">    <li class="hover:bg-slate-200  p-2 text-xs"> Protección Auditiva    </li></a>
+                                    <li class="hover:bg-slate-200  p-2 text-xs"> Trabajo seguro en alturas </li>
+                                    
+                                
                                 </ul>
                             </li>
                         </ul>

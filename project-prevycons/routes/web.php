@@ -68,9 +68,13 @@ Route::controller(blogController::class)->group(function(){
     Route::put('blog/{blog}','update')->name('blog.update');
 });
 
+Route::controller(catalogoController::class)->group(function(){
+    Route::get('catalogo','index')->name('catalogo.index');
+    Route::get('catalogo/{producto}', 'show')->name('catalogo.show');
+});
+
 Route::any('novedades', [novedadesController::class, 'index'])->name('novedades.index');
 
-Route::get('catalogo', [catalogoController::class, 'index'])->name('catalogo.index');
 
 Route::any('test', testController::class)->name('test');
 

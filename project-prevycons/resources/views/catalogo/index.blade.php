@@ -27,11 +27,16 @@
     <div class="flex flex-row">
         <div class="basis-1/3 p-4 sm:text-base text-sm">
             <form action="">
-                <input type="checkbox" name="disponible" id="" value="disponible"> Disponible
                 
+                <label for="toggle-example" class="flex relative items-center mb-4 cursor-pointer">
+                    <input type="checkbox" id="toggle-example" class="sr-only">
+                    <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
+                    <span class="ml-3 text-base font-medium text-gray-900 dark:text-gray-600">Disponible</span>
+                </label>
+
                 <br><br>
 
-                <p>Sectores</p>
+                <p class="ml-3 text-base font-medium text-gray-900 dark:text-gray-600">Sectores</p>
                 <select name="sector" id="">
                     <option value=""></option>
                     <option value="">Industrial</option>
@@ -46,26 +51,28 @@
 
                 <br><br>
 
-                <p>Categorías</p>
-                <select name="tipo" class="form-control mr-sm-2" id="exampleFormControlSelect1">
+                <p class="ml-3 text-base font-medium text-gray-900 dark:text-gray-600">Categorías</p>
+                <select name="tipo" class="form-control mr-sm-2 rounded text-base font-medium text-gray-900 dark:text-gray-600" id="exampleFormControlSelect1">
                     <option value="{{old('tipo')}}"></option>
-                    <option value=""></option>
-                    <option value="PROTECCION MANOS">Protección manos</option>
-                    <option value="PROTECCION CABEZA">Protección cabeza</option>
-                    <option value="PROTECCION RESPIRATORIA">Protección respiratoria</option>
-                    <option value="PROTECCION CORPORAL">Protección corporal</option>
-                    <option value="PROTECCION VISUAL">Protección visual</option>
-                    <option value="PROTECCION AUDITIVA">Protección auditiva</option>
-                    <option value="TRABAJO ">Trabajo seguro en alturas</option>
+                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION MANOS">Protección manos</option>
+                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION CABEZA">Protección cabeza</option>
+                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION RESPIRATORIA">Protección respiratoria</option>
+                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION CORPORAL">Protección corporal</option>
+                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION VISUAL">Protección visual</option>
+                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION AUDITIVA">Protección auditiva</option>
+                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="TRABAJO ">Trabajo seguro en alturas</option>
                 </select>
 
-                <button type="submit">Filtrar</button>
+                <br><br>
+
+                <button class="ml-3 text-lg font-medium text-gray-900 dark:text-gray-600" type="submit">FILTRAR</button>
+
             </form>
         </div>
 
         <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">
             @foreach ($servicios2 as $item)
-                <a href="" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
+                <a href="{{route('catalogo.show',$item->id)}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
                     <img src="img/productos/{{$item->id}}.png" class="mx-auto w-1/2 justify-center"
                             alt="logo-img">
                     <br>
