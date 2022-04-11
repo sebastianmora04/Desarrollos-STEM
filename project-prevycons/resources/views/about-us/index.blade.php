@@ -39,7 +39,7 @@
         <div class="md:px-16 sm:px-8 px-4">
             <div class="sm:flex sm:flex-row justify-center mx-auto w-10/12 bg-emerald-600 text-slate-50">
                 <div class="sm:basis-1/5 sm:text-lg font-semibold mt-auto mb-auto py-1"><p class="md:text-right sm:text-left text-center">¿QUÉ HACEMOS?</p></div>
-                <div class="sm:basis-3/5 sm:text-base text-sm px-1 py-1 text-justify">
+                <div class="sm:basis-3/5 sm:text-base text-sm px-1 py-1 sm:ml-2 text-justify">
                     <p>
                         Ofrecemos servicios integrales a las organizaciones que ayudarán a fortalecer tu
                         posicionamiento de marca y nombre.

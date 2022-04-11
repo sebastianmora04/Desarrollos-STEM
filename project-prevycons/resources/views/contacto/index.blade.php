@@ -18,11 +18,11 @@
             <div class="md:row-span-2  ...">
                 <form class="w-11/12" action="{{route('hire.mail')}}" method="POST">
                     @csrf <!-- Token para enviar -->
-                    <label class='ml-5 px-2 py-1'>
+                    <label class='ml-5 px-2 py-1 font-medium'>
                         Nombre
                         <br>
                         
-                        <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded" type="text" name="name" value="{{old('name')}}">
+                        <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded font-base" type="text" name="name" value="{{old('name')}}">
                     </label>
 
                     @error('name')
@@ -32,11 +32,11 @@
                     @enderror
                     <br><br>
 
-                    <label class='ml-5 px-2 py-1'>
+                    <label class='ml-5 px-2 py-1 font-medium'>
                         Correo electrónico
                         <br>
                         
-                        <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded" type="email" name="correo" value="{{old('correo')}}">
+                        <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded font-base" type="email" name="correo" value="{{old('correo')}}">
                     </label>
 
                     @error('correo')
@@ -46,11 +46,11 @@
                     @enderror
                     <br><br>
 
-                    <label class='ml-5 px-2 py-1'>
-                        Telefono
+                    <label class='ml-5 px-2 py-1 font-medium'>
+                        Telefono </h1>
                         <br>
                         
-                        <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded" type="text" name="telefono" value="{{old('telefono')}}">
+                        <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded font-base" type="text" name="telefono" value="{{old('telefono')}}">
                     </label>
 
                     @error('telefono')
@@ -60,11 +60,11 @@
                     @enderror
                     <br><br>
                     
-                    <label class='ml-5 px-2 py-1'>
-                        Tema
+                    <label class='ml-5 px-2 py-1 font-medium'>
+                        Tema </h1>
                         <br>
                         
-                        <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded" type="text" name="tema" value="{{old('tema')}}">
+                        <input class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded font-base" type="text" name="tema" value="{{old('tema')}}">
                     </label>
                     
                     @error('tema')
@@ -74,11 +74,11 @@
                     @enderror
                     <br><br>
 
-                    <label class='ml-5 px-2 py-1'>
-                        Descripción 
+                    <label class='ml-5 px-2 py-1 font-medium'>
+                        Descripción </h1>
                         <br>
                          
-                        <textarea class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded h-auto" name="descripcion" rows="3">{{old('Descripcion')}}</textarea>
+                        <textarea class="w-11/12 ml-5 px-2 py-1 border-2 border-slate-300 rounded font-base h-auto" name="descripcion" rows="3">{{old('Descripcion')}}</textarea>
                     </label>
                     
                     @error('descripcion')
