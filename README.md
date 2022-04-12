@@ -2,9 +2,16 @@
 ## Tarea realizada --
 
 
-### 08-04-2022
+### 11-04-2022
 
-#### Asignación trabajo:
+  Arreglo catálogo
+  
+      Listar productos
+      Filtrar productos - Categoría y nombre
+      Visual de cada producto
+
+
+### 08-04-2022
 
   Envío de mails desde servidor Bluehost
   
