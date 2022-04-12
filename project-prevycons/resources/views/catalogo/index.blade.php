@@ -24,8 +24,8 @@
         </div>
     </div>
     <br>
-    <div class="flex flex-row">
-        <div class="basis-1/3 p-4 sm:text-base text-sm">
+    <div class="sm:flex sm:flex-row">
+        <div class="sm:basis-1/3 sm:p-4 px-10 sm:text-base text-sm">
             <form action="">
                 
                 <label for="toggle-example" class="flex relative items-center mb-4 cursor-pointer">
@@ -34,7 +34,7 @@
                     <span class="ml-3 text-base font-medium text-gray-900 dark:text-gray-600">Disponible</span>
                 </label>
 
-                <br><br>
+                <br class="hidden sm:block"><br class="hidden sm:block">
 
                 <p class="ml-3 text-base font-medium text-gray-900 dark:text-gray-600">Sectores</p>
                 <select name="sector" id="">
@@ -65,7 +65,7 @@
 
                 <br><br>
 
-                <button class="ml-3 text-lg font-medium text-gray-900 dark:text-gray-600" type="submit">FILTRAR</button>
+                <button class="ml-3 text-base font-medium text-gray-900 dark:text-gray-600 border-2 border-gray-500 p-1 rounded hover:bg-gray-300" type="submit">FILTRAR</button>
 
             </form>
         </div>
@@ -73,13 +73,14 @@
         <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">
             @foreach ($servicios2 as $item)
                 <a href="{{route('catalogo.show',$item->id)}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
+                    <p class="text-xs justify-left text-gray-400">{{$item->categoria}}</p>
+                    <br>
                     <img src="img/productos/{{$item->id}}.png" class="mx-auto w-1/2 justify-center"
                             alt="logo-img">
                     <br>
                     <div class="sm:text-base text-sm">
                         <strong>{{$item->name}}</strong>
                         <br>
-                        <p>{{$item->categoria}}</p>
                     </div>
                 </a> <!-- box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto -->
             @endforeach
