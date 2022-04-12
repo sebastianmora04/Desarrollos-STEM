@@ -2,6 +2,16 @@
 ## Tarea realizada --
 
 
+### 12-04-2022
+  
+  Modificaciones base de datos en host
+  
+    Primary keys
+    Unique keys
+    Modificación atributos de tablas
+   
+  Cambios menores presentación catálogo
+
 ### 11-04-2022
 
   Arreglo catálogo
