@@ -22,8 +22,9 @@ class catalogoController extends Controller
     public function show(Producto $producto) 
     {   
         $tipo = $producto->categoria;
+        $name = $producto->name;
         /* $blog = Blog::find($id); */
-        $servicios2 = Producto::where('categoria','LIKE',$tipo)->get();
+        $servicios2 = Producto::where('categoria','LIKE',$tipo)->where('name','NOT LIKE',$name)->get();
  
         return view('catalogo.show',compact('producto','servicios2'));
     }

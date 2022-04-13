@@ -24,23 +24,23 @@
         </div>
     </div>
     <br>
-    <div class="sm:flex sm:flex-row bg-gray-300">
+    <div class="sm:flex sm:flex-row bg-gray-200">
         <div class="sm:basis-1/3 sm:p-4 sm:text-base text-sm">
-            <form class="px-10 py-4 bg-gray-800 rounded-lg" action="">
-                <p class="px-0 py-2 text-slate-50 sm:text-lg font-semibold">Filtros</p>
+            <form class="px-10 py-4 bg-slate-50 rounded-lg" action=""><!-- bg-gray-800 -->
+                <p class="px-0 py-2 sm:text-lg font-semibold">Filtros</p>
                 <br>
                 <label for="toggle-example" class="flex relative items-center mb-4 cursor-pointer">
                     <input type="checkbox" id="toggle-example" class="sr-only">
                     <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
-                    <span class="ml-3 font-medium text-slate-50">Disponible</span>
+                    <span class="ml-3 font-medium">Disponible</span>
                 </label>
 
-                <p class="ml-3 font-medium text-slate-50">Nombre</p>
+                <p class="ml-3 font-medium">Nombre</p>
                 <input class="w-full" type="text" name="nombre" placeholder="Ingrese nombre" value="{{old('nombre')}}">
                 
                 <br><br>
     
-                <p class="ml-3 font-medium text-slate-50">Sectores</p>
+                <p class="ml-3 font-medium">Sectores</p>
                 <select name="sector" class="w-full" id="">
                     <option value=""></option>
                     <option value="">Industrial</option>
@@ -51,7 +51,7 @@
 
                 <br><br>
 
-                <p class="ml-3 font-medium text-slate-50">Categorías</p>
+                <p class="ml-3 font-medium">Categorías</p>
                 <select name="tipo" class=" w-full form-control mr-sm-2 rounded font-medium text-gray-900 dark:text-gray-600" id="exampleFormControlSelect1">
                     <option value="{{old('tipo')}}"></option>
                     <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION MANOS">Protección manos</option>
@@ -65,8 +65,8 @@
 
                 <br><br>
 
-                <button class="ml-3 font-medium hover:text-gray-600 text-slate-50 border-2 border-gray-300 p-1 rounded hover:bg-gray-200" type="submit">FILTRAR</button>
-
+                <button class="ml-2 px-2 py-1 transition  hover:border-gray-500 hover:scale-105 ease-in-out rounded font-semibold border-2 border-gray-300" type="submit">FILTRAR</button>
+                
             </form>
         </div>
 

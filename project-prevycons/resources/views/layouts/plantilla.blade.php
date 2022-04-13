@@ -318,7 +318,7 @@ a:hover{
         </div>
 
         <br>
-        <h5 class="p-5 bg-gray-200 text-xs" style="text-align: right" ><strong>Copyright © 2016-2022 STEM</strong> Soluciones Tecnológicas S.A.S. All rights reserved.</h5 style="text-align: center">
+        <h5 class="p-5 bg-gray-300 text-xs" style="text-align: right" ><strong>Copyright © 2016-2022 STEM</strong> Soluciones Tecnológicas S.A.S. All rights reserved.</h5 style="text-align: center">
     </footer>
     <!-- scripts -->
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
