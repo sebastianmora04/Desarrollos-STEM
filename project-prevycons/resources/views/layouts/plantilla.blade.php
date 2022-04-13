@@ -190,7 +190,7 @@ a:hover{
                             <a class="" href="{{route('servicios.show',2)}}"><li class="bg-slate-50 p-2 text-xs hover:bg-slate-200 border-2 border-slate-50">Gestión de seguridad y salud en el trabajo</li></a>
                             <a class="" href="{{route('servicios.show',3)}}"><li class="bg-slate-50 p-2 text-xs hover:bg-slate-200 border-2 border-slate-50">Gestión documental</li></a>
                             <a class="" href="{{route('servicios.show',4)}}"><li class="bg-slate-50 p-2 text-xs hover:bg-slate-200 border-2 border-slate-50">Gestión ambiental</li></a>
-                            <br>
+                            
                             <li class="text-sm font-semibold px-1 bg-slate-50 border-2 border-slate-50">Otros servicios</li>
                             <a class="" href="{{route('servicios.show',5)}}"><li class="bg-slate-50 p-2 text-xs hover:bg-slate-200 border-2 border-slate-50">Plan estratégico de seguridad vial</li></a>
                             <a class="" href="{{route('servicios.show',6)}}"><li class="bg-slate-50 p-2 text-xs hover:bg-slate-200 border-2 border-slate-50">Auditorías</li></a>

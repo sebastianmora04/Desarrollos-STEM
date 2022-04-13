@@ -20,10 +20,12 @@ class catalogoController extends Controller
     }
 
     public function show(Producto $producto) 
-    {
+    {   
+        $tipo = $producto->categoria;
         /* $blog = Blog::find($id); */
+        $servicios2 = Producto::where('categoria','LIKE',$tipo)->get();
  
-        return view('catalogo.show',compact('producto'));
+        return view('catalogo.show',compact('producto','servicios2'));
     }
 
 }
