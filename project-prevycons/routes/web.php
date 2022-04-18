@@ -7,6 +7,7 @@ use App\Http\Controllers\aboutusController;
 use App\Http\Controllers\blogController;
 use App\Http\Controllers\catalogoController;
 use App\Http\Controllers\contactanosController;
+use App\Http\Controllers\loginController;
 use App\Http\Controllers\novedadesController;
 use App\Http\Controllers\serviciosController;
 use App\Http\Controllers\testController;
@@ -81,4 +82,8 @@ Route::any('test', testController::class)->name('test');
 Route::controller(contactanosController::class)->group(function(){
     Route::get('hireus', 'index')->name('hire.index');
     Route::post('hireus', 'mail')->name('hire.mail');
+});
+
+Route::controller(loginController::class)->group(function(){
+    Route::get('login', 'index')->name('login.index');
 });

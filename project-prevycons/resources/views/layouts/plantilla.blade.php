@@ -248,6 +248,9 @@ a:hover{
                         </ul>
                     </li>
                     <li class="ml-5 px-2 py-1 transition  hover:border-gray-500 hover:scale-105 ease-in-out rounded font-semibold text-orange-600 border-2 border-gray-300"><a href="{{route('hire.index')}}">Contáctanos</a></li>
+
+                    <li class="ml-5 px-2 py-1 transition hover:scale-105 ease-in-out rounded font-semibold text-slate-50 hover:bg-gray-500 bg-gray-800"><a href="{{route('login.index')}}">Ingresar</a></li>
+
                 </ul>
             </div>
         </div>
