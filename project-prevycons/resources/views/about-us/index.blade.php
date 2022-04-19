@@ -3,8 +3,9 @@
 @section('title','Prevycons - Quienes somos?')
 
 @section('content')
+    <br>
 <!-- Conozcanos -> Quienes somos? - Conozca nuestro equipo - Politica de tratamiento de datos -->
-    <div class="bg-cyan-600 flex flex-col  mx-auto h-auto text-slate-50">
+    <div class="azul1 lg:px-24 md:px-16 sm:px-12  flex flex-col  mx-auto h-auto text-green-600">
         <div class="ml-10 mt-5 sm:text-base text-sm">
             Siempre apuntando a lo más alto
         </div>
@@ -13,13 +14,25 @@
             <h1>transformar y liderar.</h1>
         </div>
     </div>
-    <div class="justify-center mx-auto shadow-xl">
+    <br>
+    <div class=" justify-center mx-auto w-10/12">
+        <div class=" sm:text-2xl text-lg font-semibold mt-auto mb-auto py-1 azul2"><p class="text-center">¿QUÉ HACEMOS?</p></div>
+        <div class=" sm:text-base text-sm px-16 py-1 sm:ml-2 text-justify">
+            <p>
+                Ofrecemos servicios integrales a las organizaciones que ayudarán a fortalecer tu
+                posicionamiento de marca y nombre.
+                AYUDAMOS A CERTIFICAR TU ORGANIZACIÓN A TRAVÉS DE ESTÁNDARES DE CALIDAD.
+            </p>
+        </div>
+    </div>
+
+    <div class="justify-center mx-auto">
         <div class="sm:px-16 px-8 sm:py-5">
             <br>
             <div class="md:flex md:flex-row justify-center mx-auto">
                 <div class="md:basis-1/4">01</div>
                 <div class="md:basis-2/4">
-                    <div class="md:flex md:flex-col  mx-auto h-auto md:text-2xl text-lg  underline underline-offset-8 text-gray-500">
+                    <div class="md:flex md:flex-col  mx-auto h-auto md:text-3xl text-xl azul2">
                         <div class="text-center m-auto">
                             ¿QUIÉNES SOMOS?
                         </div>
@@ -37,22 +50,11 @@
         </div>
         <br>
         <div class="md:px-16 sm:px-8 px-4">
-            <div class="sm:flex sm:flex-row justify-center mx-auto w-10/12 bg-emerald-600 text-slate-50">
-                <div class="sm:basis-1/5 sm:text-lg font-semibold mt-auto mb-auto py-1"><p class="md:text-right sm:text-left text-center">¿QUÉ HACEMOS?</p></div>
-                <div class="sm:basis-3/5 sm:text-base text-sm px-1 py-1 sm:ml-2 text-justify">
-                    <p>
-                        Ofrecemos servicios integrales a las organizaciones que ayudarán a fortalecer tu
-                        posicionamiento de marca y nombre.
-                        AYUDAMOS A CERTIFICAR TU ORGANIZACIÓN A TRAVÉS DE ESTÁNDARES DE CALIDAD.
-                    </p>
-                </div>
-            </div>
-            <br>
-
+        
             <br class="hidden sm:block">
             <div class="sm:flex sm:flex-row sm:px-18 md:px-16 justify-center mx-auto md:px-16 sm:px-8 px-6">
                 <div class="sm:basis-5/12 md:p-2 md:px-2 ">
-                    <h1 style="text-align: center" class=" sm:text-xl text-lg flex flex-col  mx-auto h-auto underline underline-offset-4 text-gray-500">VISIÓN</h1>
+                    <h1 style="text-align: center" class=" sm:text-xl text-lg flex flex-col  mx-auto h-auto azul2">VISIÓN</h1>
                     <br>
                     <p class="text-justify px-auto sm:text-base text-sm">
                         Para el 2028, PREV&amp;CONS será una empresa líder en el mercado con
@@ -66,7 +68,7 @@
 
                 <div class="sm:basis-1/12"></div>
                 <div class="sm:basis-5/12 md:p-2 md:px-2 ">
-                    <h1 style="text-align: center" class=" sm:text-xl text-lg flex flex-col  mx-auto h-auto underline underline-offset-4 text-gray-500">MISIÓN</h1>
+                    <h1 style="text-align: center" class=" sm:text-xl text-lg flex flex-col  mx-auto h-auto azul2">MISIÓN</h1>
                     <br>
                     <p class="text-justify px-auto sm:text-base text-sm">
                         PREV&amp;CONS se compromete en ofrecer a nuestros clientes soluciones
@@ -81,7 +83,7 @@
     <br>
     <br>
     <!-- Nosotros pre-footer  -->
-    <div class="flex flex-col  mx-auto h-auto sm:text-xl text-lg  underline underline-offset-8 text-gray-500">
+    <div class="flex flex-col  mx-auto h-auto sm:text-2xl text-xl azul2">
         <div class="m-auto">
             NOSOTROS
         </div>

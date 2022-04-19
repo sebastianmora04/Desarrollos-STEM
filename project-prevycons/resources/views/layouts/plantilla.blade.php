@@ -105,13 +105,42 @@ a:hover{
     </style> -->
     @yield('head')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css" />
     <!-- styles -->
 
     <style type="text/css">
-        
+        body{
+            font-family: 'Poppins',sans-serif;
+        }
+        .azul1{
+            color: rgb(0,130,205);
+            background-color: rgb(233,241,244)
+        }
+        .azul2{
+            color: rgb(0,130,205);
+        }
+        .azul3{
+
+        }
+        .bgazulmenu{
+            background-color: rgba(0, 21, 89, 0.98);
+            border-color: rgba(0,21,89,0.98);
+        }
+        .bgazulmenu:hover{
+            background-color: rgba(1, 33, 138, 0.98);
+            border-color: rgba(1, 33, 138, 0.98)
+        }
+        .bgazulmenu2{
+            background-color: rgba(0,130,205, 0.98);
+            border-color: rgba(0,130,205, 0.98)
+        }
+        .bgazulmenu2:hover{
+
+        }
         ul {
             list-style:none;
         }
@@ -157,90 +186,92 @@ a:hover{
         .right-categoria{
             right: -150px;
         }
-        
+        .footer1{
+            background-color: rgb(0, 21, 89);
+        }
     </style>
 </head>
-<body class="bg-slate-100 text-gray-800">
+<body class="bg-slate-100 text-gray-500">
     <!-- Header -->
-    <header class="hidden lg:block container-fluid  position-sticky top-0 px-14">
+    <header class="hidden lg:block container-fluid  position-sticky top-0 px-14 azul1">
         <div class="items-center justify-between flex px-15 py-4 my-4 mx-auto w-full">
             <div class=" text-2xl text-cyan font-semibold inline-flex items-center">
-                <img src="{{URL::asset('img/web/LOGOTIPO_PREVYCONS.png')}}" class=" w-2/4"
+                <img src="{{URL::asset('img/Logo_Prevycons.png')}}" class=" w-2/4"
                     alt="logo">
             </div>
             <div class="flex">
-                <ul class="flex text-black-600 nav">
-                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded"><a href="{{route('home.index')}}">Inicio</a></li>
+                <ul class="flex nav">
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded"><a class="font-black" href="{{route('home.index')}}">Inicio</a></li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
-                        <a href="{{route('about.index')}}">Conózcanos</a>
+                        <a class="font-black" href="{{route('about.index')}}">Conózcanos</a>
                         <br>
-                        <ul class="shadow-xl filtro1 text-sm px-auto bg-transparent text-slate-600 rounded border-1 border-orange-600">
+                        <ul class="shadow-xl filtro1 text-sm px-auto bg-transparent text-slate-50 rounded border-1 border-orange-600">
                             <li class="invisible"><br> space <br></li>
-                            <a class="" href="{{route('about.index')}}"><li class="bg-slate-50 hover:bg-slate-200 p-2 text-xs border-2 border-slate-50">¿Quiénes somos?</li></a>
-                            <a class="" href="{{route('about.team')}}"><li class="bg-slate-50 hover:bg-slate-200 p-2 text-xs border-2 border-slate-50">Nuestro equipo</li></a>
-                            <a class="" href="{{route('about.ptd')}}"><li class="bg-slate-50 hover:bg-slate-200 p-2 text-xs border-2 border-slate-50">Política de tratamiento de datos</li></a>
+                            <a class="" href="{{route('about.index')}}"><li class="bgazulmenu p-2 text-xs border ">¿Quiénes somos?</li></a>
+                            <a class="" href="{{route('about.team')}}"><li class="bgazulmenu p-2 text-xs border ">Nuestro equipo</li></a>
+                            <a class="" href="{{route('about.ptd')}}"><li class="bgazulmenu p-2 text-xs border ">Política de tratamiento de datos</li></a>
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
-                        <a href="{{route('servicios.index')}}">Servicios</a>
-                        <ul class="filtro1 px-auto bg-transparent text-slate-600 rounded text-sm shadow-xl">
+                        <a class="font-black" href="{{route('servicios.index')}}">Servicios</a>
+                        <ul class="filtro1 px-auto bg-transparent text-slate-50 rounded text-sm shadow-xl">
                             <li class="invisible"><br> space <br></li>
-                            <li class="text-sm font-semibold px-1 bg-slate-50 border-2 border-slate-50">Sistemas de gestión</li>
-                            <a class="" href="{{route('servicios.show',1)}}"><li class="bg-slate-50 p-2 text-xs hover:bg-slate-200 border-2 border-slate-50">Gestión de calidad</li></a>
-                            <a class="" href="{{route('servicios.show',2)}}"><li class="bg-slate-50 p-2 text-xs hover:bg-slate-200 border-2 border-slate-50">Gestión de seguridad y salud en el trabajo</li></a>
-                            <a class="" href="{{route('servicios.show',3)}}"><li class="bg-slate-50 p-2 text-xs hover:bg-slate-200 border-2 border-slate-50">Gestión documental</li></a>
-                            <a class="" href="{{route('servicios.show',4)}}"><li class="bg-slate-50 p-2 text-xs hover:bg-slate-200 border-2 border-slate-50">Gestión ambiental</li></a>
+                            <li class="text-sm font-semibold px-1 border-2 bgazulmenu">Sistemas de gestión</li>
+                            <a class="" href="{{route('servicios.show',1)}}"><li class="bgazulmenu p-2 text-xs border-2">Gestión de calidad</li></a>
+                            <a class="" href="{{route('servicios.show',2)}}"><li class="bgazulmenu p-2 text-xs border-2">Gestión de seguridad y salud en el trabajo</li></a>
+                            <a class="" href="{{route('servicios.show',3)}}"><li class="bgazulmenu p-2 text-xs border-2">Gestión documental</li></a>
+                            <a class="" href="{{route('servicios.show',4)}}"><li class="bgazulmenu p-2 text-xs border-2">Gestión ambiental</li></a>
                             
-                            <li class="text-sm font-semibold px-1 bg-slate-50 border-2 border-slate-50">Otros servicios</li>
-                            <a class="" href="{{route('servicios.show',5)}}"><li class="bg-slate-50 p-2 text-xs hover:bg-slate-200 border-2 border-slate-50">Plan estratégico de seguridad vial</li></a>
-                            <a class="" href="{{route('servicios.show',6)}}"><li class="bg-slate-50 p-2 text-xs hover:bg-slate-200 border-2 border-slate-50">Auditorías</li></a>
-                            <a class="" href="{{route('servicios.show',7)}}"><li class="bg-slate-50 p-2 text-xs hover:bg-slate-200 border-2 border-slate-50">Capacitaciones para SG SST</li></a>
-                            <a class="" href="{{route('servicios.show',8)}}"><li class="bg-slate-50 p-2 text-xs hover:bg-slate-200 border-2 border-slate-50">Reporte e investigación de incidentes, accidentes de trabajo y enfermedades laborales</li></a>
+                            <li class="text-sm font-semibold px-1 border-2 bgazulmenu">Otros servicios</li>
+                            <a class="" href="{{route('servicios.show',5)}}"><li class="bgazulmenu p-2 text-xs border-2">Plan estratégico de seguridad vial</li></a>
+                            <a class="" href="{{route('servicios.show',6)}}"><li class="bgazulmenu p-2 text-xs border-2">Auditorías</li></a>
+                            <a class="" href="{{route('servicios.show',7)}}"><li class="bgazulmenu p-2 text-xs border-2">Capacitaciones para SG SST</li></a>
+                            <a class="" href="{{route('servicios.show',8)}}"><li class="bgazulmenu p-2 text-xs border-2">Reporte e investigación de incidentes, accidentes de trabajo y enfermedades laborales</li></a>
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
-                        <a href="{{route('blog.index')}}">Blog</a>
-                        <ul class="shadow-xl filtro2 px-auto bg-transparent text-slate-600 rounded">
+                        <a class="font-black" href="{{route('blog.index')}}">Blog</a>
+                        <ul class="shadow-xl filtro2 px-auto bg-transparent text-slate-50 rounded">
                             <li class="invisible"> space </li>
                             <li class="invisible text-xs"> space </li>
-                            <li class="bg-slate-50 p-2 text-xs border-2 border-slate-50">1</li>
-                            <li class="bg-slate-50 p-2 text-xs border-2 border-slate-50">2</li>
-                            <li class="bg-slate-50 p-2 text-xs border-2 border-slate-50">3</li>
-                            <li class="bg-slate-50 p-2 text-xs border-2 border-slate-50">4</li>
+                            <li class="bgazulmenu p-2 text-xs border-2">1</li>
+                            <li class="bgazulmenu p-2 text-xs border-2">2</li>
+                            <li class="bgazulmenu p-2 text-xs border-2">3</li>
+                            <li class="bgazulmenu p-2 text-xs border-2">4</li>
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
-                        <a href="{{route('novedades.index')}}">Novedades</a>
+                        <a class="font-black" href="{{route('novedades.index')}}">Novedades</a>
                         <br>
-                        <ul class="shadow-xl filtro2 text-sm px-auto bg-transparent text-slate-600 rounded border-1 border-orange-600">
+                        <ul class="shadow-xl filtro2 text-sm px-auto bg-transparent text-slate-50 rounded border-1 border-orange-600">
                             <li class="invisible "><br> space <br></li>
-                            <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200 bg-slate-50 p-2 text-xs border-2 border-slate-50">Noticias</li></a>
-                            <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200 bg-slate-50 p-2 text-xs border border-slate-50">Normas</li></a>
-                            <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200 bg-slate-50 p-2 text-xs border-2 border-slate-50">Decretos</li></a>
+                            <a class="" href="{{route('about.index')}}"><li class="bgazulmenu p-2 text-xs border-2">Noticias</li></a>
+                            <a class="" href="{{route('about.team')}}"><li class="bgazulmenu p-2 text-xs border">Normas</li></a>
+                            <a class="" href="{{route('about.ptd')}}"><li class="bgazulmenu p-2 text-xs border-2">Decretos</li></a>
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
-                        <a href="{{route('catalogo.index')}}">Catálogo</a>
-                        <ul class="shadow-xl filtro22 text-sm px-auto bg-transparent text-slate-600 rounded">
+                        <a class="font-black" href="{{route('catalogo.index')}}">Catálogo</a>
+                        <ul class="shadow-xl filtro22 text-sm px-auto bg-transparent text-slate-50 rounded">
                             <li class="invisible"><br> <br></li>
-                            <li class="hover:bg-slate-200 bg-slate-50 p-2 text-xs">Sectores
-                                <ul class=" shadow-xl filtro3 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600 text-sm">
-                                    <a class="" href="{{route('about.index')}}"><li class="hover:bg-slate-200  p-2 text-xs">Industrial</li></a>
-                                    <a class="" href="{{route('about.team')}}"><li class="hover:bg-slate-200  p-2 text-xs">Médico</li></a>
-                                    <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200  p-2 text-xs">Manufactura</li></a>
-                                    <a class="" href="{{route('about.ptd')}}"><li class="hover:bg-slate-200  p-2 text-xs">Comercial</li></a>
+                            <li class="bgazulmenu p-2 text-xs">Sectores
+                                <ul class=" shadow-xl filtro3 px-auto bg-slate-50 text-slate-50 rounded border-1 border-orange-600 text-sm">
+                                    <a class="" href="{{route('about.index')}}"><li class="bgazulmenu2 p-2 text-xs">Industrial</li></a>
+                                    <a class="" href="{{route('about.team')}}"><li class="bgazulmenu2 p-2 text-xs">Médico</li></a>
+                                    <a class="" href="{{route('about.ptd')}}"><li class="bgazulmenu2 p-2 text-xs">Manufactura</li></a>
+                                    <a class="" href="{{route('about.ptd')}}"><li class="bgazulmenu2 p-2 text-xs">Comercial</li></a>
                                 </ul>
                             </li>
-                            <li class="hover:bg-slate-200 bg-slate-50 p-2 text-xs">Categorías
-                                <ul class="shadow-xl filtro3 px-auto bg-slate-50 text-slate-600 rounded border-1 border-orange-600 text-sm" name='tipo'>
+                            <li class="bgazulmenu p-2 text-xs">Categorías
+                                <ul class="shadow-xl filtro3 px-auto bg-slate-50 text-slate-50 rounded border-1 border-orange-600 text-sm" name='tipo'>
                                     <!-- Buscar otra manera de filtrar desde acá -->
-                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+MANOS">       <li class="hover:bg-slate-200  p-2 text-xs"> Protección Manos       </li></a>
-                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+CABEZA">      <li class="hover:bg-slate-200  p-2 text-xs"> Protección Cabeza      </li></a>
-                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+RESPIRATORIA"><li class="hover:bg-slate-200  p-2 text-xs"> Protección Respiratoria</li></a>
-                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+CORPORAL">    <li class="hover:bg-slate-200  p-2 text-xs"> Protección Corporal    </li></a>
-                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+VISUAL">      <li class="hover:bg-slate-200  p-2 text-xs"> Protección Visual      </li></a>
-                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+AUDITIVA">    <li class="hover:bg-slate-200  p-2 text-xs"> Protección Auditiva    </li></a>
-                                    <li class="hover:bg-slate-200  p-2 text-xs"> Trabajo seguro en alturas </li>
+                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+MANOS">       <li class="bgazulmenu2  p-2 text-xs"> Protección Manos       </li></a>
+                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+CABEZA">      <li class="bgazulmenu2  p-2 text-xs"> Protección Cabeza      </li></a>
+                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+RESPIRATORIA"><li class="bgazulmenu2  p-2 text-xs"> Protección Respiratoria</li></a>
+                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+CORPORAL">    <li class="bgazulmenu2  p-2 text-xs"> Protección Corporal    </li></a>
+                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+VISUAL">      <li class="bgazulmenu2  p-2 text-xs"> Protección Visual      </li></a>
+                                    <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+AUDITIVA">    <li class="bgazulmenu2  p-2 text-xs"> Protección Auditiva    </li></a>
+                                    <li class="bgazulmenu2 p-2 text-xs"> Trabajo seguro en alturas </li>
                                     
                                 
                                 </ul>
@@ -260,7 +291,7 @@ a:hover{
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-slate-100 block lg:hidden">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
           <a href="{{route('home.index')}}" class="flex items-center">
-              <img src="{{URL::asset('img/web/LOGOTIPO_PREVYCONS.png')}}" class="mr-3 h-6 sm:h-9" alt="Logo" />
+              <img src="{{URL::asset('img/Logo_Prevycons.png')}}" class="mr-3 h-6 sm:h-9" alt="Logo" />
           </a>
           <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-300 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
@@ -300,28 +331,31 @@ a:hover{
     
 
     <!-- footer -->
-    <footer class=" bg-gray-400">
+    <footer class="footer1">
+        <br>
+        <img class="w-1/5 m-auto" src="{{URL::asset('img/Logo_Prevycons barra inferior.png')}}" alt="">
+        <br>
+        <p class="text-gray-400 m-auto text-center text-xs space-x-1"> <a href="">NOSOTROS</a>  |<a href="">SERVICIOS</a>  |<a href="">CONTACTO</a></p>
         <br>
         <!-- redes sociales -->
-        <div class="ml-auto flex flex-row w-full justify-end">
-            <div class="sm:basis-1/6 basis-1/4 justify-end flex flex-row">
+        <div class="flex flex-row w-full justify-center">
+            <div class="sm:basis-1/12 basis-1/4 flex flex-row">
                 <div class="basis-1/4">
-                    <a class="" href="https://www.facebook.com/prevycons" target="_blank" rel="noopener noreferrer"><img src="{{URL::asset('img/facebook logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
+                    <a class="" href="https://www.facebook.com/prevycons" target="_blank" rel="noopener noreferrer"><img src="{{URL::asset('img/redes/Facebook Gris.png')}}" class="w-4 md:w-2/3 transition hover:scale-110 rounded m-auto" alt=""></a>
                 </div>
                 <div class="basis-1/4">
-                    <a class="" href="https://wa.link/9qcq92" target="_blank" rel="noopener noreferrer"><img src="{{URL::asset('img/whatsapp logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
+                    <a class="" href="https://wa.link/9qcq92" target="_blank" rel="noopener noreferrer"><img src="{{URL::asset('img/redes/Whatsapp Gris.png')}}" class="w-4 md:w-2/3 transition hover:scale-110 rounded m-auto" alt=""></a>
                 </div>
                 <div class="basis-1/4">
-                    <a class="" href="https://www.instagram.com/prevycons" target="_blank" rel="noopener noreferrer"><img src="{{URL::asset('img/instagram logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
+                    <a class="" href="https://www.instagram.com/prevycons" target="_blank" rel="noopener noreferrer"><img src="{{URL::asset('img/redes/Instagram Gris.png')}}" class="w-4 md:w-2/3 transition hover:scale-110 rounded m-auto" alt=""></a>
                 </div>
                 <div class="basis-1/4">
-                    <a class="" href="" target="_blank" rel="noopener noreferrer"><img src="{{URL::asset('img/youtube logo_icon.png')}}" class="w-4 md:w-1/2 transition hover:scale-110 rounded" alt=""></a>
+                    <a class="" href="" target="_blank" rel="noopener noreferrer"><img src="{{URL::asset('img/redes/youtube Gris.png')}}" class="w-4 md:w-2/3 transition hover:scale-110 rounded m-auto" alt=""></a>
                 </div>
             </div>
         </div>
 
-        <br>
-        <h5 class="p-5 bg-gray-300 text-xs" style="text-align: right" ><strong>Copyright © 2016-2022 STEM</strong> Soluciones Tecnológicas S.A.S. All rights reserved.</h5 style="text-align: center">
+        <h5 class="p-5 text-gray-400 text-xs" style="text-align: center" ><strong>Copyright © 2016-2022 STEM</strong> Soluciones Tecnológicas S.A.S. All rights reserved.</h5 style="text-align: center">
     </footer>
     <!-- scripts -->
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
