@@ -30,14 +30,14 @@
         <div class="sm:px-16 px-8 sm:py-5">
             <br>
             <div class="md:flex md:flex-row justify-center mx-auto">
-                <div class="md:basis-1/4">01</div>
-                <div class="md:basis-2/4">
+                <div class="md:basis-2/5">01</div>
+                <div class="md:basis-2/5">
                     <div class="md:flex md:flex-col  mx-auto h-auto md:text-3xl text-xl azul2">
                         <div class="text-center m-auto">
                             ¿QUIÉNES SOMOS?
                         </div>
                     </div>
-                    <br>
+                    <br><br>
                     <p class=" text-justify sm:text-base text-sm">
                         Somos una firma de profesionales que acompañamos a nuestros clientes en el desarrollo de sistemas de gestión basados en la mejora continua.
                         Prestamos nuestros servicios en diseño e implementación de sistemas de gestión de calidad (Normas ISO 9001, ISO 14001, ISO 45001), Gestión Documental, Planes de manejo ambiental, Sistemas de gestión en salud y seguridad en el trabajo, Mediciones higiénicas, Investigación de accidentes y enfermedades laborales, Planes de seguridad vial, Auditorías
@@ -89,17 +89,20 @@
         </div>
     </div>
     <br>
-    <div class="grid sm:grid-cols-3 grid-cols-2 gap-4  h-auto w-full p-4 justify-center mx-auto">
-        <a href="{{route('about.team')}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
-            <div class="sm:text-base text-sm text-center mx-auto font-semibold">NUESTRO EQUIPO</div>
+    <div class="grid grid-cols-2 gap-4  h-auto sm:w-2/3 w-full p-4 justify-center mx-auto">
+        <a href="{{route('about.team')}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-3/4 m-auto rounded bg-blue-200">
+            <div class="sm:text-base text-gray-800 text-sm text-center mx-auto font-semibold">NUESTRO EQUIPO</div>
             <br>
             <br class="sm:hidden">
-            <h1 class="hover:bg-slate-200 hover:font-semibold sm:mx-auto sm:w-1/2 sm:text-base text-sm text-center rounded">SABER MÁS</h1>
+            <h1 class="hover:bg-slate-200 text-gray-800 hover:font-semibold sm:mx-auto sm:w-1/2 sm:text-sm text-xs text-center rounded">SABER MÁS</h1>
         </a>
-        <a href="{{route('about.ptd')}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
-            <div class="sm:text-base text-sm text-center mx-auto font-semibold">POLÍTICA DE TRATAMIENTO DE DATOS</div>
+        <a href="{{route('about.ptd')}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-3/4 m-auto rounded bg-blue-200">
+            <div class="sm:text-base text-gray-800 text-sm text-center mx-auto font-semibold">POLÍTICA DE TRATAMIENTO DE DATOS</div>
             <br>
-            <h1 class="hover:bg-slate-200 hover:font-semibold sm:mx-auto sm:w-1/2 sm:text-base text-sm text-center rounded">SABER MÁS</h1>
+            <h1 class="hover:bg-slate-200 text-gray-800 hover:font-semibold sm:mx-auto sm:w-1/2 sm:text-sm text-xs text-center rounded">SABER MÁS</h1>
         </a>
     </div>
+
+    <br>
+
 @endsection

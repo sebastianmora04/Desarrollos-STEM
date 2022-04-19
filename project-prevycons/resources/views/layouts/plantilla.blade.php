@@ -191,7 +191,7 @@ a:hover{
         }
     </style>
 </head>
-<body class="bg-slate-100 text-gray-500">
+<body class="bg-slate-100 text-gray-400">
     <!-- Header -->
     <header class="hidden lg:block container-fluid  position-sticky top-0 px-14 azul1">
         <div class="items-center justify-between flex px-15 py-4 my-4 mx-auto w-full">
@@ -335,7 +335,7 @@ a:hover{
         <br>
         <img class="w-1/5 m-auto" src="{{URL::asset('img/Logo_Prevycons barra inferior.png')}}" alt="">
         <br>
-        <p class="text-gray-400 m-auto text-center text-xs space-x-1"> <a href="">NOSOTROS</a>  |<a href="">SERVICIOS</a>  |<a href="">CONTACTO</a></p>
+        <p class="text-gray-400 m-auto text-center text-xs space-x-1"> <a href="{{route('about.index')}}">NOSOTROS</a>  |<a href="{{route('servicios.index')}}">SERVICIOS</a>  |<a href="{{route('hire.index')}}">CONTACTO</a></p>
         <br>
         <!-- redes sociales -->
         <div class="flex flex-row w-full justify-center">
