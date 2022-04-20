@@ -2,6 +2,17 @@
 
 @section('title','Prevycons - Quienes somos?')
 
+@section('head')
+    <style>
+        .linea {
+        border-top: 3px solid rgb(177, 177, 177);
+        height: 2px;
+        padding: 0;
+        margin: 20px auto 0 auto;
+        }
+    </style>
+@endsection
+
 @section('content')
     <br>
 <!-- Conozcanos -> Quienes somos? - Conozca nuestro equipo - Politica de tratamiento de datos -->
@@ -48,7 +59,9 @@
                 </div>
             </div>
         </div>
-        <br>
+        
+        <div class="linea w-5/6"></div>
+
         <div class="md:px-16 sm:px-8 px-4">
         
             <br class="hidden sm:block">
@@ -79,6 +92,7 @@
             </div>
         </div>
         <br>
+        <div class="linea w-5/6"></div>
     </div>
     <br>
     <br>

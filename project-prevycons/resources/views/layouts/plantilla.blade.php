@@ -110,9 +110,31 @@ a:hover{
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css" />
-    <!-- styles -->
 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+              },
+            }
+          }
+        }
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.2/dist/flowbite.min.css" />
+    
+    <!-- styles -->
     <style type="text/css">
+
+        .tamaño{
+            height: 400px;
+        }
+        .sombra{
+            text-shadow: black 1px 2px;;
+        }
+
         body{
             font-family: 'Poppins',sans-serif;
         }
@@ -191,7 +213,7 @@ a:hover{
         }
     </style>
 </head>
-<body class="bg-slate-100 text-gray-400">
+<body class="bg-slate-100 text-gray-500">
     <!-- Header -->
     <header class="hidden lg:block container-fluid  position-sticky top-0 px-14 azul1">
         <div class="items-center justify-between flex px-15 py-4 my-4 mx-auto w-full">
@@ -358,6 +380,9 @@ a:hover{
         <h5 class="p-5 text-gray-400 text-xs" style="text-align: center" ><strong>Copyright © 2016-2022 STEM</strong> Soluciones Tecnológicas S.A.S. All rights reserved.</h5 style="text-align: center">
     </footer>
     <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.2/dist/flowbite.js"></script>
+
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
     <script src="../path/to/flowbite/dist/flowbite.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
