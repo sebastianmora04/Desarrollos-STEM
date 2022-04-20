@@ -2,8 +2,20 @@
 
 @section('title','Prevycons - Servicios')
 
+@section('head')
+    <style>
+        .linea {
+        border-top: 3px solid rgb(177, 177, 177);
+        height: 2px;
+        padding: 0;
+        margin: 20px auto 0 auto;
+        }
+    </style>
+@endsection
+
 @section('content')
-    <div class="bg-orange-600 flex flex-col  mx-auto h-auto text-slate-50">
+    <br>
+    <div class="azul1 lg:px-24 md:px-16 sm:px-12  flex flex-col  mx-auto h-auto text-orange-600">
         <div class="ml-10 mt-5 sm:text-base text-sm">
             Nuestra pasión es el pensamiento creativo
         </div>
@@ -17,65 +29,54 @@
         <p></p>
     </div>
     <br>
-    <div class="flex flex-col  mx-auto h-auto sm:text-2xl text-lg underline underline-offset-8 text-gray-500">
+    <div class="flex flex-col  mx-auto h-auto sm:text-3xl text-xl azul2">
         <div class="m-auto text-center sm:px-0 px-2">
             DISEÑO E IMPLEMENTACIÓN DE SISTEMAS DE GESTIÓN
         </div>
     </div>
-    <br>
+    <br><br>
     <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">
     @foreach ($servicios as $item)
-        <a href="{{route('servicios.show',$item->id)}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
+        <a href="{{route('servicios.show',$item->id)}}" class="bg-gradient-to-t from-blue-900 to-blue-700 box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto rounded-lg text-slate-50 w-11/12 mx-auto">
             <img src="{{$item->img}}" class="mx-auto w-1/2 justify-center"
                     alt="logo-img">
             <br>
             <div class="sm:text-base text-sm">
-                <strong>{{$item->name}}</strong>
-                <br>{{$item->descripcion}}
+                <p class="text-center"><strong>{{$item->name}}</strong></p>
+                <br><p class="sm:text-sm text-xs">{{$item->descripcion}}</p>
             </div>
         </a> <!-- box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto -->
     @endforeach
     </div>
+    <br><br>
+
+    <div class="linea w-5/6"></div>
     {{$servicios->links()}}
+    
     <br>
-    <div class="flex flex-col  mx-auto h-auto sm:text-xl text-lg  underline underline-offset-8 text-gray-500">
-        <div class="m-auto">
+
+    <div class="flex flex-col  mx-auto h-auto sm:text-3xl text-xl azul2">
+        <div class="m-auto text-center sm:px-0 px-2">
             OTROS SERVICIOS
         </div>
     </div>
+
     <br>
+
     <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4  h-auto w-11/12 p-4  justify-center mx-auto">
         @foreach ($servicios2 as $item)
-        <a href="{{route('servicios.show',$item->id)}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
-                <img src="{{$item->img}}" class="mx-auto justify-center"
+        <a href="{{route('servicios.show',$item->id)}}" class="bg-gradient-to-t from-blue-900 to-blue-700 box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto rounded-lg text-slate-50 w-11/12 mx-auto">
+                <img src="{{$item->img}}" class="mx-auto w-1/2 justify-center"
                         alt="logo-img">
                 <br>
                 <div class="sm:text-base text-sm">
-                    <strong>{{$item->name}}</strong>
-                    <br> {{$item->descripcion}}
+                    <p class="text-center"><strong>{{$item->name}}</strong></p>
+                    <br><p class="sm:text-sm text-xs">{{$item->descripcion}}</p>
                 </div>
         </a>
         @endforeach
     </div>
 
+    <br><br>
 
-    <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">
-        @foreach ($servicios as $item)
-        <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-lg hover:shadow-2xl">
-            <a href="{{route('servicios.show',$item->id)}}">
-                <img class="mx-auto w-1/2 justify-center py-2 rounded-t-lg" src="{{$item->img}}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="{{route('servicios.show',$item->id)}}">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{$item->name}}</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 ">{{$item->descripcion}}</p>
-                <a href="{{route('servicios.show',$item->id)}}" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Read more
-                    <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </a>
-            </div>
-        </div>
-        @endforeach
-    </div>
 @endsection

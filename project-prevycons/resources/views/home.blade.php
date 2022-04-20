@@ -21,19 +21,19 @@
         <!-- Carousel wrapper -->
         <div class="overflow-hidden relative h-96 rounded-lg tamaño shadow-xl">
              <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out shadow-3xl" data-carousel-item>
+            <div class="hidden duration-1000 ease-in-out shadow-3xl" data-carousel-item>
                 <img src="img/celular.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                 <span class="sombra absolute top-1/3 left-24 text-4xl font-bold text-white text-left  sm:text-4xl">Siguenos en nuestras redes</span>
                 <span class="absolute top-52 left-24  text-white text-left text-2xl font-bold"><a href="#" class="bg-blue-600 p-2 rounded-full">Saber mas</a></span>
             </div>
             <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out shadow-xl" data-carousel-item>
+            <div class="hidden duration-1000 ease-in-out shadow-xl" data-carousel-item>
                 <img src="img/celular.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                 <span class="sombra absolute top-1/3 left-24 text-4xl font-bold text-white text-left  sm:text-4xl">Siguenos en nuestras redes</span>
                 <span class="absolute top-52 left-24  text-white text-left text-2xl font-bold"><a href="#" class="bg-blue-600 p-2 rounded-full">Saber mas</a></span>
             </div>
             <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="hidden duration-1000 ease-in-out" data-carousel-item>
                 <img src="img/celular.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                 <span class="sombra absolute top-1/3 left-24 text-4xl font-bold text-white text-left  sm:text-4xl">Siguenos en nuestras redes</span>
                 <span class="absolute top-52 left-24  text-white text-left text-2xl font-bold"><a href="#" class="bg-blue-600 p-2 rounded-full">Saber mas</a></span></div>
@@ -60,5 +60,19 @@
     </div>
 </div>
 
+<br>
+
+<div class="flex flex-col  mx-auto h-auto sm:text-3xl text-xl azul2">
+    <div class="m-auto text-center sm:px-0 px-2">
+        PORTAFOLIO DE SERVICIOS
+    </div>
+</div>
+
+<br><br>
+
+<h2 class="text-center px-60">Servicio de Salud y Seguridad Ocupacional, Sistemas de Gestión Documental y Ambiental,
+    Capacitación, IPS, Auditorías, EPP, PESV</h2>
+
+<br><br>
 
 @endsection

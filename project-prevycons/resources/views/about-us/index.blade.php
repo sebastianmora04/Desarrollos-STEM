@@ -106,7 +106,7 @@
     <div class="grid grid-cols-2 gap-4  h-auto sm:w-2/3 w-full p-4 justify-center mx-auto">
         <a href="{{route('about.team')}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-3/4 m-auto rounded bg-blue-200">
             <div class="sm:text-base text-gray-800 text-sm text-center mx-auto font-semibold">NUESTRO EQUIPO</div>
-            <br>
+            <br><br>
             <br class="sm:hidden">
             <h1 class="hover:bg-slate-200 text-gray-800 hover:font-semibold sm:mx-auto sm:w-1/2 sm:text-sm text-xs text-center rounded">SABER MÁS</h1>
         </a>

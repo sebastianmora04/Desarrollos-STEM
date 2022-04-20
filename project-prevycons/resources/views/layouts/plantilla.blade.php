@@ -146,7 +146,7 @@ a:hover{
             color: rgb(0,130,205);
         }
         .azul3{
-
+            background-color: rgba(0, 21, 89, 0.98)
         }
         .bgazulmenu{
             background-color: rgba(0, 21, 89, 0.98);
