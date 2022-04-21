@@ -8,101 +8,7 @@
     <!--favicon -->
     <link rel="shortcut icon" href="{{URL::asset('img/pagina_web_favicon.png')}}" type="image/x-icon">
 
-<!--
-    <style>
-body{
-    font-family: 'Poppins', sans-serif;
-    margin:0;
-    background-color: #ffffff;
-}
-
-.nombret {
-    background-color: #ff6600b9;
-    font-size: 20px;
-    padding: 15px 25px 15px 25px;
-    display: flex;
-    align-items: center;
-}
-
-.menu li{
-    list-style: none;
-    margin-right: 15px;
-}
-
-.menu ul{
-    display: flex;
-    align-items: center;
-}
-
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-}
-
-.menu img{
-    width: 60px;
-    margin-bottom: -3px;
-    margin-left: -5px;
-    margin-right: 10px;
-}
-
-.lista{
-    display: flex;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-a:hover{
-    text-decoration: none;
-    color: black;
-}
-
-.titulos{
-    font-size: 30px;
-    background: #0c9b18;
-    margin: 40px;
-    color: white;
-    padding: 15px 30px 15px 30px;
-    border-radius: 73px;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .titulos{
-        font-size: 2.5rem;
-    }
-}
-.contenedor{
-    max-width: 1280px;
-    width: 90%;
-    margin: auto;
-}
-
-
-/** footer */
-
-.contenido-foter{
-    background-color: #0c9b18;
-    padding: 30px;
-}
-.iconos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.iconos-centrar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-    </style> -->
+<!-- <style> -->
     @yield('head')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -114,13 +20,20 @@ a:hover{
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              fontFamily: {
-                sans: ['Inter', 'sans-serif'],
-              },
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        },
+                    transitionDuration: {
+                        '0': '0ms',
+                        '3000': '3000ms',
+                        }
+                    colors: {
+                        'azuloscuro': '#001559',
+                    },
+                }
             }
-          }
         }
     </script>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.2/dist/flowbite.min.css" />
@@ -135,7 +48,7 @@ a:hover{
             text-shadow: black 1px 2px;;
         }
 
-        body{
+        .titulos{
             font-family: 'Poppins',sans-serif;
         }
         .azul1{
@@ -161,7 +74,7 @@ a:hover{
             border-color: rgba(0,130,205, 0.98)
         }
         .bgazulmenu2:hover{
-
+            
         }
         ul {
             list-style:none;
@@ -215,11 +128,13 @@ a:hover{
 </head>
 <body class="bg-slate-100 text-gray-500">
     <!-- Header -->
-    <header class="hidden lg:block container-fluid  position-sticky top-0 px-14 azul1">
+    <header class="hidden lg:block container-fluid  position-sticky top-0 px-14 azul1 titulos">
         <div class="items-center justify-between flex px-15 py-4 my-4 mx-auto w-full">
             <div class=" text-2xl text-cyan font-semibold inline-flex items-center">
-                <img src="{{URL::asset('img/Logo_Prevycons.png')}}" class=" w-2/4"
+                <a href="{{route('home.index')}}">
+                    <img src="{{URL::asset('img/Logo_Prevycons.png')}}" class=" w-2/4"
                     alt="logo">
+                </a>
             </div>
             <div class="flex">
                 <ul class="flex nav">
@@ -310,7 +225,7 @@ a:hover{
     </header>
     <!-- nav -->
     
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-slate-100 block lg:hidden">
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-slate-100 block lg:hidden titulos">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
           <a href="{{route('home.index')}}" class="flex items-center">
               <img src="{{URL::asset('img/Logo_Prevycons.png')}}" class="mr-3 h-6 sm:h-9" alt="Logo" />

@@ -3,7 +3,7 @@
 @section('title','Prevycons - Contáctanos')
 
 @section('content')
-    <div class="azul1 lg:px-24 md:px-16 sm:px-12  flex flex-col  mx-auto h-auto text-blue-600">
+    <div class="azul1 lg:px-24 md:px-16 sm:px-12  flex flex-col  mx-auto h-auto text-blue-600 titulos">
         <div class="ml-10 mt-5 sm:text-base text-sm">
             Trabajamos en brindar un servicio excepcional
         </div>

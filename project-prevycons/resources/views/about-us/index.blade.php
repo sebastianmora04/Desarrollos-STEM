@@ -16,7 +16,7 @@
 @section('content')
     <br>
 <!-- Conozcanos -> Quienes somos? - Conozca nuestro equipo - Politica de tratamiento de datos -->
-    <div class="azul1 lg:px-24 md:px-16 sm:px-12  flex flex-col  mx-auto h-auto text-green-600">
+    <div class="azul1 lg:px-24 md:px-16 sm:px-12  flex flex-col  mx-auto h-auto text-green-600 titulos">
         <div class="ml-10 mt-5 sm:text-base text-sm">
             Siempre apuntando a lo más alto
         </div>
@@ -27,7 +27,7 @@
     </div>
     <br>
     <div class=" justify-center mx-auto w-10/12">
-        <div class=" sm:text-2xl text-lg font-semibold mt-auto mb-auto py-1 azul2"><p class="text-center">¿QUÉ HACEMOS?</p></div>
+        <div class=" sm:text-2xl text-lg mt-auto mb-auto py-1 azul2 titulos"><p class="text-center">¿QUÉ HACEMOS?</p></div>
         <div class=" sm:text-base text-sm px-16 py-1 sm:ml-2 text-justify">
             <p>
                 Ofrecemos servicios integrales a las organizaciones que ayudarán a fortalecer tu
@@ -43,7 +43,7 @@
             <div class="md:flex md:flex-row justify-center mx-auto">
                 <div class="md:basis-2/5">01</div>
                 <div class="md:basis-2/5">
-                    <div class="md:flex md:flex-col  mx-auto h-auto md:text-3xl text-xl azul2">
+                    <div class="md:flex md:flex-col  mx-auto h-auto md:text-3xl text-xl azul2 titulos">
                         <div class="text-center m-auto">
                             ¿QUIÉNES SOMOS?
                         </div>
@@ -67,7 +67,7 @@
             <br class="hidden sm:block">
             <div class="sm:flex sm:flex-row sm:px-18 md:px-16 justify-center mx-auto md:px-16 sm:px-8 px-6">
                 <div class="sm:basis-5/12 md:p-2 md:px-2 ">
-                    <h1 style="text-align: center" class=" sm:text-xl text-lg flex flex-col  mx-auto h-auto azul2">VISIÓN</h1>
+                    <h1 style="text-align: center" class=" sm:text-xl text-lg flex flex-col  mx-auto h-auto azul2 titulos">VISIÓN</h1>
                     <br>
                     <p class="text-justify px-auto sm:text-base text-sm">
                         Para el 2028, PREV&amp;CONS será una empresa líder en el mercado con
@@ -81,7 +81,7 @@
 
                 <div class="sm:basis-1/12"></div>
                 <div class="sm:basis-5/12 md:p-2 md:px-2 ">
-                    <h1 style="text-align: center" class=" sm:text-xl text-lg flex flex-col  mx-auto h-auto azul2">MISIÓN</h1>
+                    <h1 style="text-align: center" class=" sm:text-xl text-lg flex flex-col  mx-auto h-auto azul2 titulos">MISIÓN</h1>
                     <br>
                     <p class="text-justify px-auto sm:text-base text-sm">
                         PREV&amp;CONS se compromete en ofrecer a nuestros clientes soluciones
@@ -97,7 +97,7 @@
     <br>
     <br>
     <!-- Nosotros pre-footer  -->
-    <div class="flex flex-col  mx-auto h-auto sm:text-2xl text-xl azul2">
+    <div class="flex flex-col  mx-auto h-auto sm:text-2xl text-xl azul2 titulos">
         <div class="m-auto">
             NOSOTROS
         </div>

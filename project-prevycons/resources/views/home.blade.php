@@ -2,9 +2,17 @@
 
 @section('title','Prevycons - Home')
 
+@section('head')
+    <style>
+        .portafolio{
+            letter-spacing: 1px;
+        }
+    </style>
+@endsection
+
 @section('content')
 
-<div class="flex flex-col  mx-auto h-auto azul1">
+<div class="flex flex-col  mx-auto h-auto azul1 titulos">
     <div class="ml-10 mt-5">
         <br>
     </div>
@@ -16,7 +24,7 @@
 
 
 
-<div class="container py-5 mx-auto">
+<div class="container py-5 md:px-10 sm:px-5 mx-auto">
     <div id="default-carousel" class="relative" data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="overflow-hidden relative h-96 rounded-lg tamaño shadow-xl">
@@ -46,13 +54,13 @@
         </div>
         <!-- Slider controls -->
         <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex justify-center items-center w-16 h-16 rounded-full sm:w-16 sm:h-16 bg-blue-800 group-hover:bg-white/50 dark:group-hover:bg-blue-800/60 group-focus:ring-4 group-focus:ring-white group-focus:ring-blue-800/70 group-focus:outline-none">
+            <span class="inline-flex justify-center items-center w-16 h-16 rounded-full sm:w-16 sm:h-16 bgazulmenu2 group-focus:ring-4 group-focus:ring-white group-focus:ring-cyan-600/70 group-focus:outline-none">
                 <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                 <span class="hidden">Previous</span>
             </span>
         </button>
         <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none ml-20" data-carousel-next>
-            <span class="inline-flex justify-center items-center w-16 h-16 rounded-full sm:w-16 sm:h-16 bg-blue-800 group-hover:bg-white/50 dark:group-hover:bg-blue-800/60 group-focus:ring-4 group-focus:ring-white group-focus:ring-blue-800/70 group-focus:outline-none">
+            <span class="inline-flex justify-center items-center w-16 h-16 rounded-full sm:w-16 sm:h-16 bgazulmenu2 group-focus:ring-4 group-focus:ring-white group-focus:ring-cyan-600/70 group-focus:outline-none">
                 <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 <span class="hidden">Next</span>
             </span>
@@ -62,7 +70,7 @@
 
 <br>
 
-<div class="flex flex-col  mx-auto h-auto sm:text-3xl text-xl azul2">
+<div class="flex flex-col  mx-auto h-auto sm:text-3xl text-xl azul2 font-semibold portafolio">
     <div class="m-auto text-center sm:px-0 px-2">
         PORTAFOLIO DE SERVICIOS
     </div>
