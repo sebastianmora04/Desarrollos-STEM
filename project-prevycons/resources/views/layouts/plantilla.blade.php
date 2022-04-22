@@ -10,11 +10,12 @@
 
 <!-- <style> -->
     @yield('head')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -37,10 +38,12 @@
         }
     </script>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.2/dist/flowbite.min.css" />
-    
+
     <!-- styles -->
     <style type="text/css">
-
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
         .tamaño{
             height: 400px;
         }
@@ -74,22 +77,22 @@
             border-color: rgba(0,130,205, 0.98)
         }
         .bgazulmenu2:hover{
-            
+
         }
         ul {
             list-style:none;
         }
-        
+
         .nav > li {
             float:left;
         }
-        
+
         .nav li ul {
             display:none;
             position:absolute;
         }
         .filtro1{
-            
+
             min-width:230px;
         }
         .filtro2{
@@ -108,11 +111,11 @@
         .nav li:hover > ul {
             display:block;
         }
-        
+
         .nav li ul li {
             position:relative;
         }
-        
+
         .nav li ul li ul {
             right:-180px;
             top:0px;
@@ -158,7 +161,7 @@
                             <a class="" href="{{route('servicios.show',2)}}"><li class="bgazulmenu p-2 text-xs border-2">Gestión de seguridad y salud en el trabajo</li></a>
                             <a class="" href="{{route('servicios.show',3)}}"><li class="bgazulmenu p-2 text-xs border-2">Gestión documental</li></a>
                             <a class="" href="{{route('servicios.show',4)}}"><li class="bgazulmenu p-2 text-xs border-2">Gestión ambiental</li></a>
-                            
+
                             <li class="text-sm font-semibold px-1 border-2 bgazulmenu">Otros servicios</li>
                             <a class="" href="{{route('servicios.show',5)}}"><li class="bgazulmenu p-2 text-xs border-2">Plan estratégico de seguridad vial</li></a>
                             <a class="" href="{{route('servicios.show',6)}}"><li class="bgazulmenu p-2 text-xs border-2">Auditorías</li></a>
@@ -209,8 +212,8 @@
                                     <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+VISUAL">      <li class="bgazulmenu2  p-2 text-xs"> Protección Visual      </li></a>
                                     <a href="{{$cc=route('catalogo.index')}}?sector=&nombre=&tipo=PROTECCION+AUDITIVA">    <li class="bgazulmenu2  p-2 text-xs"> Protección Auditiva    </li></a>
                                     <li class="bgazulmenu2 p-2 text-xs"> Trabajo seguro en alturas </li>
-                                    
-                                
+
+
                                 </ul>
                             </li>
                         </ul>
@@ -224,7 +227,7 @@
         </div>
     </header>
     <!-- nav -->
-    
+
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-slate-100 block lg:hidden titulos">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
           <a href="{{route('home.index')}}" class="flex items-center">
@@ -265,7 +268,7 @@
 
     <!-- Contenido -->
     @yield('content')
-    
+
 
     <!-- footer -->
     <footer class="footer1">
