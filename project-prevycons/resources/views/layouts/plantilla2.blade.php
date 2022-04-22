@@ -147,7 +147,7 @@
 </head>
 <body class="bg-gradient-to-t from-[#001559] to-blue-700 text-[#e9f1f4]">
     <!-- Header -->
-    <header class="hidden lg:block container-fluid  position-sticky top-0 px-14 text-[#e9f1f4] titulos">
+    <header class="hidden lg:block container-fluid sticky top-0 px-14 text-[#e9f1f4] titulos bg-blue-700">
         <div class="items-center justify-between flex px-15 py-4 my-4 mx-auto w-full">
             <div class=" text-2xl text-cyan font-semibold inline-flex items-center">
                 <a href="{{route('home.index')}}">
@@ -311,7 +311,7 @@
             </div>
         </div>
 
-        <h5 class="p-5 text-xs" style="text-align: center" ><strong>Copyright © 2016-2022 STEM</strong> Soluciones Tecnológicas S.A.S. All rights reserved.</h5 style="text-align: center">
+        <h5 class="p-5 text-[10px]" style="text-align: center" ><strong>Copyright © 2016-2022 STEM</strong> Soluciones Tecnológicas S.A.S. All rights reserved.</h5 style="text-align: center">
     </footer>
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>

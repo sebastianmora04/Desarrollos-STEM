@@ -195,35 +195,36 @@
 @endsection
 
 @section('content')
+    <br>
     
-    <div class="bg-indigo-600 flex flex-col  mx-auto h-auto text-slate-50">
-        <div class="ml-10 mt-5">
-            <br>
+    <div class="azul1 lg:px-24 md:px-16 sm:px-12  flex flex-col  mx-auto h-auto text-indigo-600 titulos">
+        <div class="ml-10 mt-5 sm:text-base text-sm">
+            
         </div>
         <div class="ml-10 mb-5 sm:text-5xl text-3xl">
             <h1>Login </h1> 
-            <h1><br></h1>
+            <h1></h1>
         </div>
     </div>
 
-    <br>
+    <br><br>
 
     <form class="md:w-1/2 m-auto w-3/4 " action="">
 
         <label class="font-semibold md:text-base text-sm">
-            Usuario: 
+            <p class="font-bold md:text-lg">Usuario</p>
             <br> 
             <input class="w-full border-1 rounded border-gray-500" type="text" name="username" value="{{old('username')}}">
         </label>
         <br>
         <label class="font-semibold md:text-base text-sm">
-            Contraseña: 
+            <p class="font-bold md:text-lg">Contraseña</p> 
             <br> 
             <input type="password" class="w-full border-1 rounded border-gray-500" type="text" name="pass" value="">
         </label>
         <br>
         <br>
-        <button type="submit" class="w-full px-2 py-1 border-2 text-slate-50 md:text-lg text-base bg-gray-800 hover:bg-gray-500 font-medium">Ingresar</button>    
+        <button type="submit" class="w-full px-2 py-1 border-2 text-slate-50 md:text-lg text-base bg-indigo-600 hover:bg-indigo-500 font-medium">Ingresar</button>    
     </form>
     <br>
 

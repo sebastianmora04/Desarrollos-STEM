@@ -3,17 +3,19 @@
 @section('title','Prevycons - Catálogo')
 
 @section('content')
-
-    <div class="bg-emerald-600 flex flex-col  mx-auto h-auto text-slate-50">
-        <div class="ml-10 mt-5">
-            <br>
+    <br>
+    <div class="azul1 lg:px-24 md:px-16 sm:px-12  flex flex-col  mx-auto h-auto text-emerald-600 titulos">
+        <div class="ml-10 mt-5 sm:text-base text-sm">
+            
         </div>
         <div class="ml-10 mb-5 sm:text-5xl text-3xl">
             <h1>Catálogo </h1> 
-            <h1><br></h1>
+            <h1></h1>
         </div>
     </div>
-    <br>
+
+    <br><br>
+    
     <div>
         <p></p>
     </div>

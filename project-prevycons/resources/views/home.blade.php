@@ -23,7 +23,6 @@
 </div>
 
 
-
 <div class="container py-5 md:px-10 sm:px-5 mx-auto">
     <div id="default-carousel" class="relative" data-carousel="slide">
         <!-- Carousel wrapper -->
