@@ -5,7 +5,7 @@
 @section('head')
     <style>
         .linea {
-        border-top: 3px solid rgb(177, 177, 177);
+        border-top: 3px solid rgb(207, 207, 207);
         height: 2px;
         padding: 0;
         margin: 20px auto 0 auto;
