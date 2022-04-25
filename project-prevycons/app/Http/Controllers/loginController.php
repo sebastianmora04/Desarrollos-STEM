@@ -10,4 +10,8 @@ class loginController extends Controller
     {
         return view('login.index');
     }
+    public function registro()
+    {
+        return view('login.registro');
+    }
 }

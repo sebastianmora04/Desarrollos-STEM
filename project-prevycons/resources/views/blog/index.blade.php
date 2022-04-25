@@ -38,7 +38,7 @@
     <div class="grid grid-cols-3 gap-4 h-auto w-11/12 p-4 justify-center mx-auto">
     @foreach ($blogs as $item)
 
-        <a href="{{route('blog.show',$item->id)}}" class="flex flex-col items-center rounded border border-[#7398fd] shadow-md md:flex-row md:max-w-xl bg-gradient-to-t from-blue-700 to-[#001559]">
+        <a href="{{route('blog.show',$item->id)}}" class="flex flex-col items-center rounded border border-[#7398fd] shadow-md md:flex-row md:max-w-xl bg-gradient-to-t from-[#254ecc] to-[#001559]">
             <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/docs/images/blog/image-4.jpg" alt="">
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight">{{$item->name}}</h5>

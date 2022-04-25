@@ -86,4 +86,5 @@ Route::controller(contactanosController::class)->group(function(){
 
 Route::controller(loginController::class)->group(function(){
     Route::get('login', 'index')->name('login.index');
+    Route::get('registro', 'registro')->name('login.registro');
 });

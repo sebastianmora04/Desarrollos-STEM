@@ -40,7 +40,7 @@
     <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-rows-2 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">
         @foreach ($servicios as $item)
         <div class="row-span-2 ">
-            <div class="box-border h-96 p-4 shadow-lg hover:shadow-2xl w-auto rounded-lg text-slate-50 w-11/12 mx-auto bg-gradient-to-t from-[#001559] to-blue-700">
+            <div class="box-border h-96 p-4 shadow-lg hover:shadow-2xl w-auto rounded-lg text-slate-50 w-11/12 mx-auto bg-gradient-to-t from-[#001559] to-[#254ecc]">
                 <a href="{{route('servicios.show',$item->id)}}">
                     <img src="{{$item->img}}" class="mx-auto w-3/5 justify-center"
                             alt="logo-img">
@@ -75,7 +75,7 @@
     <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4  h-auto w-11/12 p-4  justify-center mx-auto">
         @foreach ($servicios2 as $item)
         <div class="row-span-2 ">
-            <div class="box-border h-96 p-4 shadow-lg hover:shadow-2xl w-auto rounded-lg text-slate-50 w-11/12 mx-auto bg-gradient-to-t from-[#001559] to-blue-700">
+            <div class="box-border h-96 p-4 shadow-lg hover:shadow-2xl w-auto rounded-lg text-slate-50 w-11/12 mx-auto bg-gradient-to-t from-[#001559] to-[#254ecc]">
                 <a href="{{route('servicios.show',$item->id)}}">
                     <img src="{{$item->img}}" class="mx-auto w-3/5 justify-center"
                             alt="logo-img">

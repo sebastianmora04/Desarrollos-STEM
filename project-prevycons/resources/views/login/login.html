@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <!--favicon -->
+    <link rel="shortcut icon" href="{{URL::asset('img/pagina_web_favicon.png')}}" type="image/x-icon">
+
+    <!-- <style> -->
+    <!-- @yield('head')-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        },
+                    transitionDuration: {
+                        '0': '0ms',
+                        '3000': '3000ms',
+                        },
+                    colors: {
+                        'azuloscuro': '#001559',
+                    },
+                }
+            },
+            plugins: [
+                require('@tailwindcss/forms'),
+                // ...
+            ],
+        }
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.2/dist/flowbite.min.css" />
+    <!-- styles -->
+
+    <style>
+        .portafolio{
+            letter-spacing: 1px;
+        }
+    </style> <!-- Style en home -->
+
+    <style type="text/css">
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+        .tamaño{
+            height: 400px;
+        }
+        .sombra{
+            text-shadow: black 1px 2px;;
+        }
+
+        .titulos{
+            font-family: 'Poppins',sans-serif;
+        }
+        .azul1{
+            color: rgb(0,130,205);
+            background-color: rgb(233,241,244)
+        }
+        .azul2{
+            color: rgb(0,130,205);
+        }
+        .azul3{
+            background-color: rgba(0, 21, 89, 0.98)
+        }
+        .bgazulmenu{
+            background-color: rgba(0, 21, 89, 0.98);
+            border-color: rgba(0,21,89,0.98);
+        }
+        .bgazulmenu:hover{
+            background-color: rgba(1, 33, 138, 0.98);
+            border-color: rgba(1, 33, 138, 0.98)
+        }
+        .bgazulmenu2{
+            background-color: rgba(0,130,205, 0.98);
+            border-color: rgba(0,130,205, 0.98)
+        }
+
+        .bordeazul{
+            border-color: #148CEE;
+        }
+
+        ::placeholder{
+            color: #C9C9C9;
+            font-weight: 300;
+        }
+        .liviano{
+            font-weight: 200;
+        }
+        ul {
+            list-style:none;
+        }
+
+        .nav > li {
+            float:left;
+        }
+
+        .nav li ul {
+            display:none;
+            position:absolute;
+        }
+        .filtro1{
+            min-width:230px;
+        }
+        .filtro2{
+            min-width:100px;
+        }
+        .filtro22{
+            min-width:80px;
+        }
+        .filtro22:hover{
+            right: 20px;
+            min-width:80px;
+        }
+        .filtro3{
+            min-width: 180px;
+        }
+        .nav li:hover > ul {
+            display:block;
+        }
+
+        .nav li ul li {
+            position:relative;
+        }
+
+        .nav li ul li ul {
+            right:-180px;
+            top:0px;
+
+        }
+        .right-categoria{
+            right: -150px;
+        }
+        .footer1{
+            background-color: rgb(0, 21, 89);
+        }
+    </style>
+</head>
+<body class="azul1">
+
+    <div class="container flex flex-col w-11/12 sm:w-3/5 text-center mx-auto h-auto azul1 titulos">
+        <div class="ml-10 mt-5">
+            <br>
+        </div>
+        <div class="mb-5 text-3xl sm:text-5xl text-center">
+            <h1>Prev&cons</h1> 
+            <h2 class="liviano sm:font-normal text-sm sm:text-2xl">Prevención y consultoría</h2>
+            <h1><br></h1>
+        </div>
+        <form action="">
+            <div class="m-3">
+                <input type="email" name="correo" class="form-input  px-12 sm:px-24 py-1 rounded text-left bordeazul" placeholder="Correo Electronico">
+            </div>
+            <div class="relative m-3">
+                <input type="password" name="contraseña" class="form-input text-black px-12 sm:px-24 py-1 rounded-md relative bordeazul" placeholder="Contraseña">
+                <div class="absolute right-5 sm:right-52 inset-y-0 rigth-0 flex items-center">
+                    <img src="img/Icono Ver contraseña.png" alt="" class="w-6">
+                </div>
+            </div>
+        
+            <div class="text-center text-slate-400 my-12 divide-y-4 divide-x-52 divide-slate-300 ">
+                <a href="" class="text-center text-white bg-blue-600  py-2 px-8 sm:px-32 rounded-full">Iniciar sesión</a>
+                <div class="text-center mt-12 flex justify-center space-x-2">
+                    <a href="" class="">Volver   </a> 
+                    <img src="img/Icono Salir Gris.png" class="w-5" alt="">
+                </div>
+            </div>
+        </form>
+
+        <div class="divide-y-4 divide-amber-800 ">
+            
+        </div>
+
+        
+
+    </div>
+    
+
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.2/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

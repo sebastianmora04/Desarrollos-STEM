@@ -111,13 +111,16 @@
 
             min-width:230px;
         }
+        .filtrologin{
+            min-width: 100px;
+        }
         .filtro2{
             min-width:100px;
         }
         .filtro22{
             min-width:80px;
         }
-        .filtro22:hover{
+        .filtro32:hover{
             right: 20px;
             min-width:80px;
         }
@@ -145,10 +148,10 @@
         }
     </style>
 </head>
-<body class="bg-gradient-to-t from-[#001559] to-blue-700 text-[#e9f1f4]">
+<body class="bg-gradient-to-t from-[#001559] to-[#254ecc] text-[#e9f1f4]">
     <!-- Header -->
-    <header class="hidden lg:block container-fluid sticky top-0 px-14 text-[#e9f1f4] titulos bg-blue-700">
-        <div class="items-center justify-between flex px-15 py-4 my-4 mx-auto w-full">
+    <header class="hidden lg:block container-fluid sticky top-0 px-14 text-[#e9f1f4] titulos bg-[#114398]">
+        <div class="items-center justify-between flex px-15 pt-10 py-6  mx-auto w-full">
             <div class=" text-2xl text-cyan font-semibold inline-flex items-center">
                 <a href="{{route('home.index')}}">
                     <img src="{{URL::asset('img/Logo_Prevycons barra inferior.png')}}" class=" w-2/4"
@@ -236,7 +239,20 @@
                     </li>
                     <li class="ml-5 px-2 py-1 transition  hover:border-gray-300 hover:scale-105 ease-in-out rounded font-semibold text-[#e9f1f4] border-2 border-gray-200"><a href="{{route('hire.index')}}">Contáctanos</a></li>
 
-                    <li class="ml-5 px-2 py-1 transition hover:scale-105 ease-in-out rounded font-semibold text-[#e9f1f4] hover:bg-gray-500 bg-gray-800"><a href="{{route('login.index')}}">Ingresar</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-white hover:underline-offset-2 hover:underline ease-in-out rounded">
+                        <a class="font-black" href="{{route('login.index')}}">Ingresar</a>
+                        <br>
+                        <ul class="shadow-xl filtrologin text-sm px-auto bg-transparent text-blue-700 rounded border-1 border-orange-600">
+                            <li class="invisible"><br> space <br></li>
+                            <a class="" href="{{route('login.index')}}"><li class="bgslatemenu p-2 text-[11px] border ">Iniciar Sesión</li></a>
+                            <a class="" href="{{route('login.registro')}}">
+                                <li class="bgslatemenu p-2 text-[10px] border flex flex-row">
+                                    <img class="basis-1/4 w-5 h-5" src="{{URL::asset('img/login/Icono Crear cuenta.png')}}" alt=""> 
+                                    <p class="basis-3/4 ml-2">  Regístrate</p>
+                                </li>
+                            </a>
+                        </ul>
+                    </li>
 
                 </ul>
             </div>
