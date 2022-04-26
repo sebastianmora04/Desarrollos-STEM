@@ -27,7 +27,7 @@ class contactanosController extends Controller
         ]);
 
         $correo= new ContactoMailable($request->all());
-        Mail::to('contacto@prevycons.com')->send($correo);
+        Mail::to('mrsebastian64@gmail.com')->send($correo);
         return view('contacto.index');
     }
 }

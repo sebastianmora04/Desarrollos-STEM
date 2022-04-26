@@ -47,12 +47,13 @@
                     <br>
                     <div class="sm:text-base text-sm">
                         <p class="text-center titulos"><strong>{{$item->name}}</strong></p>
+                       
                         <br><p class="sm:text-sm text-xs">{{$item->descripcion}}</p>
                     </div>
                 </a>
             </div> <!-- box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto -->
             <br>
-            <p class="text-center azul2 titulos md:text-xl">Ver Más</p>
+            <a href="{{route('servicios.show',$item->id)}}"><p class="text-center azul2 titulos md:text-xl">Ver Más</p></a>
         </div>
         @endforeach
     </div>
@@ -80,9 +81,9 @@
                     <img src="{{$item->img}}" class="mx-auto w-3/5 justify-center"
                             alt="logo-img">
                     <br>
-                    <div class="sm:text-base text-sm">
+                    <div class="sm:text-[15px] text-sm">
                         <p class="text-center titulos"><strong>{{$item->name}}</strong></p>
-                        <br><p class="sm:text-sm text-xs">{{$item->descripcion}}</p>
+                        <br><p class="sm:text-[13px] text-xs">{{$item->descripcion}}</p>
                     </div>
                 </a>
             </div> <!-- box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto -->

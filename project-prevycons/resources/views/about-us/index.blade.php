@@ -26,13 +26,16 @@
         </div>
     </div>
     <br>
-    <div class=" justify-center mx-auto w-10/12">
-        <div class=" sm:text-2xl text-lg mt-auto mb-auto py-1 azul2 titulos"><p class="text-center">¿QUÉ HACEMOS?</p></div>
-        <div class=" sm:text-base text-sm px-16 py-1 sm:ml-2 text-justify">
+    <div class=" justify-center mx-auto w-10/12 px-1">
+        <div class=" sm:text-2xl text-lg mt-auto mb-auto py-1 azul2 text-center titulos">¿QUÉ HACEMOS? ¡Empresas potencialmente exitosas!</div>
+        <br>
+        <div class=" sm:text-base text-sm px-16 py-1 sm:ml-2">
             <p>
-                Ofrecemos servicios integrales a las organizaciones que ayudarán a fortalecer tu
-                posicionamiento de marca y nombre.
-                AYUDAMOS A CERTIFICAR TU ORGANIZACIÓN A TRAVÉS DE ESTÁNDARES DE CALIDAD.
+                Contribuimos en la mejora de la competitividad de las empresas y nos dedicamos a velar por la parte más importante de una organización, el recurso humano, sus empleados. Así logramos hacer un riguroso ejercicio de mejora para fortalecer los procesos empresariales, que permiten que se generen con alto potencial y eficiencia.
+                <br><br>
+                En PREV&CONS generamos relaciones de valor con nuestros clientes apoyados en el conocimiento y la experiencia de Consultoría a la medida, nuestro equipo de profesionales se encargará de estudiar y analizar cuál es la mejor estrategia para lograr una implementación adecuada de los procesos de su empresa.
+                <br><br>
+                TE AYUDAMOS A CERTIFICAR TU ORGANIZACIÓN A TRAVÉS DE LA CERTIFICACIÓN DE ESTÁNDARES DE CALIDAD.
             </p>
         </div>
     </div>
@@ -50,11 +53,11 @@
                     </div>
                     <br><br>
                     <p class=" text-justify sm:text-base text-sm">
-                        Somos una firma de profesionales que acompañamos a nuestros clientes en el desarrollo de sistemas de gestión basados en la mejora continua.
-                        Prestamos nuestros servicios en diseño e implementación de sistemas de gestión de calidad (Normas ISO 9001, ISO 14001, ISO 45001), Gestión Documental, Planes de manejo ambiental, Sistemas de gestión en salud y seguridad en el trabajo, Mediciones higiénicas, Investigación de accidentes y enfermedades laborales, Planes de seguridad vial, Auditorías
-                        internas y externas.
-                        Tenemos experiencia en empresas del sector industrial, agroindustrial, constructor, comercializadoras de servicios, IPS, colegios, entidades sin ánimo de lucro y de economía solidaria.
-
+                        Somos un grupo de profesionales interdisciplinarios de expertos que acompañamos a nuestros clientes en el desarrollo de sistemas de gestión integral basados en la mejora continua de los procesos u operaciones.
+                        <br>
+                        Nuestro portafolio de servicios nos permite prestar soporte y servicios en el diseño e implementación de sistemas de gestión de calidad (Normas ISO 9001, ISO 14001, ISO 45001), Gestión Documental, Planes de manejo ambiental, sistemas de gestión en salud y seguridad en el trabajo, Mediciones higiénicas, Investigación de accidentes y enfermedades laborales, Planes de seguridad vial, Auditorías internas y externas.
+                        <br>
+                        Tenemos más de 5 años de experiencia en empresas del sector industrial, agroindustrial, constructor, comercializadoras de servicios, IPS, colegios, entidades sin ánimo de lucro y de economía solidaria.
                     </p>
                 </div>
             </div>

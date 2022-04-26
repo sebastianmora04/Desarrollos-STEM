@@ -154,7 +154,7 @@
         <div class="items-center justify-between flex px-15 pt-10 py-6  mx-auto w-full">
             <div class=" text-2xl text-cyan font-semibold inline-flex items-center">
                 <a href="{{route('home.index')}}">
-                    <img src="{{URL::asset('img/Logo_Prevycons barra inferior.png')}}" class=" w-2/4"
+                    <img src="{{URL::asset('img/Logo_Prevycons Letra Blanca.png')}}" class=" w-2/4"
                     alt="logo">
                 </a>
             </div>
