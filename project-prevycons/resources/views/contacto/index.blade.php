@@ -60,7 +60,7 @@
                     @csrf <!-- Token para enviar -->
 
                     <div class="mx-8 my-3">
-                        <input type="text" name="name" class="bg-transparent form-input w-11/12 py-2 text-xl rounded-md bordeazul font-black tracking-wide" value="{{old('Descripcion')}}" placeholder="Nombre">
+                        <input type="text" name="name" class="bg-transparent form-input w-11/12 py-2 lg:text-xl md:text-lg rounded-md bordeazul font-black tracking-wide" value="{{old('Descripcion')}}" placeholder="Nombre">
                     </div>
                     @error('name')
                         <br>
@@ -69,7 +69,7 @@
                     @enderror
 
                     <div class="mx-8 my-3">
-                        <input type="email" name="correo" class="bg-transparent form-input w-11/12 py-2 text-xl rounded-md bordeazul font-black tracking-wide" value="{{old('Descripcion')}}" placeholder="Correo Electrónico">
+                        <input type="email" name="correo" class="bg-transparent form-input w-11/12 py-2 lg:text-xl md:text-lg rounded-md bordeazul font-black tracking-wide" value="{{old('Descripcion')}}" placeholder="Correo Electrónico">
                     </div>
                     @error('correo')
                         <br>
@@ -78,7 +78,7 @@
                     @enderror
             
                     <div class="mx-8 my-3">
-                        <input type="text" name="telefono" class="bg-transparent form-input w-11/12 py-2 text-xl rounded-md bordeazul font-black tracking-wide" value="{{old('Descripcion')}}" placeholder="Teléfono">
+                        <input type="text" name="telefono" class="bg-transparent form-input w-11/12 py-2 lg:text-xl md:text-lg rounded-md bordeazul font-black tracking-wide" value="{{old('Descripcion')}}" placeholder="Teléfono">
                     </div>
                     @error('telefono')
                         <br>
@@ -87,7 +87,7 @@
                     @enderror
 
                     <div class="mx-8 my-3">
-                        <input type="text" name="tema" class="bg-transparent form-input w-11/12 py-2 text-xl rounded-md bordeazul font-black tracking-wide" value="{{old('Descripcion')}}" placeholder="Tema">
+                        <input type="text" name="tema" class="bg-transparent form-input w-11/12 py-2 lg:text-xl md:text-lg rounded-md bordeazul font-black tracking-wide" value="{{old('Descripcion')}}" placeholder="Tema">
                     </div>
                     @error('tema')
                         <br>
@@ -96,7 +96,7 @@
                     @enderror
 
                     <div class="mx-8 my-3">
-                        <textarea class="bg-transparent form-input w-11/12 py-2 text-xl rounded-md bordeazul font-black tracking-wide h-auto px-3" name="descripcion" rows="3" placeholder="Descripción">{{old('Descripcion')}}</textarea>
+                        <textarea class="bg-transparent form-input w-11/12 py-2 lg:text-xl md:text-lg rounded-md bordeazul font-black tracking-wide h-auto px-3" name="descripcion" rows="3" placeholder="Descripción">{{old('Descripcion')}}</textarea>
                     </div>
                     @error('descripcion')
                         <br>
@@ -104,7 +104,7 @@
                         <br>
                     @enderror
                 
-                    <button class="w-[100px] mx-8 my-3 py-1 text-xl transition hover:bg-gray-300 hover:scale-110 ease-in-out rounded-xl font-semibold text-orange-500 border-2 border-gray-600" type="submit">
+                    <button class="w-[100px] mx-8 my-3 py-1 lg:text-xl md:text-lg transition hover:bg-gray-300 hover:scale-110 ease-in-out rounded-xl font-semibold text-orange-500 border-2 border-gray-600" type="submit">
                         Enviar
                     </button>
                     
@@ -122,10 +122,10 @@
 
                 <div class="flex flex-row">
                     <div class="basis-1/4">
-                        <img class="md:w-32 ml-10" src="{{URL::asset('img/login/Iconos Sitio.png')}}" alt="">
+                        <img class="md:w-32 xl:ml-10" src="{{URL::asset('img/login/Iconos Sitio.png')}}" alt="">
                     </div>
-                    <div class="basis-3/4 my-auto lg:text-base sm:text-lg azul2">
-                        <strong class="titulos lg:text-3xl sm:text-2xl">Nuestra oficina</strong>
+                    <div class="basis-3/4 my-auto lg:text-xl md:text-lg sm:text-base text-sm azul2">
+                        <strong class="titulos xl:text-3xl lg:text-2xl md:text-xl text-lg">Nuestra oficina</strong>
                         <br>
                         <strong class="titulos font-black">Dirección:</strong> Carrera 19 #41-33 Bucaramanga, Santander
                         <br>
@@ -139,10 +139,10 @@
 
                 <div class="flex flex-row">
                     <div class="basis-1/4">
-                        <img class="md:w-32 ml-10" src="{{URL::asset('img/login/Icono Gerente.png')}}" alt="">
+                        <img class="md:w-32 xl:ml-10" src="{{URL::asset('img/login/Icono Gerente.png')}}" alt="">
                     </div>
-                    <div class="basis-3/4 my-auto lg:text-base sm:text-xl text-lg azul2">
-                        <strong class="titulos lg:text-3xl sm:text-2xl">Director general</strong>
+                    <div class="basis-3/4 my-auto lg:text-xl md:text-lg sm:text-base text-sm azul2">
+                        <strong class="titulos xl:text-3xl lg:text-2xl md:text-xl text-lg">Director general</strong>
                         <br>
                         <strong class="titulos font-black">Susana Prada Robayo</strong>
                         <br>

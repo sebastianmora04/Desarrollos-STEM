@@ -25,7 +25,7 @@
     </div>
     <div class="sm:ml-10 sm:mb-5 sm:text-5xl text-3xl text-center">
         <h1>Bienvenidos a Prevycons</h1> 
-        <h1><br></h1>
+        <h1><br class="sm:block hidden"></h1>
     </div>
 </div>
 
@@ -78,13 +78,13 @@
             <button type="button" class="bg-blue-700 sm:w-20 w-10 h-2 " aria-current="false" aria-label="Slide 3" data-carousel-slide-to="4"></button>
         </div>
         <!-- Slider controls -->
-        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+        <button type="button" class="hidden sm:block flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
             <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-12 sm:h-12 bgazulmenu2 group-focus:ring-4 group-focus:ring-white group-focus:ring-cyan-600/70 group-focus:outline-none">
                 <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                 <span class="hidden">Previous</span>
             </span>
         </button>
-        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none ml-20" data-carousel-next>
+        <button type="button" class="hidden sm:block flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none ml-20" data-carousel-next>
             <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-12 sm:h-12 bgazulmenu2 group-focus:ring-4 group-focus:ring-white group-focus:ring-cyan-600/70 group-focus:outline-none">
                 <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 <span class="hidden">Next</span>
@@ -108,14 +108,14 @@
 
 <br><br class="sm:block hidden">
 
-    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-rows-2 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">
+    <div class="grid lg:grid-cols-4 grid-cols-2 grid-rows-2 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">
         @foreach ($servicios as $item)
-        <div class="row-span-2 ">
-            <div class="box-border sm:h-60 p-4 shadow-lg hover:shadow-2xl w-auto rounded-lg text-slate-50 w-11/12 mx-auto bg-gradient-to-t from-[#001559] to-blue-700">
+        <div class="row-span-2">
+            <div class="box-border sm:h-60 h-32 p-4 shadow-lg hover:shadow-2xl w-auto rounded-lg text-slate-50 w-11/12 mx-auto bg-gradient-to-t from-[#001559] to-blue-700 flex sm:items-start items-center">
                 <a href="{{route('servicios.show',$item->id)}}">
                     <div class="sm:text-base text-sm">
-                        <p class="text-center titulos"><strong>{{$item->name}}</strong></p>
-                        <br><p class="sm:text-sm text-xs">{{$item->descripcion}}</p>
+                        <div class="text-center titulos align-middle"><strong>{{$item->name}}</strong></div>
+                        <br class="sm:block hidden"><p class="sm:text-sm text-xs sm:block hidden">{{$item->descripcion}}</p>
                     </div>
                 </a>
             </div> <!-- box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto -->
@@ -139,14 +139,14 @@
 
     <br>
 
-    <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4  h-auto w-11/12 p-4  justify-center mx-auto">
+    <div class="grid lg:grid-cols-4 grid-cols-2 grid-rows-2 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">
         @foreach ($servicios2 as $item)
-        <div class="row-span-2 ">
-            <div class="box-border sm:h-60 p-4 shadow-lg hover:shadow-2xl w-auto rounded-lg text-slate-50 w-11/12 mx-auto bg-gradient-to-t from-[#001559] to-blue-700">
+        <div class="row-span-2">
+            <div class="box-border sm:h-64 h-36 p-4 shadow-lg hover:shadow-2xl w-auto rounded-lg text-slate-50 w-11/12 mx-auto bg-gradient-to-t from-[#001559] to-blue-700 flex sm:items-start items-center">
                 <a href="{{route('servicios.show',$item->id)}}">
                     <div class="sm:text-base text-sm">
-                        <p class="text-center titulos"><strong>{{$item->name}}</strong></p>
-                        <br><p class="sm:text-sm text-xs">{{$item->descripcion}}</p>
+                        <div class="text-center titulos"><strong>{{$item->name}}</strong></div>
+                        <br class="sm:block hidden"><p class="sm:text-sm text-xs sm:block hidden">{{$item->descripcion}}</p>
                     </div>
                 </a>
             </div> <!-- box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto -->

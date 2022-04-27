@@ -29,7 +29,7 @@
     <div class=" justify-center mx-auto w-10/12 px-1">
         <div class=" sm:text-2xl text-lg mt-auto mb-auto py-1 azul2 text-center titulos">¿QUÉ HACEMOS? ¡Empresas potencialmente exitosas!</div>
         <br>
-        <div class=" sm:text-base text-sm px-16 py-1 sm:ml-2">
+        <div class=" sm:text-base text-sm md:px-16 px-1 py-1 sm:ml-2">
             <p>
                 Contribuimos en la mejora de la competitividad de las empresas y nos dedicamos a velar por la parte más importante de una organización, el recurso humano, sus empleados. Así logramos hacer un riguroso ejercicio de mejora para fortalecer los procesos empresariales, que permiten que se generen con alto potencial y eficiencia.
                 <br><br>
@@ -65,9 +65,9 @@
         
         <div class="linea w-5/6"></div>
 
-        <div class="md:px-16 sm:px-8 px-4">
+        <div class="lg:px-16 ">
         
-            <br class="hidden sm:block">
+            <br>
             <div class="sm:flex sm:flex-row sm:px-18 md:px-16 justify-center mx-auto md:px-16 sm:px-8 px-6">
                 <div class="sm:basis-5/12 md:p-2 md:px-2 ">
                     <h1 style="text-align: center" class=" sm:text-xl text-lg flex flex-col  mx-auto h-auto azul2 titulos">VISIÓN</h1>
@@ -107,13 +107,13 @@
     </div>
     <br>
     <div class="grid grid-cols-2 gap-4  h-auto sm:w-2/3 w-full p-4 justify-center mx-auto">
-        <a href="{{route('about.team')}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-3/4 m-auto rounded bg-blue-200">
+        <a href="{{route('about.team')}}" class="box-border lg:h-[124] md:h-[148px] h-[132px] p-4 shadow-lg hover:shadow-2xl w-full m-auto rounded bg-blue-200">
             <div class="sm:text-base text-gray-800 text-sm text-center mx-auto font-semibold">NUESTRO EQUIPO</div>
-            <br><br>
+            <br><br class="hidden sm:block">
             <br class="sm:hidden">
             <h1 class="hover:bg-slate-200 text-gray-800 hover:font-semibold sm:mx-auto sm:w-1/2 sm:text-sm text-xs text-center rounded">SABER MÁS</h1>
         </a>
-        <a href="{{route('about.ptd')}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-3/4 m-auto rounded bg-blue-200">
+        <a href="{{route('about.ptd')}}" class="box-border lg:h-[124] md:h-[148px] h-[132px] p-4 shadow-lg hover:shadow-2xl w-full m-auto rounded bg-blue-200">
             <div class="sm:text-base text-gray-800 text-sm text-center mx-auto font-semibold">POLÍTICA DE TRATAMIENTO DE DATOS</div>
             <br>
             <h1 class="hover:bg-slate-200 text-gray-800 hover:font-semibold sm:mx-auto sm:w-1/2 sm:text-sm text-xs text-center rounded">SABER MÁS</h1>

@@ -4,83 +4,100 @@
 
 @section('content')
     <br>
-    <div class="azul1 lg:px-24 md:px-16 sm:px-12  flex flex-col  mx-auto h-auto text-emerald-600 titulos">
-        <div class="ml-10 mt-5 sm:text-base text-sm">
+    
+    <div class="sm:p-4 sm:text-base text-sm">
+        <form class="px-10 py-4 bg-slate-50 rounded-lg" action=""><!-- bg-gray-800 -->
+            <p class="px-0 py-2 sm:text-lg font-semibold">Filtros</p>
+            <br>
+            <label for="toggle-example" class="flex relative items-center mb-4 cursor-pointer">
+                <input type="checkbox" id="toggle-example" class="sr-only">
+                <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
+                <span class="ml-3 font-medium">Disponible</span>
+            </label>
+
+            <p class="ml-3 font-medium">Nombre</p>
+            <input class="w-full" type="text" name="nombre" placeholder="Ingrese nombre" value="{{old('nombre')}}">
             
-        </div>
-        <div class="ml-10 mb-5 sm:text-5xl text-3xl">
-            <h1>Catálogo </h1> 
-            <h1></h1>
-        </div>
+            <br><br>
+
+            <p class="ml-3 font-medium">Sectores</p>
+            <select name="sector" class="w-full" id="">
+                <option value=""></option>
+                <option value="">Industrial</option>
+                <option value="">Médico</option>
+                <option value="">Manufactura</option>
+                <option value="">Comercial</option>
+            </select>
+
+            <br><br>
+
+            <p class="ml-3 font-medium">Categorías</p>
+            <select name="tipo" class=" w-full form-control mr-sm-2 rounded font-medium text-gray-900 dark:text-gray-600" id="exampleFormControlSelect1">
+                <option value="{{old('tipo')}}"></option>
+                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION MANOS">Protección manos</option>
+                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION CABEZA">Protección cabeza</option>
+                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION RESPIRATORIA">Protección respiratoria</option>
+                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION CORPORAL">Protección corporal</option>
+                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION VISUAL">Protección visual</option>
+                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION AUDITIVA">Protección auditiva</option>
+                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="TRABAJO ">Trabajo seguro en alturas</option>
+            </select>
+
+            <br><br>
+
+            <button class="ml-2 px-2 py-1 transition  hover:border-gray-500 hover:scale-105 ease-in-out rounded font-semibold border-2 border-gray-300" type="submit">FILTRAR</button>
+            
+        </form>
     </div>
 
-    <br><br>
-    
-    <div>
-        <p></p>
+    <div class="flex flex-col  mx-auto h-auto azul2 titulos">
+        <div class="ml-10 mt-5">
+            <br>
+        </div>
+        <div class="sm:ml-10 sm:mb-5 sm:text-5xl text-3xl text-center">
+            <h1>CATÁLOGO</h1> 
+        </div>
     </div>
+    
     <br>
-    <div class="flex flex-col  mx-auto h-auto sm:text-2xl text-lg underline underline-offset-8 text-gray-500">
+
+    <div class="flex flex-col  mx-auto h-auto sm:text-xl text-lg font-semibold text-slate-500">
         <div class="m-auto text-center sm:px-0 px-2">
-            ELEMENTOS DE PROTECCIÓN PERSONAL - EPP
+            Elementos de protección personal - EPP
         </div>
     </div>
     <br>
-    <div class="sm:flex sm:flex-row bg-gray-200">
-        <div class="sm:basis-1/3 sm:p-4 sm:text-base text-sm">
-            <form class="px-10 py-4 bg-slate-50 rounded-lg" action=""><!-- bg-gray-800 -->
-                <p class="px-0 py-2 sm:text-lg font-semibold">Filtros</p>
-                <br>
-                <label for="toggle-example" class="flex relative items-center mb-4 cursor-pointer">
-                    <input type="checkbox" id="toggle-example" class="sr-only">
-                    <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
-                    <span class="ml-3 font-medium">Disponible</span>
-                </label>
-
-                <p class="ml-3 font-medium">Nombre</p>
-                <input class="w-full" type="text" name="nombre" placeholder="Ingrese nombre" value="{{old('nombre')}}">
-                
-                <br><br>
     
-                <p class="ml-3 font-medium">Sectores</p>
-                <select name="sector" class="w-full" id="">
-                    <option value=""></option>
-                    <option value="">Industrial</option>
-                    <option value="">Médico</option>
-                    <option value="">Manufactura</option>
-                    <option value="">Comercial</option>
-                </select>
+    
 
-                <br><br>
+    <div class="sm:flex sm:flex-row bg-gray-200">
 
-                <p class="ml-3 font-medium">Categorías</p>
-                <select name="tipo" class=" w-full form-control mr-sm-2 rounded font-medium text-gray-900 dark:text-gray-600" id="exampleFormControlSelect1">
-                    <option value="{{old('tipo')}}"></option>
-                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION MANOS">Protección manos</option>
-                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION CABEZA">Protección cabeza</option>
-                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION RESPIRATORIA">Protección respiratoria</option>
-                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION CORPORAL">Protección corporal</option>
-                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION VISUAL">Protección visual</option>
-                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION AUDITIVA">Protección auditiva</option>
-                    <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="TRABAJO ">Trabajo seguro en alturas</option>
-                </select>
-
-                <br><br>
-
-                <button class="ml-2 px-2 py-1 transition  hover:border-gray-500 hover:scale-105 ease-in-out rounded font-semibold border-2 border-gray-300" type="submit">FILTRAR</button>
-                
-            </form>
-        </div>
-
-        <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-4  h-auto w-11/12 p-4 justify-center mx-auto">
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4  h-auto w-11/12 p-12 justify-center mx-auto">
             @foreach ($servicios2 as $item)
+                
+            <div class=" mx-auto max-w-sm rounded-lg shadow-md w-full bg-gradient-to-t from-[#254ecc] to-[#001559]">
+                <a href="{{route('catalogo.show',$item->id)}}">
+                    <img class="w-full" src="img/productos/{{$item->id}}.png" alt="" />
+                </a>
+                <div class="p-5">
+        
+                    <p class="mb-3 font-normal text-slate-100 text-xs">{{$item->categoria}}</p>
+                    <a href="{{route('catalogo.show',$item->id)}}">
+                        <h5 class="mb-2 text-xl font-bold tracking-tight text-white">{{$item->name}}</h5>
+                    </a>
+                    
+                </div>
+            </div>
+            
+            
                 <!-- Prueba -->
-                <div class="max-w-sm bg-slate-50 rounded-lg shadow-md  dark:border-gray-700">
-                    <p class="p-2 text-xs justify-left text-gray-600">{{$item->categoria}}</p>
+                <!-- <div class="max-w-sm bg-slate-50 rounded-lg shadow-md  dark:border-gray-700">
+                    
                     <a href="{{route('catalogo.show',$item->id)}}" class="w-full">
                         <img class="py-2 px-8 rounded-t-lg w-full" src="img/productos/{{$item->id}}.png" alt="product image" />
                     </a>
                     <div class="px-5 pb-5">
+                        <p class="p-2 text-xs justify-left text-gray-600">{{$item->categoria}}</p>
                         <a href="{{route('catalogo.show',$item->id)}}">
                             <h5 class="md:text-lg font-semibold tracking-tight">{{$item->name}}</h5>
                         </a>
@@ -97,7 +114,7 @@
                             <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Normal -->
                 <!--<a href="{{route('catalogo.show',$item->id)}}" class="box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto">
