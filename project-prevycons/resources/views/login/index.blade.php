@@ -20,6 +20,7 @@
         <br>
     </div>
     <div class="mb-5 text-4xl sm:text-6xl text-center">
+        <img src="{{URL::asset('img/Logo prevycons.png')}}" class="w-1/4 mx-auto" alt="">
         <h1 class="titulos">Prev&cons</h1> 
         <h2 class="font-black text-xl sm:text-[28px]">Prevención y Consultoría</h2>
     </div>

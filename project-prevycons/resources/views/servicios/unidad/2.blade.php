@@ -2,51 +2,90 @@
 
 @section('title','Prevycons - Servicio '. $servicios->name)
 
+@section('head')
+    <style>    
+    .volver{
+        color: rgb(0, 21, 89);
+        border-color: rgb(0, 21, 89)
+    }
+    </style>
+@endsection
+
 @section('content')
-    <a class="px-16" href="{{route('servicios.index')}}">Regresar</a>
-    <img src="{{URL::asset($servicios->img)}}" class="mx-auto w-1/12 justify-center" alt="logo-img">
-    <h2 class="mx-auto text-center"><strong>{{$servicios->name}}</strong></h2>
+
+    <img src="{{URL::asset($servicios->img)}}" class="mx-auto w-1/6 justify-center" alt="logo-img">
+    
     <br>
-    <p class="px-8">{{$servicios->descripcion}}</p>
+
+    <h2 class="mx-auto text-center azul2 titulos text-3xl px-[350px]"><strong>{{$servicios->name}}</strong></h2>
+    
     <br>
-    <p class="px-8">{{$servicios->contenido}}</p>
-    <br>
-    <div>
-        <ul class="px-16">
-            <li><strong>Acciones a desarrollar</strong></li>
-            <li> - Sensibilización a empresas en SG- SST</li>
-            <li> - Acciones  correctivas y preventivas</li>
-            <li> - COPASST- Conformación y funciones</li>
-            <li> - Comité de convivencia laboral - Conformación y funciones</li>
-            <li> - Investigación de accidentes e incidentes de trabajo</li>
-        </ul>
+
+    <div class="flex flex-row px-28 font-semibold" style="color: rgb(134, 133, 133)">
+
+        <div class="basis-1/2 w-11/12 px-4">
+            <p class="">{{$servicios->descripcion}}</p>
+            <br>
+            <p class="">{{$servicios->contenido}}</p>
+            <br>
+            <p class="">
+            </p>
+
+            <p class="titulos text-lg ">Entregables</p>
+            <ul class="my-2 ">
+                <li> - Identificación de peligros</li>
+                <li> - Documentación del sistema</li>
+                <li> - Sensibilización a empresas en SG- SST</li>
+                <li> - COPASST- Conformación y funciones</li>
+                <li> - Comité de convivencia laboral – Conformación y funciones</li>
+                <li> - Investigación de accidentes e incidentes de trabajo</li>
+                <li> - Conformación y capacitación a brigadas de emergencia</li>
+                <li> - Auditoría y plan de mejora</li>
+            </ul>
+
+        </div>
+    
+        <div class="basis-1/2 w-11/12 px-2">
+            <p class="titulos text-lg">Aplicación del sistema de gestión</p>
+            <ul class="my-2">
+                <li> - Pautas básicas orden y aseo</li>
+                <li> - Uso adecuado de EPP</li>
+                <li> - Trabajo en alturas</li>
+                <li> - Gestión del riesgo</li>
+                <li> - Preparación y atención de emergencias. Plan de emergencias, generalidades y requisitos legales</li>
+                <li> - Qué son y qué hacer en Primeros auxilios</li>
+                <li> - Brigada contra incendio sin práctica</li>
+                <li> - Uso y almacenamiento de Sustancias químicas </li>
+                <li> - Manejo defensivo y Seguridad vial</li>
+                <li> - Seguridad para peatones</li>
+                <li> - Manejo y uso seguro de herramientas manuales</li>
+            </ul>
+
+            <br>
+            
+            <p class="titulos text-lg">Sistema de vigilancia epidemiológica</p>
+            <ul class="my-2">
+                <li> - Levantamiento y desplazamiento manual de cargas</li>
+                <li> - Cuidado de manos</li>
+                <li> - Riesgo cardiovascular</li>
+                <li> - Autocuidado y síndrome metabólico</li>
+                <li> - Riesgo psicosocial</li>
+                <li> - Autocuidado y espalda sana, higiene postural</li>
+                <li> - Sensibilización de NO al consumo de Alcohol ni drogas</li>
+                <li> - Capacitación de pausas saludables</li>
+            </ul>
+
+            <img src="" class="" alt="">
+
+        </div>
+
     </div>
+
     <br>
-    <div class="grid grid-cols-2 gap-4  h-auto w-11/12 p-4  justify-center mx-auto">
-        <ul>
-            <li><strong>Aplicación del sistema de gestión</strong></li>
-            <li> - Pautas básicas orden y aseo</li>
-            <li> - Uso adecuado de EPP</li>
-            <li> - Trabajo en alturas</li>
-            <li> - Gestión del riesgo</li>
-            <li> - Preparación y atención de emergencias. Plan de emergencias, generalidades y requisitos legales</li>
-            <li> - Qué son y qué hacer en Primeros auxilios</li>
-            <li> - Brigada contra incendio sin práctica</li>
-            <li> - Uso y almacenamiento de Sustancias químicas </li>
-            <li> - Manejo defensivo y Seguridad vial</li>
-            <li> - Seguridad para peatones</li>
-            <li> - Manejo y uso seguro de herramientas manuales</li>
-        </ul>
-        <ul>
-            <li><strong>Sistema de Vigilancia Epidemiológica</strong></li>
-            <li> - Levantamiento y desplazamiento manual de cargas</li>
-            <li> - Cuidado de manos</li>
-            <li> - Riesgo cardiovascular</li>
-            <li> - Autocuidado y síndrome metabólico</li>
-            <li> - Riesgo psicosocial</li>
-            <li> - Autocuidado y espalda sana, higiene postural</li>
-            <li> - Sensibilización de NO al consumo de Alcohol ni drogas</li>
-            <li> - Capacitación de pausas saludables</li>
-        </ul>
-    </div>
+
+    <a href="{{route('servicios.index')}}"><button class="mx-32 px-4 py-1 transition hover:scale-105 ease-in-out rounded-full font-black border volver sm:text-xl text-lg " type="submit">Volver</button></a>
+
+    <br><br>
+
+
 @endsection

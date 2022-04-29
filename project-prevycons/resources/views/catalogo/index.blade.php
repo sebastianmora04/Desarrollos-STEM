@@ -2,50 +2,65 @@
 
 @section('title','Prevycons - Catálogo')
 
+@section('head')
+
+    <style>
+        .bgfiltro{
+            background-color: #d3dce0;
+            border-color: transparent;
+        }
+    </style>
+
+@endsection
+
 @section('content')
     <br>
     
-    <div class="sm:p-4 sm:text-base text-sm">
-        <form class="px-10 py-4 bg-slate-50 rounded-lg" action=""><!-- bg-gray-800 -->
-            <p class="px-0 py-2 sm:text-lg font-semibold">Filtros</p>
-            <br>
-            <label for="toggle-example" class="flex relative items-center mb-4 cursor-pointer">
+    <div class="sm:p-4 sm:text-base text-sm ">
+        <form class="px-10 py-4 bg-slate-50 rounded-lg bg-inherit" action=""><!-- bg-gray-800 -->
+            
+            <label for="toggle-example" class="flex relative items-center mb-4 cursor-pointer hidden">
                 <input type="checkbox" id="toggle-example" class="sr-only">
                 <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
                 <span class="ml-3 font-medium">Disponible</span>
             </label>
 
-            <p class="ml-3 font-medium">Nombre</p>
-            <input class="w-full" type="text" name="nombre" placeholder="Ingrese nombre" value="{{old('nombre')}}">
+            <div class="flex flex-row">
             
-            <br><br>
+                <div class="basis-1/6">
+                    <select name="sector" class="w-11/12 h-9 border bgfiltro font-bold azul2 rounded-lg" id="">
+                        <option class="ml-3 text-sm font-medium titulos azul2">Sectores</option>
+                        <option class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="">Industrial</option>
+                        <option class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="">Médico</option>
+                        <option class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="">Manufactura</option>
+                        <option class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="">Comercial</option>
+                    </select>
+                </div>
+                
+                <div class="basis-7/12">
+                    <input style="background-color: #d3dce0; border-color:transparent" class="w-11/12 h-9 lg:ml-4 md:ml-3 ml-1 bgfiltro rounded-lg font-bold" type="text" name="nombre" placeholder="Buscar producto" value="{{old('nombre')}}">
+                </div>
 
-            <p class="ml-3 font-medium">Sectores</p>
-            <select name="sector" class="w-full" id="">
-                <option value=""></option>
-                <option value="">Industrial</option>
-                <option value="">Médico</option>
-                <option value="">Manufactura</option>
-                <option value="">Comercial</option>
-            </select>
+                <div class="basis-1/6 azul2">
+                    <select name="tipo" class="w-11/12 h-9 form-control rounded-lg bgfiltro font-bold azul2" id="exampleFormControlSelect1">
+                        <option  class="ml-3 text-sm font-medium titulos azul2" value="">Categoría</option>
+                        <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION MANOS">Protección manos</option>
+                        <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION CABEZA">Protección cabeza</option>
+                        <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION RESPIRATORIA">Protección respiratoria</option>
+                        <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION CORPORAL">Protección corporal</option>
+                        <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION VISUAL">Protección visual</option>
+                        <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION AUDITIVA">Protección auditiva</option>
+                        <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="TRABAJO ">Trabajo seguro en alturas</option>
+                    </select>
+                </div>
 
-            <br><br>
+                <div class="basis-1/12">
+                    <button class="ml-2 px-2 py-1 transition hover:border-gray-500 hover:scale-105 ease-in-out rounded font-bold border-2 border-gray-300 azul2" type="submit">FILTRAR</button>
+                </div>
 
-            <p class="ml-3 font-medium">Categorías</p>
-            <select name="tipo" class=" w-full form-control mr-sm-2 rounded font-medium text-gray-900 dark:text-gray-600" id="exampleFormControlSelect1">
-                <option value="{{old('tipo')}}"></option>
-                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION MANOS">Protección manos</option>
-                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION CABEZA">Protección cabeza</option>
-                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION RESPIRATORIA">Protección respiratoria</option>
-                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION CORPORAL">Protección corporal</option>
-                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION VISUAL">Protección visual</option>
-                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION AUDITIVA">Protección auditiva</option>
-                <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="TRABAJO ">Trabajo seguro en alturas</option>
-            </select>
+            </div>
 
-            <br><br>
-
-            <button class="ml-2 px-2 py-1 transition  hover:border-gray-500 hover:scale-105 ease-in-out rounded font-semibold border-2 border-gray-300" type="submit">FILTRAR</button>
+            
             
         </form>
     </div>
