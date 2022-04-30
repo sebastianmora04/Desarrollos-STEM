@@ -1,4 +1,4 @@
-@extends('layouts.plantilla')
+@extends('layouts.plantilla2')
 
 @section('title','Prevycons - Blog '. $blog->name)
 
@@ -6,8 +6,10 @@
     <strong>{{$blog->name}}</strong>
     <p class="text-slate-400">{{$blog->categoria}}</p>
     <br>
-    <br>
-    <p>{{$blog->informacion}}</p>
-    <br>
     <a href="{{route('blog.edit', $blog)}}">Editar post</a>
+    <br>
+
+    <div>
+        <p>{{$blog->informacion}}</p>
+    </div>
 @endsection

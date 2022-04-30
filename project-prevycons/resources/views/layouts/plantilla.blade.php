@@ -134,7 +134,7 @@
 </head>
 <body class="bg-slate-100 text-gray-500">
     <!-- Header -->
-    <header class="hidden lg:block container-fluid sticky top-0 px-14 azul1 titulos">
+    <header class="hidden lg:block container-fluid sticky top-0 px-14 azul1">
         <div class="items-center justify-between flex px-15 pt-10 py-6  mx-auto w-full">
             <div class=" text-2xl text-cyan font-semibold inline-flex items-center">
                 <a href="{{route('home.index')}}">
@@ -144,9 +144,9 @@
             </div>
             <div class="flex">
                 <ul class="flex nav">
-                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded"><a class="font-black" href="{{route('home.index')}}">Inicio</a></li>
+                    <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded"><a class="font-black titulos" href="{{route('home.index')}}">Inicio</a></li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
-                        <a class="font-black" href="{{route('about.index')}}">Conózcanos</a>
+                        <a class="font-black titulos" href="{{route('about.index')}}">Conózcanos</a>
                         <br>
                         <ul class="shadow-xl filtro1 text-sm px-auto bg-transparent text-slate-50 rounded border-1 border-orange-600">
                             <li class="invisible"><br> space <br></li>
@@ -156,16 +156,16 @@
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
-                        <a class="font-black" href="{{route('servicios.index')}}">Servicios</a>
+                        <a class="font-black titulos" href="{{route('servicios.index')}}">Servicios</a>
                         <ul class="filtro1 px-auto bg-transparent text-slate-50 rounded text-sm shadow-xl">
                             <li class="invisible"><br> space <br></li>
-                            <li class="text-sm font-semibold px-1 border-2 bgazulmenu">Sistemas de gestión</li>
+                            <li class="text-sm font-semibold px-1 border-2 bgazulmenu titulos">Sistemas de gestión</li>
                             <a class="" href="{{route('servicios.show',1)}}"><li class="bgazulmenu p-2 text-xs border-2">Gestión de calidad</li></a>
                             <a class="" href="{{route('servicios.show',2)}}"><li class="bgazulmenu p-2 text-xs border-2">Gestión de seguridad y salud en el trabajo</li></a>
                             <a class="" href="{{route('servicios.show',3)}}"><li class="bgazulmenu p-2 text-xs border-2">Gestión documental</li></a>
                             <a class="" href="{{route('servicios.show',4)}}"><li class="bgazulmenu p-2 text-xs border-2">Gestión ambiental</li></a>
 
-                            <li class="text-sm font-semibold px-1 border-2 bgazulmenu">Otros servicios</li>
+                            <li class="text-sm font-semibold px-1 border-2 bgazulmenu titulos">Otros servicios</li>
                             <a class="" href="{{route('servicios.show',5)}}"><li class="bgazulmenu p-2 text-xs border-2">Plan estratégico de seguridad vial</li></a>
                             <a class="" href="{{route('servicios.show',6)}}"><li class="bgazulmenu p-2 text-xs border-2">Auditorías</li></a>
                             <a class="" href="{{route('servicios.show',7)}}"><li class="bgazulmenu p-2 text-xs border-2">Capacitaciones para SG SST</li></a>
@@ -173,7 +173,7 @@
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
-                        <a class="font-black" href="{{route('blog.index')}}">Blog</a>
+                        <a class="font-black titulos" href="{{route('blog.index')}}">Blog</a>
                         <ul class="shadow-xl filtro2 px-auto bg-transparent text-slate-50 rounded">
                             <li class="invisible"> space </li>
                             <li class="invisible text-xs"> space </li>
@@ -184,7 +184,7 @@
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
-                        <a class="font-black" href="{{route('novedades.index')}}">Novedades</a>
+                        <a class="font-black titulos" href="{{route('novedades.index')}}">Novedades</a>
                         <br>
                         <ul class="shadow-xl filtro2 text-sm px-auto bg-transparent text-slate-50 rounded border-1 border-orange-600">
                             <li class="invisible "><br> space <br></li>
@@ -194,7 +194,7 @@
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
-                        <a class="font-black" href="{{route('catalogo.index')}}">Catálogo</a>
+                        <a class="font-black titulos" href="{{route('catalogo.index')}}">Catálogo</a>
                         <ul class="shadow-xl filtro22 text-sm px-auto bg-transparent text-slate-50 rounded">
                             <li class="invisible"><br> <br></li>
                             <li class="bgazulmenu p-2 text-xs">Sectores
@@ -221,10 +221,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="ml-5 px-2 py-1 transition  hover:border-gray-500 hover:scale-105 ease-in-out rounded font-semibold text-orange-600 border-2 border-gray-300"><a href="{{route('hire.index')}}">Contáctanos</a></li>
+                    <li class="ml-5 px-2 py-1 transition  hover:border-gray-500 hover:scale-105 ease-in-out rounded font-semibold text-orange-600 border-2 border-gray-300 titulos"><a href="{{route('hire.index')}}">Contáctanos</a></li>
 
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">
-                        <a class="font-black" href="{{route('login.index')}}">
+                        <a class="font-black titulos" href="{{route('login.index')}}">
                             Ingresar
                         </a>
                         <br>

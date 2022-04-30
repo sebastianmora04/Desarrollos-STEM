@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Blog;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,8 +15,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-        $this->call(ServicioSeeder::class);
-        $this->call(ProductoSeeder::class);
+        User::create([
+            'name' => 'Sebastian',
+            'lastname'=>'Mora',
+            'email' => 'sebasdark@outlook.es',
+            'password' => bcrypt('admin123'),
+            'is_admin' => true,
+            'is_staff' => true,
+        ]);
+
+        Blog::factory()->count(50)->create();
     }
 }

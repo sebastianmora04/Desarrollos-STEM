@@ -16,6 +16,39 @@ class Blog extends Model
     public function setNameAttribute($value){
         $this->attributes['name'] = strtolower($value);
     }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    /**
+     * Get the comments for the blog post.
+     */
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
+    /**
+     * Return the sluggable configuration array for this model.
+     *
+     * @return array
+     */
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'title',
+                'onUpdate' => true
+            ]
+        ];
+    }
+
+    public function getGetLimitBodyAttribute()
+    {
+        return substr($this->body, 0, 140) . '...';
+    }
     //protected function name(): Attribute
    // {
        // return new Attribute(
