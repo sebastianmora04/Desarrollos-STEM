@@ -14,4 +14,12 @@ class loginController extends Controller
     {
         return view('login.registro');
     }
+    public function success()
+    {
+        return view('login.success');
+    }
+    public function recordar()
+    {
+        return view('login.recordar');
+    }
 }
