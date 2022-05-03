@@ -15,9 +15,8 @@
 
 @section('content')
     
-    <br>
     <a href="{{route('blog.edit', $blog)}}">Editar post</a>
-    <br>
+    <br><br><br>
 
     <div class="grid grid-cols-3 px-10">
         <div class="col-span-2 w-11/12 mx-auto">
