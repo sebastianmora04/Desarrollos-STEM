@@ -45,9 +45,9 @@ class Blog extends Model
         ];
     }
 
-    public function getGetLimitBodyAttribute()
+    public function getGetLimitInformacionAttribute()
     {
-        return substr($this->body, 0, 140) . '...';
+        return substr($this->informacion, 0, 140) . '...';
     }
     //protected function name(): Attribute
    // {

@@ -11,6 +11,8 @@ use App\Http\Controllers\loginController;
 use App\Http\Controllers\novedadesController;
 use App\Http\Controllers\serviciosController;
 use App\Http\Controllers\testController;
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,9 +44,9 @@ use App\Http\Controllers\testController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', homeController::class)->name('/');
 Route::controller(homeController::class)->group(function(){
     Route::get('home', 'index')->name('home.index');
+    Route::get('/','index')->name('/');
 });
 
 Route::controller(aboutusController::class)->group(function(){
@@ -90,3 +92,5 @@ Route::controller(loginController::class)->group(function(){
     Route::get('success', 'success')->name('login.success');
     Route::get('recordar', 'recordar')->name('login.recordar');
 });
+
+Auth::routes();
