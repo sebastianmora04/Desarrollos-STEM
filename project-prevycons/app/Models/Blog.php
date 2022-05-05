@@ -10,11 +10,11 @@ class Blog extends Model
 {
     use HasFactory;
 
-    public function getNameAttribute($value){
+    public function getTituloAttribute($value){
         return ucwords($value);
     }
-    public function setNameAttribute($value){
-        $this->attributes['name'] = strtolower($value);
+    public function setTituloAttribute($value){
+        $this->attributes['titulo'] = strtolower($value);
     }
 
     public function user()

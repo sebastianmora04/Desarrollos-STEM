@@ -76,8 +76,14 @@ Route::controller(catalogoController::class)->group(function(){
     Route::get('catalogo/{producto}', 'show')->name('catalogo.show');
 });
 
-Route::any('novedades', [novedadesController::class, 'index'])->name('novedades.index');
-
+Route::controller(novedadesController::class)->group(function(){
+    Route::get('novedades', 'index')->name('novedades.index');
+    Route::get('novedades/create','create')->name('novedades.create');
+    Route::post('novedades', 'store')->name('novedades.store');
+    Route::get('novedades/{novedades}', 'show')->name('novedades.show'); /* Ruta con variable opcional */
+    Route::get('novedades/{novedades}/edit','edit')->name('novedades.edit');
+    Route::put('novedades/{novedades}','update')->name('novedades.update');
+});
 
 Route::any('test', testController::class)->name('test');
 
@@ -93,4 +99,4 @@ Route::controller(loginController::class)->group(function(){
     Route::get('recordar', 'recordar')->name('login.recordar');
 });
 
-Auth::routes();
+//Auth::routes();

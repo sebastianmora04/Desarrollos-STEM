@@ -1,6 +1,6 @@
 @extends('layouts.plantilla2')
 
-@section('title','Prevycons - Blog')
+@section('title','Prevycons - Novedades')
 
 @section('head')
     <style>
@@ -10,46 +10,79 @@
         padding: 0;
         margin: 20px auto 0 auto;
         }
+        .bgfiltro{
+            background-color: transparent;
+            border-color: #d3dce0;
+        }
     </style>
 @endsection
 
 @section('content')
-    <br>
-    <a href="{{route('blog.create')}}" class="">
-        <button class="ml-5 px-2 py-1 transition  hover:border-gray-500 hover:scale-105 ease-in-out rounded font-semibold border-2 border-gray-300">Crear post</button>
-    </a>
-    <br>
+    <div class="linea"></div>
 
-    <br>
+    <div class="sm:p-4 sm:text-base text-sm ">
+        <form class="px-10 py-4 bg-slate-50 rounded-lg bg-inherit" action=""><!-- bg-gray-800 -->
+            
+            <label for="toggle-example" class="flex relative items-center mb-4 cursor-pointer hidden">
+                <input type="checkbox" id="toggle-example" class="sr-only">
+                <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
+                <span class="ml-3 font-medium">Disponible</span>
+            </label>
+
+            <div class="flex flex-row">
+            
+                <div class="basis-3/12">
+                    <select name="tipo" class="w-11/12 h-9 border bgfiltro font-bold text-white rounded-lg focus:border-white" id="">
+                        <option class="ml-3 text-sm font-medium titulos azul2" value="">Categoría</option>
+                        <option class="ml-3 text-sm font-medium azul2" value="Noticias">Noticias</option>
+                        <option class="ml-3 text-sm font-medium azul2" value="Normas">Normas</option>
+                        <option class="ml-3 text-sm font-medium azul2" value="Decretos">Decretos</option>
+                    </select>
+                </div>
+                
+                <div class="basis-8/12">
+                    <input style="background-color: transparent; border-color:#d3dce0" class="w-11/12 h-9 lg:ml-4 md:ml-3 ml-1 bgfiltro rounded-lg font-bold" type="text" name="nombre" placeholder="Buscar novedad" value="{{old('nombre')}}">
+                </div>
+
+                <div class="basis-1/12">
+                    <button class="ml-2 px-2 py-1 transition hover:border-gray-500 hover:scale-105 ease-in-out rounded font-bold border-2 border-slate-100 hover:border-white text-white" type="submit">FILTRAR</button>
+                </div>
+
+            </div>
+
+            
+            
+        </form>
+    </div>
 
     <div class="linea"></div>
+
     <div class="lg:px-24 md:px-16 sm:px-12 flex flex-col mx-auto h-auto text-slate-50 titulos">
         <div class="ml-10 mt-5">
             <br>
         </div>
         <div class="ml-10 mb-5 sm:text-5xl text-3xl">
-            <h1>Blog </h1> 
+            <h1>Novedades </h1> 
             <h1></h1>
         </div>
     </div>
     <div class="linea"></div>
-
     <br>
+
     <div class="sm:grid md:grid-cols-3 sm:grid-cols-2 gap-4 h-auto w-11/12 p-4 justify-center mx-auto">
-    @foreach ($blogs as $item)
-        <a href="{{route('blog.show',$item->id)}}" class="flex flex-col items-center rounded border border-[#7398fd] shadow-md md:max-w-xl bg-gradient-to-t from-[#254ecc] to-[#001559]">
+        
+        @foreach ($novedades as $item)   
+        <a href="{{route('novedades.show',$item->id)}}" class="flex flex-col items-center rounded border border-[#7398fd] shadow-md md:max-w-xl bg-gradient-to-t from-[#254ecc] to-[#001559]">
             <img class="object-cover w-full rounded-t-lg md:rounded-none md:rounded-l-lg" src="/docs/images/blog/image-4.jpg" alt="">
             <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="mb-2 lg:text-2xl md:text-[22px] text-xl font-bold tracking-tight ">{{$item->titulo}}</h5>
-                <p class="mb-3 font-normal md:text-base text-sm">{{$item->get_limit_informacion}}</p>
+                <h5 class="mb-2 lg:text-2xl md:text-[22px] text-xl font-bold tracking-tight">{{$item->titulo}}</h5>
+                <p class="mb-3 font-normal md:text-base text-sm">{{$item->informacion}}</p>
             </div>
         </a>
         <br class="sm:hidden block">
-    @endforeach
+        @endforeach
+        
     </div>
-
-    {{$blogs->links()}}
-
 
     <div class="linea"></div>
 

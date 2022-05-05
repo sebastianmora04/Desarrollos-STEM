@@ -130,11 +130,17 @@
         .footer1{
             background-color: rgb(0, 21, 89);
         }
+        .capadelante{
+            z-index: 1;
+        }
+        #slide{
+            display: inline-block;
+        }
     </style>
 </head>
 <body class="bg-slate-100 text-gray-500">
     <!-- Header -->
-    <header class="hidden lg:block container-fluid sticky top-0 px-14 azul1">
+    <header class="hidden lg:block container-fluid sticky top-0 px-14 azul1 capadelante z-50">
         <div class="items-center justify-between flex px-15 pt-10 py-6  mx-auto w-full">
             <div class=" text-2xl text-cyan font-semibold inline-flex items-center">
                 <a href="{{route('home.index')}}">
@@ -188,9 +194,9 @@
                         <br>
                         <ul class="shadow-xl filtro2 text-sm px-auto bg-transparent text-slate-50 rounded border-1 border-orange-600">
                             <li class="invisible "><br> space <br></li>
-                            <a class="" href="{{route('about.index')}}"><li class="bgazulmenu p-2 text-xs border-2">Noticias</li></a>
-                            <a class="" href="{{route('about.team')}}"><li class="bgazulmenu p-2 text-xs border">Normas</li></a>
-                            <a class="" href="{{route('about.ptd')}}"><li class="bgazulmenu p-2 text-xs border-2">Decretos</li></a>
+                            <a class="" href="{{route('novedades.index')}}?tipo=Noticias&nombre="><li class="bgazulmenu p-2 text-xs border-2">Noticias</li></a>
+                            <a class="" href="{{route('novedades.index')}}?tipo=Normas&nombre="><li class="bgazulmenu p-2 text-xs border">Normas</li></a>
+                            <a class="" href="{{route('novedades.index')}}?tipo=Decretos&nombre="><li class="bgazulmenu p-2 text-xs border-2">Decretos</li></a>
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-orange-600 hover:underline-offset-2 hover:underline ease-in-out rounded">

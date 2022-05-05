@@ -18,7 +18,7 @@ class blogController extends Controller
     public function store(StoreBlog $request){
 
         $blog = New Blog();
-        $blog->name=$request->name;
+        $blog->titulo=$request->titulo;
         $blog->informacion=$request->informacion;
         $blog->categoria=$request->categoria;
         
@@ -41,12 +41,12 @@ class blogController extends Controller
     public function update(Request $request,Blog $blog){
 
         $request->validate([
-            'name' => 'required',
+            'titulo' => 'required',
             'informacion' => 'required|min:10',
             'categoria' => 'required'
         ]);
 
-        $blog->name=$request->name;
+        $blog->titulo=$request->titulo;
         $blog->informacion=$request->informacion;
         $blog->categoria=$request->categoria;
         

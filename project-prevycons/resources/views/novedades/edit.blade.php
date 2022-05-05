@@ -1,19 +1,19 @@
 @extends('layouts.plantilla2')
 
-@section('title','Prevycons - Blog Edit')
+@section('title','Prevycons - Edit')
 
 @section('content')
-    <h1>Edit post</h1>
-    <form action="{{route('blog.update',$blog)}}" method="POST" class="text-[#C9C9C9]">
+    <h1>Edit new</h1>
+    <form action="{{route('novedades.update',$novedades)}}" method="POST" class="text-[#C9C9C9]">
 
         @csrf 
 
         @method('PUT')
         
         <label>
-            Name:
+            Titulo:
             <br>
-            <input type="text" class="bg-transparent" name="titulo" value="{{old('titulo',$blog->titulo)}}">
+            <input type="text" class="bg-transparent" name="titulo" value="{{old('titulo',$novedades->titulo)}}">
         </label>
 
         @error('titulo')
@@ -27,7 +27,7 @@
         <label>
             Informacion: 
             <br> 
-            <textarea class="bg-transparent" name="informacion" rows="3">{{old('informacion',$blog->informacion)}}</textarea>
+            <textarea class="bg-transparent" name="informacion" rows="3">{{old('informacion',$novedades->informacion)}}</textarea>
         </label>
 
         @error('informacion')
@@ -41,7 +41,7 @@
         <label>
             Categoría: 
             <br> 
-            <input type="text" class="bg-transparent" name="categoria" value="{{old('categoria',$blog->categoria)}}">
+            <input type="text" class="bg-transparent" name="categoria" value="{{old('categoria',$novedades->categoria)}}">
         </label>
 
         @error('categoria')

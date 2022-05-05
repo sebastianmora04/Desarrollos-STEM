@@ -204,9 +204,9 @@
                         <br>
                         <ul class="shadow-xl filtro2 text-sm px-auto bg-transparent text-blue-700 rounded border-1 border-orange-600">
                             <li class="invisible "><br> space <br></li>
-                            <a class="" href="{{route('about.index')}}"><li class="bgslatemenu p-2 text-xs border-2">Noticias</li></a>
-                            <a class="" href="{{route('about.team')}}"><li class="bgslatemenu p-2 text-xs border">Normas</li></a>
-                            <a class="" href="{{route('about.ptd')}}"><li class="bgslatemenu p-2 text-xs border-2">Decretos</li></a>
+                            <a class="" href="{{route('novedades.index')}}?tipo=Noticias&nombre="><li class="bgslatemenu p-2 text-xs border-2">Noticias</li></a>
+                            <a class="" href="{{route('novedades.index')}}?tipo=Normas&nombre="><li class="bgslatemenu p-2 text-xs border">Normas</li></a>
+                            <a class="" href="{{route('novedades.index')}}?tipo=Decretos&nombre="><li class="bgslatemenu p-2 text-xs border-2">Decretos</li></a>
                         </ul>
                     </li>
                     <li class="ml-5 px-1 py-1 transition  hover:scale-105 hover:text-white hover:underline-offset-2 hover:underline ease-in-out rounded">

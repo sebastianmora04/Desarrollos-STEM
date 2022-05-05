@@ -25,7 +25,7 @@ class StoreBlog extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
+            'titulo' => 'required',
             'informacion' => 'required',
             'categoria' => 'required'
         ];
@@ -39,7 +39,7 @@ class StoreBlog extends FormRequest
     public function messages()
     {
         return[
-            'name.required' => 'Debe ingresar un título',
+            'titulo.required' => 'Debe ingresar un título',
             'informacion.required' => 'Debe ingresar información',
             'categoria.required' => 'Debe ingresar categoría'
         ];

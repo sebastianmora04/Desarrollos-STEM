@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class UpdatingBlogsTable extends Migration
+class CreateNovedadesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class UpdatingBlogsTable extends Migration
      */
     public function up()
     {
-        Schema::table('blogs', function (Blueprint $table) {
-            $table->foreignId('user_id')->constrained();
-            $table->string('slug')->unique();
-            $table->boolean('is_draft')->default(false);
+        Schema::create('novedades', function (Blueprint $table) {
+            $table->id();
+            $table->string('titulo');
+            $table->text('informacion');
+            $table->string('categoria');
+            $table->timestamps();
         });
     }
 
@@ -27,6 +29,6 @@ class UpdatingBlogsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('novedades');
     }
 }

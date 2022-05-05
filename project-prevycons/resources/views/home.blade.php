@@ -13,6 +13,12 @@
         padding: 0;
         margin: 20px auto 0 auto;
         }
+        .capaatras{
+            z-index: 0;
+        }
+        .capadelante{
+            z-index: 1;
+        }
     </style>
 @endsection
 
@@ -30,8 +36,9 @@
 </div>
 
 
-<div id="slide" class="container py-5 md:px-10 sm:px-5 mx-auto">
-    <div id="default-carousel" class="relative" data-carousel="slide">
+
+<div id="slide" class="container py-5 md:px-10 sm:px-5 mx-auto capaatras">
+    <div id="default-carousel" class="relative" data-carousel="static">
         <!-- Carousel wrapper -->
         <div class="overflow-hidden relative lg:h-96 sm:h-80 h-[260px] rounded-lg tamaño shadow-xl">
             <!-- Item 1 -->

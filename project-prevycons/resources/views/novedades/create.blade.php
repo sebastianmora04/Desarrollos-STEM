@@ -1,19 +1,17 @@
-@extends('layouts.plantilla2')
+@extends('layouts.plantilla')
 
-@section('title','Prevycons - Blog Edit')
+@section('title','Prevycons - Create')
 
 @section('content')
-    <h1>Edit post</h1>
-    <form action="{{route('blog.update',$blog)}}" method="POST" class="text-[#C9C9C9]">
+    <h1>Create new</h1>
+    <form action="{{route('novedades.store')}}" method="POST">
 
         @csrf 
 
-        @method('PUT')
-        
         <label>
             Name:
             <br>
-            <input type="text" class="bg-transparent" name="titulo" value="{{old('titulo',$blog->titulo)}}">
+            <input type="text" name="titulo" value="{{old('titulo')}}">
         </label>
 
         @error('titulo')
@@ -21,29 +19,29 @@
             <small>*{{$message}}</small>
             <br>
         @enderror
-
+        
         <br>
         
         <label>
             Informacion: 
             <br> 
-            <textarea class="bg-transparent" name="informacion" rows="3">{{old('informacion',$blog->informacion)}}</textarea>
+            <textarea name="informacion" rows="3">{{old('informacion')}}</textarea>
         </label>
-
+        
         @error('informacion')
             <br>
             <small>*{{$message}}</small>
             <br>
         @enderror
-
-        <br>
         
+        <br>
+
         <label>
             Categoría: 
             <br> 
-            <input type="text" class="bg-transparent" name="categoria" value="{{old('categoria',$blog->categoria)}}">
+            <input type="text" name="categoria" value="{{old('categoria')}}">
         </label>
-
+        
         @error('categoria')
             <br>
             <small>*{{$message}}</small>
@@ -58,6 +56,7 @@
             <input type="text">
         </label>
         <br>
-        <button type="submit">Actualizar</button>
+        <br>
+        <button type="submit">Publicar</button>
     </form>
 @endsection

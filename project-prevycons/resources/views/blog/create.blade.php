@@ -11,10 +11,10 @@
         <label>
             Name:
             <br>
-            <input type="text" name="name" value="{{old('name')}}">
+            <input type="text" name="titulo" value="{{old('titulo')}}">
         </label>
 
-        @error('name')
+        @error('titulo')
             <br>
             <small>*{{$message}}</small>
             <br>

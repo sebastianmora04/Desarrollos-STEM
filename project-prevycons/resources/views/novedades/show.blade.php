@@ -1,6 +1,6 @@
 @extends('layouts.plantilla2')
 
-@section('title','Prevycons - Blog '. $blog->name)
+@section('title','Prevycons - '. $novedades->name)
 
 @section('head')
     <style>
@@ -15,17 +15,17 @@
 
 @section('content')
     
-    <a href="{{route('blog.edit', $blog)}}">Editar post</a>
+    <a href="{{route('novedades.edit', $novedades)}}">Editar novedad</a>
     <br><br><br>
 
     <div class="grid grid-cols-3 px-10">
         <div class="col-span-2 w-11/12 mx-auto">
-            <p class="text-slate-400">{{$blog->categoria}}</p>
-            <strong class="text-4xl titulos tracking-wide">{{$blog->titulo}}</strong>
+            <p class="text-slate-400">{{$novedades->categoria}}</p>
+            <strong class="text-4xl titulos tracking-wide">{{$novedades->titulo}}</strong>
 
             <br><br>
 
-            <p class="text-justify py-4">{{$blog->informacion}}</p>
+            <p class="text-justify py-4">{{$novedades->informacion}}</p>
         </div>
 
         <div class="mx-auto w-11/12">
