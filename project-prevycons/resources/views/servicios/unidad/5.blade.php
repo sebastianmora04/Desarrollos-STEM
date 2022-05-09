@@ -13,27 +13,27 @@
 
 @section('content')
     
-    <img src="{{URL::asset($servicios->img)}}" class="mx-auto w-1/6 justify-center" alt="logo-img">
+    <img src="{{URL::asset($servicios->img . '.png')}}" class="mx-auto w-1/6 justify-center" alt="logo-img">
     
     <br>
 
-    <h2 class="mx-auto text-center azul2 titulos text-3xl px-[350px]"><strong>{{$servicios->name}}</strong></h2>
+    <h2 class="mx-auto text-center azul2 titulos sm:text-3xl text-[22px] xl:px-[350px] lg:px-[250px] md:px-[100px]"><strong>{{$servicios->name}}</strong></h2>
     
     <br>
 
-    <div class="flex flex-row px-24 font-semibold" style="color: rgb(134, 133, 133)">
+    <div class="sm:flex sm:flex-row lg:px-24 sm:px-18 font-semibold" style="color: rgb(134, 133, 133)">
 
-        <div class="basis-1/2 w-11/12">
+        <div class="basis-1/2 w-11/12 mx-auto sm:px-8 px-2 text-justify sm:text-base text-sm">
             
-            <p class="px-8">{{$servicios->contenido}}</p>
+            <p class="">{{$servicios->contenido}}</p>
             <br>
-            <p class="px-8">
+            <p class="">
                 Toda entidad, organización o empresa del sector público o privado, que cuente con una flota de vehículos automotores o no automotores superior a diez (10) unidades, o que contrate o administre personal de conductores, deberá diseñar e implementar un Plan Estratégico de Seguridad Vial en función de su misionalidad y tamaño, de acuerdo con la metodología expedida por el Ministerio de Transporte y articularlo con su Sistema de Gestión de Seguridad y Salud en el Trabajo –SGSST”. Art. 12 de la Ley 1503 de 2011, modificado por el Art. 110 del Decreto Ley 2106 de 2019.
             </p>
         </div>
     
-        <div class="basis-1/2 w-11/12">
-            <p class="titulos text-lg">La formulación del PESV debe elaborarse con base en lo siguiente:</p>
+        <div class="basis-1/2 w-11/12 mx-auto lg:px-0 md:px-6 px-2 text-justify sm:text-base text-sm">
+            <p class="titulos sm:text-lg">La formulación del PESV debe elaborarse con base en lo siguiente:</p>
             <ul class="my-2">
                 <li> - Las acciones contenidas en el Art. 12 de la Ley 1503 de 2011</li>
                 <li> - Los pilares estratégicos contenidos en el Plan Nacional de Seguridad Vial 2011-2021, de acuerdo con lo dispuesto en el Art. 10° del Decreto 2851 de 2013</li>

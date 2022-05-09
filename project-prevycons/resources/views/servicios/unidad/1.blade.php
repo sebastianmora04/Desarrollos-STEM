@@ -13,36 +13,36 @@
 
 @section('content')
     
-    <img src="{{URL::asset($servicios->img)}}" class="mx-auto w-1/6 justify-center" alt="logo-img">
+    <img src="{{URL::asset($servicios->img . '.png')}}" class="mx-auto w-1/6 justify-center" alt="logo-img">
     
     <br>
 
-    <h2 class="mx-auto text-center azul2 titulos text-3xl px-[350px]"><strong>{{$servicios->name}}</strong></h2>
+    <h2 class="mx-auto text-center azul2 titulos sm:text-3xl text-[22px] xl:px-[350px] lg:px-[250px] md:px-[100px]"><strong>{{$servicios->name}}</strong></h2>
     
     <br>
 
-    <div class="flex flex-row px-24 font-semibold" style="color: rgb(134, 133, 133)">
+    <div class="sm:flex sm:flex-row lg:px-24 sm:px-18 font-semibold" style="color: rgb(134, 133, 133)">
 
-        <div class="basis-1/2 w-11/12">
-            <p class="px-8">{{$servicios->descripcion}}</p>
+        <div class="basis-1/2 w-11/12 mx-auto sm:px-8 px-2 text-justify sm:text-base text-sm">
+            <p class="">{{$servicios->descripcion}}</p>
             <br>
-            <p class="px-8">{{$servicios->contenido}}</p>
+            <p class="">{{$servicios->contenido}}</p>
             <br>
-            <p class="px-8">
+            <p class="">
                 En Prevycons generamos relaciones de valor con nuestros clientes apoyados en el conocimiento y la experiencia de Consultoría a la medida, nuestro equipo de profesionales se encargará de estudiar y analizar cuál es la mejor estrategia para lograr una implementación adecuada de los procesos de su empresa.
             </p>
             <br>
-            <p class="px-8">
+            <p class="">
                 Contribuimos en la mejora de la competitividad de las empresas y nos dedicamos a velar por la parte más importante de una organización sus empleados logrando empresas potencialmente exitosas.
             </p>
             <br>
-            <p class="px-8">
+            <p class="">
                 Un Sistema de Gestión está especialmente recomendado a cualquier tipo de organización o actividad orientada a la producción de bienes o servicios, que necesiten de la gestión de sistemas una herramienta útil para mejorar su empresa. 
             </p>
         </div>
     
-        <div class="basis-1/2 w-11/12">
-            <p class="titulos text-lg">Entregables</p>
+        <div class="basis-1/2 w-11/12 mx-auto lg:px-0 md:px-6 px-2 text-justify sm:text-base text-sm">
+            <p class="titulos sm:text-lg">Entregables</p>
             <ul class="my-2">
                 <li> - Definición del alcance</li>
                 <li> - Definición de política y objetivos del sistema</li>

@@ -95,7 +95,8 @@ Route::controller(contactanosController::class)->group(function(){
 Route::controller(loginController::class)->group(function(){
     Route::get('login', 'index')->name('login.index');
     Route::get('registro', 'registro')->name('login.registro');
-    Route::get('success', 'success')->name('login.success');
+    Route::post('registro', 'store')->name('registro.store');
+    Route::get('registro/success/{usuario}', 'success')->name('login.success');
     Route::get('recordar', 'recordar')->name('login.recordar');
 });
 

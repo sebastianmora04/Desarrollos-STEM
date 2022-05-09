@@ -13,17 +13,17 @@
 
 @section('content')
 
-    <img src="{{URL::asset($servicios->img)}}" class="mx-auto w-1/6 justify-center" alt="logo-img">
+    <img src="{{URL::asset($servicios->img . '.png')}}" class="mx-auto w-1/6 justify-center" alt="logo-img">
     
     <br>
 
-    <h2 class="mx-auto text-center azul2 titulos text-3xl px-[350px]"><strong>{{$servicios->name}}</strong></h2>
+    <h2 class="mx-auto text-center azul2 titulos sm:text-3xl text-[22px] xl:px-[350px] lg:px-[250px] md:px-[100px]"><strong>{{$servicios->name}}</strong></h2>
     
     <br>
 
-    <div class="flex flex-row px-28 font-semibold" style="color: rgb(134, 133, 133)">
+    <div class="sm:flex sm:flex-row lg:px-24 sm:px-18 font-semibold" style="color: rgb(134, 133, 133)">
 
-        <div class="basis-1/2 w-11/12 px-4">
+        <div class="basis-1/2 w-11/12 mx-auto sm:px-8 px-2 text-justify sm:text-base text-sm">
             <p class="">{{$servicios->descripcion}}</p>
             <br>
             <p class="">{{$servicios->contenido}}</p>
@@ -31,7 +31,7 @@
             <p class="">
             </p>
 
-            <p class="titulos text-lg ">Entregables</p>
+            <p class="titulos sm:text-lg ">Entregables</p>
             <ul class="my-2 ">
                 <li> - Identificación de peligros</li>
                 <li> - Documentación del sistema</li>
@@ -45,8 +45,8 @@
 
         </div>
     
-        <div class="basis-1/2 w-11/12 px-2">
-            <p class="titulos text-lg">Aplicación del sistema de gestión</p>
+        <div class="basis-1/2 w-11/12 mx-auto lg:px-0 md:px-6 px-2 text-justify sm:text-base text-sm">
+            <p class="titulos sm:text-lg">Aplicación del sistema de gestión</p>
             <ul class="my-2">
                 <li> - Pautas básicas orden y aseo</li>
                 <li> - Uso adecuado de EPP</li>
@@ -63,7 +63,7 @@
 
             <br>
             
-            <p class="titulos text-lg">Sistema de vigilancia epidemiológica</p>
+            <p class="titulos sm:text-lg">Sistema de vigilancia epidemiológica</p>
             <ul class="my-2">
                 <li> - Levantamiento y desplazamiento manual de cargas</li>
                 <li> - Cuidado de manos</li>

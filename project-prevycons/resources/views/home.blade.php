@@ -38,7 +38,7 @@
 
 
 <div id="slide" class="container py-5 md:px-10 sm:px-5 mx-auto capaatras">
-    <div id="default-carousel" class="relative" data-carousel="static">
+    <div id="default-carousel" class="relative" data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="overflow-hidden relative lg:h-96 sm:h-80 h-[260px] rounded-lg tamaño shadow-xl">
             <!-- Item 1 -->

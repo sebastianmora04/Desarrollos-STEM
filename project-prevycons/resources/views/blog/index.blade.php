@@ -38,7 +38,7 @@
     <div class="sm:grid md:grid-cols-3 sm:grid-cols-2 gap-4 h-auto w-11/12 p-4 justify-center mx-auto">
     @foreach ($blogs as $item)
         <a href="{{route('blog.show',$item->id)}}" class="flex flex-col items-center rounded border border-[#7398fd] shadow-md md:max-w-xl bg-gradient-to-t from-[#254ecc] to-[#001559]">
-            <img class="object-cover w-full rounded-t-lg md:rounded-none md:rounded-l-lg" src="/docs/images/blog/image-4.jpg" alt="">
+            <img class="object-cover w-full rounded md:rounded-none md:rounded" src="{{URL::asset('img/blogprueba.png')}}" alt="">
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 lg:text-2xl md:text-[22px] text-xl font-bold tracking-tight ">{{$item->titulo}}</h5>
                 <p class="mb-3 font-normal md:text-base text-sm">{{$item->get_limit_informacion}}</p>
@@ -66,9 +66,11 @@
     <br>
 
     <!-- Noticias desde acá -->
-    <div class="lg:px-8 md:px-6 sm:px-2 flex flex-row">
-        <div class="basis-1/4 ml-10">01</div>
-        <div class="basis-3/4 mr-10">
+    <div class="lg:px-8 md:px-6 sm:px-2 sm:flex sm:flex-row">
+        <div class="basis-1/4 sm:ml-10">
+            <img src="{{URL::asset('img/blogprueba.png')}}" alt="">
+        </div>
+        <div class="basis-3/4 px-4 sm:mr-8">
             <h1 class="font-semibold sm:text-xl text-lg">Nuevo sistema de reportes</h1>
             <br>
             <p class="sm:text-lg text-base">Lorem ipsum dolor sit amet, consectetuer adipiscit nulla facilisis atrrdd vero

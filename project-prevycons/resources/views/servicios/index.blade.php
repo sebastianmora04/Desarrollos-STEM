@@ -42,7 +42,7 @@
         <div class="row-span-2 ">
             <div class="box-border h-96 p-4 shadow-lg hover:shadow-2xl w-auto rounded-lg text-slate-50 w-11/12 mx-auto bg-gradient-to-t from-[#001559] to-[#254ecc]">
                 <a href="{{route('servicios.show',$item->id)}}">
-                    <img src="{{$item->img}}" class="mx-auto w-3/5 justify-center"
+                    <img src="{{$item->img . '.png'}}" class="mx-auto w-3/5 justify-center"
                             alt="logo-img">
                     <br>
                     <div class="sm:text-base text-sm">
@@ -78,7 +78,7 @@
         <div class="row-span-2 ">
             <div class="box-border h-96 p-4 shadow-lg hover:shadow-2xl w-auto rounded-lg text-slate-50 w-11/12 mx-auto bg-gradient-to-t from-[#001559] to-[#254ecc]">
                 <a href="{{route('servicios.show',$item->id)}}">
-                    <img src="{{$item->img}}" class="mx-auto w-3/5 justify-center"
+                    <img src="{{$item->img . '.png'}}" class="mx-auto w-3/5 justify-center"
                             alt="logo-img">
                     <br>
                     <div class="sm:text-[15px] text-sm">
