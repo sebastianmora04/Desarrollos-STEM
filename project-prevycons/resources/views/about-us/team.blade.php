@@ -30,7 +30,7 @@
     </div>
     
     <br>
-    <img class="mx-auto" src="" alt="imagen">
+    <img class="w-full" src="{{URL::asset('img/oficina.png')}}" alt="imagen">
 
     <div class="linea w-5/6"></div>
     <br>

@@ -145,12 +145,15 @@
                 </a> --> <!-- box-border h-auto p-4 shadow-lg hover:shadow-2xl w-auto -->
             @endforeach
         </div>
-        {{$servicios->links()}}
 
     </div>
-
-    
+    <div class="bg-gray-200">
+        <div class="w-10/12 mx-auto bg-gray-200">
+            {{$servicios2->links()}}
+        </div>
+        <br>
     </div>
+</div>
 
 
 
