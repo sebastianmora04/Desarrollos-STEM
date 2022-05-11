@@ -25,10 +25,10 @@
                 <span class="ml-3 font-medium">Disponible</span>
             </label>
 
-            <div class="flex flex-row">
+            <div class="sm:flex sm:flex-row">
             
                 <div class="basis-1/6">
-                    <select name="sector" class="w-11/12 h-9 border bgfiltro font-bold azul2 rounded-lg" id="">
+                    <select name="sector" class="w-11/12 h-9 sm:my-0 my-2 border bgfiltro font-bold azul2 rounded-lg" id="">
                         <option class="ml-3 text-sm font-medium titulos azul2">Sectores</option>
                         <option class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="">Industrial</option>
                         <option class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="">Médico</option>
@@ -38,11 +38,11 @@
                 </div>
                 
                 <div class="basis-7/12">
-                    <input style="background-color: #d3dce0; border-color:transparent" class="w-11/12 h-9 lg:ml-4 md:ml-3 ml-1 bgfiltro rounded-lg font-bold" type="text" name="nombre" placeholder="Buscar producto" value="{{old('nombre')}}">
+                    <input style="background-color: #d3dce0; border-color:transparent" class="w-11/12 h-9 lg:ml-4 md:ml-3 sm:my-0 my-2 bgfiltro rounded-lg font-bold" type="text" name="nombre" placeholder="Buscar producto" value="{{old('nombre')}}">
                 </div>
 
                 <div class="basis-1/6 azul2">
-                    <select name="tipo" class="w-11/12 h-9 form-control rounded-lg bgfiltro font-bold azul2" id="exampleFormControlSelect1">
+                    <select name="tipo" class="w-11/12 h-9 sm:my-0 my-2 form-control rounded-lg bgfiltro font-bold azul2" id="exampleFormControlSelect1">
                         <option  class="ml-3 text-sm font-medium titulos azul2" value="">Categoría</option>
                         <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION MANOS">Protección manos</option>
                         <option  class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600" value="PROTECCION CABEZA">Protección cabeza</option>
@@ -55,13 +55,11 @@
                 </div>
 
                 <div class="basis-1/12">
-                    <button class="ml-2 px-2 py-1 transition hover:border-gray-500 hover:scale-105 ease-in-out rounded font-bold border-2 border-gray-300 azul2" type="submit">FILTRAR</button>
+                    <button class="sm:ml-2 px-2 py-1 sm:my-0 my-2 transition hover:border-gray-500 hover:scale-105 ease-in-out rounded font-bold border-2 border-gray-300 azul2" type="submit">FILTRAR</button>
                 </div>
 
             </div>
 
-            
-            
         </form>
     </div>
 
@@ -96,9 +94,9 @@
                 </a>
                 <div class="p-5">
         
-                    <p class="mb-3 font-normal text-slate-100 text-xs">{{$item->categoria}}</p>
+                    <p class="mb-3 font-normal text-slate-100 sm:text-xs text-[11px]">{{$item->categoria}}</p>
                     <a href="{{route('catalogo.show',$item->id)}}">
-                        <h5 class="mb-2 text-xl font-bold tracking-tight text-white">{{$item->name}}</h5>
+                        <h5 class="mb-2 sm:text-xl text-base font-bold tracking-tight text-white">{{$item->name}}</h5>
                     </a>
                     
                 </div>

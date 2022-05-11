@@ -150,7 +150,7 @@
 </head>
 <body class="bg-gradient-to-t from-[#001559] to-[#254ecc] text-[#e9f1f4]">
     <!-- Header -->
-    <header class="hidden lg:block container-fluid sticky top-0 px-14 text-[#e9f1f4] bg-[#114398]">
+    <header class="hidden lg:block container-fluid sticky top-0 px-14 text-[#e9f1f4] bg-[#114398] z-50">
         <div class="items-center justify-between flex px-15 pt-10 py-6  mx-auto w-full">
             <div class=" text-2xl text-cyan font-semibold inline-flex items-center">
                 <a href="{{route('home.index')}}">

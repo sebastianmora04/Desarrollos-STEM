@@ -33,33 +33,24 @@
 
         @csrf 
         
-        <div class="m-1">
-            <input type="text" name="nombre" class="form-input sm:w-7/12 w-full py-2 sm:text-xl text-lg rounded-md bordeazul font-black tracking-wide" placeholder="Nombre">
-        </div>
-
-        <div class="m-1">
-            <input type="text" name="apellido"class="form-input sm:w-7/12 w-full py-2 sm:text-xl text-lg rounded-md bordeazul font-black tracking-wide" placeholder="Apellido">
-        </div>
-
-        <div class="m-1">
-            <input type="email" name="correo" class="form-input sm:w-7/12 w-full py-2 sm:text-xl text-lg rounded-md bordeazul font-black tracking-wide" placeholder="Correo Electronico">
-        </div>
-
-        <div class="relative m-1">
-            <input type="password" name="contrasena" class="form-input sm:w-7/12 w-full py-2 sm:text-xl text-lg rounded-md bordeazul font-black tracking-wide relative" placeholder="Contraseña">
-            <div class="absolute right-5 md:right-28 lg:right-44 inset-y-0 flex items-center">
-                <img src="img/login/Icono Ver contraseña.png" alt="" class="w-6">
+        <input type="text" name="name" class="my-1 form-input sm:w-7/12 w-full py-2 sm:text-xl text-lg rounded-md bordeazul font-black tracking-wide" placeholder="Nombre">
+        
+        <input type="text" name="lastname"class="my-1 form-input sm:w-7/12 w-full py-2 sm:text-xl text-lg rounded-md bordeazul font-black tracking-wide" placeholder="Apellido">
+        
+        <input type="email" name="email" class="my-1 form-input sm:w-7/12 w-full py-2 sm:text-xl text-lg rounded-md bordeazul font-black tracking-wide" placeholder="Correo Electronico">
+        
+        <label class="relative my-1">
+            <input type="password" name="password" class="my-1 form-input sm:w-7/12 w-full py-2 sm:text-xl text-lg rounded-md bordeazul font-black tracking-wide relative" placeholder="Contraseña">
+            <div class="absolute right-0 block md:right-6 lg:right-6 inset-y-0 flex items-center">
+                <img src="img/login/Icono Ver contraseña.png" alt="" class="w-3 md:w-6">
             </div>
-        </div>
+        </label>
         
-        <div class="m-1">
-            <input type="text" name="username" class="form-input sm:w-7/12 w-full py-2 sm:text-xl text-lg rounded-md bordeazul font-black tracking-wide" placeholder="Nombre de usuario" maxlength="12">
-        </div>
+        <input type="text" name="username" class="my-1 form-input sm:w-7/12 w-full py-2 sm:text-xl text-lg rounded-md bordeazul font-black tracking-wide" placeholder="Nombre de usuario" maxlength="12">
         
-        <div class="text-center my-4 divide-y-4 divide-x-52">
-            <button type="submit" class="font-black sm:text-xl text-lg text-center text-white bg-blue-600  py-2 px-8 sm:px-32 rounded-full tracking-wide">Crear cuenta</button>
-            <a href="" class="font-black sm:text-xl text-lg text-center text-white bg-blue-600  py-2 px-8 sm:px-32 rounded-full tracking-wide hidden">Crear cuenta</a>
-        </div>
+        <br><br>
+
+        <button type="submit" class="my-1 font-black sm:text-xl text-lg text-center text-white bg-blue-600  py-2 px-8 sm:px-32 rounded-full tracking-wide">Crear cuenta</button>
 
     </form>
     

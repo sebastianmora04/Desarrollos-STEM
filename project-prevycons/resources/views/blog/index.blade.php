@@ -48,7 +48,10 @@
     @endforeach
     </div>
 
-    {{$blogs->links()}}
+    <div class="w-10/12 mx-auto">
+        {{$blogs->links()}}
+    </div>
+    
 
 
     <div class="linea"></div>
@@ -71,9 +74,9 @@
             <img src="{{URL::asset('img/blogprueba.png')}}" alt="">
         </div>
         <div class="basis-3/4 px-4 sm:mr-8">
-            <h1 class="font-semibold sm:text-xl text-lg">Nuevo sistema de reportes</h1>
+            <h1 class="font-semibold lg:text-xl md:text-lg text-base">Nuevo sistema de reportes</h1>
             <br>
-            <p class="sm:text-lg text-base">Lorem ipsum dolor sit amet, consectetuer adipiscit nulla facilisis atrrdd vero
+            <p class="lg:text-lg md:text-base text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscit nulla facilisis atrrdd vero
                 erosasd et accumsana et iusto odio dignisqwesimismod tincidunt uat, vlum
                 dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio digssimt ut
                 laoreet dolore magna. 

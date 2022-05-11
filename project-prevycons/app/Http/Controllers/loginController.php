@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreBlog;
+use App\Http\Requests\StoreUser;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -16,13 +16,13 @@ class loginController extends Controller
     {
         return view('login.registro');
     }
-    public function store(StoreBlog $request){
+    public function store(StoreUser $request){
 
         $usuario = New User();
-        $usuario->name=$request->nombre;
-        $usuario->lastname=$request->apellido;
-        $usuario->email=$request->correo;
-        $usuario->password=$request->contrasena;
+        $usuario->name=$request->name;
+        $usuario->lastname=$request->lastname;
+        $usuario->email=$request->email;
+        $usuario->password=$request->password;
         $usuario->username=$request->username;
         
         $usuario->save();

@@ -31,7 +31,7 @@
                 PREV&CONS realiza para sus clientes asesorías ambientales en: Manejo de residuos sólidos, Ahorro y uso eficiente de agua y energía, Política cero papeles, vertimientos, Residuos peligrosos, y todo lo concerniente a la normatividad ambiental vigente.
             </p>
             <br>
-            <p class=" titulos text-lg">Plan de gestión integral de residuos sólidos</p>
+            <p class=" titulos sm:text-lg text-[17px]">Plan de gestión integral de residuos sólidos</p>
             <br>
             <p class="">
                 El Plan de Gestión Integral de Residuos Sólidos está orientado a racionalizar y optimizar los recursos, mitigar los impactos negativos, contribuyendo a un cambio en la cultura y en las formas convencionales del manejo de los residuos por las empresas.
@@ -40,7 +40,7 @@
         </div>
     
         <div class="basis-1/2 w-11/12 mx-auto lg:px-0 md:px-6 px-2 text-justify sm:text-base text-sm">
-            <p class="titulos sm:text-lg">Acciones a desarrollar</p>
+            <p class="titulos sm:text-lg text-[17px] sm:my-0 my-2">Acciones a desarrollar</p>
             <ul class="my-2">
                 <li> - Cómo desarrollar un plan de manejo ambiental</li>
                 <li> - Reducción, reutilización y reciclaje de residuos sólidos</li>

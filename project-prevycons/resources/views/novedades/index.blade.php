@@ -20,7 +20,7 @@
 @section('content')
     <div class="linea"></div>
 
-    <div class="sm:p-4 sm:text-base text-sm ">
+    <div class="sm:p-4 md:text-base sm:text-sm text-xs ">
         <form class="px-10 py-4 bg-slate-50 rounded-lg bg-inherit" action=""><!-- bg-gray-800 -->
             
             <label for="toggle-example" class="flex relative items-center mb-4 cursor-pointer hidden">
@@ -32,20 +32,20 @@
             <div class="flex flex-row">
             
                 <div class="basis-3/12">
-                    <select name="tipo" class="w-11/12 h-9 border bgfiltro font-bold text-white rounded-lg focus:border-white" id="">
-                        <option class="ml-3 text-sm font-medium titulos azul2" value="">Categoría</option>
-                        <option class="ml-3 text-sm font-medium azul2" value="Noticias">Noticias</option>
-                        <option class="ml-3 text-sm font-medium azul2" value="Normas">Normas</option>
-                        <option class="ml-3 text-sm font-medium azul2" value="Decretos">Decretos</option>
+                    <select name="tipo" class="sm:w-11/12 h-9 px-2 border bgfiltro font-bold text-white rounded-lg focus:border-white" id="">
+                        <option class="ml-3 sm:text-sm text-xs font-medium titulos azul2" value="">Categoría</option>
+                        <option class="ml-3 sm:text-sm text-xs font-medium azul2" value="Noticias">Noticias</option>
+                        <option class="ml-3 sm:text-sm text-xs font-medium azul2" value="Normas">Normas</option>
+                        <option class="ml-3 sm:text-sm text-xs font-medium azul2" value="Decretos">Decretos</option>
                     </select>
                 </div>
                 
                 <div class="basis-8/12">
-                    <input style="background-color: transparent; border-color:#d3dce0" class="w-11/12 h-9 lg:ml-4 md:ml-3 ml-1 bgfiltro rounded-lg font-bold" type="text" name="nombre" placeholder="Buscar novedad" value="{{old('nombre')}}">
+                    <input style="background-color: transparent; border-color:#d3dce0" class="w-11/12 h-9 lg:ml-4 md:ml-3 ml-1 bgfiltro rounded-lg font-bold md:text-base sm:text-sm text-xs" type="text" name="nombre" placeholder="Buscar novedad" value="{{old('nombre')}}">
                 </div>
 
                 <div class="basis-1/12">
-                    <button class="ml-2 px-2 py-1 transition hover:border-gray-500 hover:scale-105 ease-in-out rounded font-bold border-2 border-slate-100 hover:border-white text-white" type="submit">FILTRAR</button>
+                    <button class="sm:ml-2 px-2 py-1 h-9 transition hover:border-gray-500 hover:scale-105 ease-in-out rounded font-bold border-2 border-slate-100 hover:border-white text-white" type="submit">FILTRAR</button>
                 </div>
 
             </div>
