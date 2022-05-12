@@ -18,15 +18,17 @@
     <a href="{{route('novedades.edit', $novedades)}}">Editar novedad</a>
     <br><br><br>
 
-    <div class="grid grid-cols-3 px-10">
-        <div class="col-span-2 w-11/12 mx-auto">
-            <p class="text-slate-400">{{$novedades->categoria}}</p>
-            <strong class="text-4xl titulos tracking-wide">{{$novedades->titulo}}</strong>
+    <div class="sm:grid sm:grid-cols-3 sm:px-10 px-4">
+        <div class="sm:col-span-2 w-11/12 mx-auto sm:text-base text-[15px]">
+            <p class="text-slate-300">{{$novedades->categoria}}</p>
+            <strong class="sm:text-4xl text-3xl titulos tracking-wide">{{$novedades->titulo}}</strong>
 
             <br><br>
 
-            <p class="text-justify py-4">{{$novedades->informacion}}</p>
+            <p class="text-justify py-4"><?php echo nl2br($novedades->informacion,FALSE) ?></p>
         </div>
+
+        <br class="sm:hidden">
 
         <div class="mx-auto w-11/12">
             <h2 class="font-bold text-xl">COMENTARIOS</h2>

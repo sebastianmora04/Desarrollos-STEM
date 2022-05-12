@@ -27,7 +27,7 @@
 
             <br><br>
 
-            <p class="text-justify py-4">{{$blog->informacion}}</p>
+            <p class="text-justify py-4"><?php echo nl2br($blog->informacion,FALSE) ?></p>
         </div>
 
         <br class="sm:hidden">

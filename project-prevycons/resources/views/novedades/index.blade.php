@@ -76,7 +76,7 @@
             <img class="object-cover w-full rounded-t-lg md:rounded-none md:rounded-l-lg" src="/docs/images/blog/image-4.jpg" alt="">
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 lg:text-2xl md:text-[22px] text-xl font-bold tracking-tight">{{$item->titulo}}</h5>
-                <p class="mb-3 font-normal md:text-base text-sm">{{$item->informacion}}</p>
+                <p class="mb-3 font-normal md:text-base text-sm">{{$item->get_limit_informacion}}</p>
             </div>
         </a>
         <br class="sm:hidden block">

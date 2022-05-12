@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Novedades extends Model
 {
     use HasFactory;
+
+    public function getGetLimitInformacionAttribute()
+    {
+        return substr($this->informacion, 0, 140) . '...';
+    }
 }
