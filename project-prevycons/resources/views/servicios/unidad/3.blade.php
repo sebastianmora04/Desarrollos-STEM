@@ -54,7 +54,7 @@
 
             <br>
             
-            <img src="" class="" alt="">
+            <img src="{{URL::asset('img/documental.jpg')}}" class="" alt="">
 
         </div>
 

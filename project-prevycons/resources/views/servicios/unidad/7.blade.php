@@ -50,7 +50,7 @@
 
             <br>
 
-            <img src="{{URL::asset('img/prueba.png')}}" class="" alt="">
+            <img src="{{URL::asset('img/capacitacion.png')}}" class="" alt="">
 
         </div>
 

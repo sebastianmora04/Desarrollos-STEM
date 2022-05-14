@@ -45,7 +45,7 @@
 
             <br>
             
-            <img src="{{URL::asset('img/prueba.png')}}" class="" alt="">
+            <img src="{{URL::asset('img/auditorias.jpg')}}" class="" alt="">
 
         </div>
 

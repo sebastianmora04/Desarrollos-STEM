@@ -44,6 +44,9 @@
         body{
             font-family: 'Montserrat', sans-serif;
         }
+        .monse{
+            font-family: 'Montserrat', sans-serif;
+        }
         .tamaño{
             height: 400px;
         }

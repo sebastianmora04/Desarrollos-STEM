@@ -21,13 +21,16 @@
     
     <br>
 
+    <p class="mx-auto w-11/12 lg:px-32 md:px-10 px-2 font-semibold text-justify sm:text-base text-sm" style="color: rgb(134, 133, 133)">{{$servicios->descripcion}}</p>
+    <br>
+    <p class="mx-auto w-11/12 lg:px-32 md:px-10 px-2 font-semibold text-justify sm:text-base text-sm" style="color: rgb(134, 133, 133)">{{$servicios->contenido}}</p>
+    
+    <br>
+
     <div class="sm:flex sm:flex-row lg:px-24 sm:px-18 font-semibold" style="color: rgb(134, 133, 133)">
 
         <div class="basis-1/2 w-11/12 mx-auto sm:px-8 px-2 text-justify sm:text-base text-sm">
-            <p class="">{{$servicios->descripcion}}</p>
-            <br>
-            <p class="">{{$servicios->contenido}}</p>
-            <br>
+            
             <p class="">
             </p>
 
@@ -42,6 +45,12 @@
                 <li> - Conformación y capacitación a brigadas de emergencia</li>
                 <li> - Auditoría y plan de mejora</li>
             </ul>
+
+            <br class="hidden sm:block"><br class="">
+
+            <img src="{{URL::asset('img/gsst2.jpg')}}" class="" alt="">
+
+            <br class="block sm:hidden">
 
         </div>
     
@@ -75,7 +84,7 @@
                 <li> - Capacitación de pausas saludables</li>
             </ul>
 
-            <img src="" class="" alt="">
+            
 
         </div>
 
